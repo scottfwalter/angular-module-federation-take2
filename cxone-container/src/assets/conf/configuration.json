@@ -1,0 +1,19 @@
+{
+  "apiServerBaseUrl": "",
+  "assetsServerBaseUrl": "/admin/assets/<version>",
+  "defaultLang": "en_US",
+  "websocketServerBaseUrl": "",
+  "appContext": "/cxone",
+  "protocol": "https://",
+  "agentsApiV11": ".ucnlabext.com/InContactAPI/services/v11.0/agents/",
+  "buApiV11": ".ucnlabext.com/InContactAPI/services/v11.0/business-unit",
+  "agentsApiV14": ".ucnlabext.com/InContactAPI/services/v14.0/agents/",
+  "buApiV13": ".ucnlabext.com/InContactAPI/services/v13.0/business-unit",
+  "agentPattern": ".ucnlabext.com/InContactAPI/services/v7.0/agent-patterns",
+  "acdApiBaseUrl": ".dev.nice-incontact.com/InContactAPI",
+  "areaIdentifier": "na1",
+  "npxBaseUrl": "https://qa9app.pune.nice.com",
+  "acsBaseUrl": ".dev.nice-incontact.com/public/saml/sso",
+  "global.web_app.url" : "http://cxone.dev.niceincontact.com",
+  "translationKey": "hybrid-webapp-authorization"
+}

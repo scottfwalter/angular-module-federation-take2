@@ -1,0 +1,53 @@
+{
+  "apps": [
+    {
+      "path": "angular1-hello",
+      "remoteEntry": "http://localhost:5001/remoteEntry.js",
+      "remoteName": "app1Angular",
+      "exposedModule": "./web-components",
+      "elementName": "app1-hello-element"
+    },
+    {
+      "path": "angular1-goodbye",
+      "remoteEntry": "http://localhost:5001/remoteEntry.js",
+      "remoteName": "app1Angular",
+      "exposedModule": "./web-components",
+      "elementName": "app1-goodbye-element"
+    },
+    {
+      "startsWith": "angular1Root",
+      "remoteEntry": "http://localhost:5001/remoteEntry.js",
+      "remoteName": "app1Angular",
+      "exposedModule": "./web-components",
+      "elementName": "app1-element"
+    },
+    {
+      "startsWith": "angular1",
+      "remoteEntry": "http://localhost:5001/remoteEntry.js",
+      "remoteName": "app1Angular",
+      "exposedModule": "./web-components",
+      "elementName": "app1-element"
+    },
+    {
+      "path": "angular2",
+      "remoteEntry": "http://localhost:5002/remoteEntry.js",
+      "remoteName": "app2Angular",
+      "exposedModule": "./web-components",
+      "elementName": "app2-element"
+    },
+    {
+      "path": "angular4",
+      "remoteEntry": "http://localhost:5004/remoteEntry.js",
+      "remoteName": "app4Angular",
+      "exposedModule": "./web-components",
+      "elementName": "app4-element"
+    },
+    {
+      "path": "boilerplateMFE",
+      "remoteEntry": "http://localhost:4200/remoteEntry.js",
+      "remoteName": "mfeBoilerPlate",
+      "exposedModule": "./web-components",
+      "elementName": "app-boilerplate"
+    }
+  ]
+}

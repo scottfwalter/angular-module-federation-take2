@@ -1,0 +1,22 @@
+<div class="grid-wrapper">
+  <cxone-spinner class="appSpinner"></cxone-spinner>
+  <cxone-header></cxone-header>
+  <section class="main-content">
+    <cxone-sidebar [isToggleButtonEnabled]="sidebarToggleButton" [isCollapsed]="sidebarCollapsed"></cxone-sidebar>
+
+    <div style="margin: 20px; overflow: auto;">
+      <h1>Container Version {{ngVersion}}</h1>
+      <h2>JEDI Name {{jediName}}</h2>
+      <h2><button (click)="publishViaRXJS()">Publish via RXJS</button></h2>
+      <h2 class="mt-5">Counter Service Value: {{ counterService.counter}}</h2>
+<button class="py-2 px-8 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400" (click)="incrementCounter()">Increment Counter</button>
+
+<button type="button" (click)="sendEventToChildren()">Send Event To Children</button>
+
+<h3>env1 {{envDetails | json }}</h3>
+<h3>Useless Version {{uselessVersion}}</h3>
+
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</div>

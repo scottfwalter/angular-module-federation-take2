@@ -1,0 +1,4 @@
+karma.conf.js
+node_modules/**/*.js
+build/
+vendor/**/*.js

@@ -1,0 +1,52 @@
+{
+  "name": "app1-angular",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-architects/module-federation": "^12.5.3",
+    "@angular-architects/module-federation-tools": "^12.5.3",
+    "@angular/animations": "~12.2.0",
+    "@angular/common": "~12.2.0",
+    "@angular/compiler": "~12.2.0",
+    "@angular/core": "~12.2.0",
+    "@angular/elements": "^12.2.0",
+    "@angular/forms": "~12.2.0",
+    "@angular/platform-browser": "~12.2.0",
+    "@angular/platform-browser-dynamic": "~12.2.0",
+    "@angular/router": "~12.2.0",
+    "cxone-client-services-platform": "^8.85.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.2.2",
+    "moment-timezone": "^0.5.16",
+    "rxjs": "~6.6.0",
+    "sha1": "^1.1.1",
+    "shared-js-lib": "file:../shared-js-lib/dist/",
+    "sockjs-client": "^1.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4",
+    "components-lib": "file:../shared-angular-components/dist/components-lib/",
+    "useless-lib": "^1.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.1",
+    "@angular/cli": "~12.2.1",
+    "@angular/compiler-cli": "~12.2.0",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "typescript": "~4.3.5"
+  }
+}

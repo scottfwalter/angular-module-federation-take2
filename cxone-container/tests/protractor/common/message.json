@@ -1,0 +1,65 @@
+{
+  "commonValidationMessages" :{
+    "uniqueFieldValueError" : "This name already exists. Try a new one.",
+    "specialCharacterError" : "Oops, you can’t use \\ ! < > ? % \"",
+    "specialCharacterError2" : "Oops, you can’t use \\ / ! + < > ? # & , % \"",
+    "tooLongFieldValueError" : "Your entry is too long",
+    "requiredFieldError" : "This field is required."
+  },
+
+  "loginAuthenticatorPage" :{
+    "loginAuthenticatorCreationMessage" : "Login Authenticator created successfully.",
+    "loginAuthenticatorUpdateMessage": "Login Authenticator updated successfully."
+  },
+
+  "ACDSpecific" :{
+    "ACDLoginIdsConstraint" : "You cannot enter more than 4 items",
+    "ACDSpecialCharError": "These characters cannot be used:"
+  },
+
+  "userManagementPage":{
+    "uniqueFieldValueError": "The user name already exists. Try a new one",
+    "contactHandlingTimeRangeValidation": "Value must be between 15 and 300",
+    "userSoftLimitMessage": "New Employee will exceed the limit of users, please contact sales at CXoneSalesTeam@niceincontact.com",
+    "roleAssociationToInactiveUserMessage": "Please assign employee to an active role before re-activating",
+    "emailAddressValidation": "The email address you entered is not valid",
+    "accountLockedMessage": "(Account Locked)",
+    "mfaTimeStepMaxLimit": "Number is too large",
+    "mfaTimeStepMinLimit": "Number is too small",
+    "mfaTimeStepDecimalError": "Must be an integer.",
+    "mfaTimeStepCharError": "Numbers only!",
+    "invalidMFAError" : "Invalid MFA Secret",
+    "emailSentSuccessfully" : "Email was sent successfully!"
+  },
+  "importUsers":{
+    "successfulImport": "Employees imported successfully.",
+    "failedImport": "Failed to import employees.",
+    "mfaSecretValidation": "Line : 1, Error : MFA Secret not appropriate.",
+    "mfaTimeStepSpecialCharValidation": "Line : 1, Error : MFA Time Step contains special char.",
+    "mfaTimeStepValidation": "Line : 1, Error : MFA Time Step is not appropriate.",
+    "blankRoleValidation": "Line : 1, Error : Role must not be blank.",
+    "roleDoesNotExistsLine1": "Line : 1, Error : Role does not exist in system",
+    "roleDoesNotExistsLine2": "Line : 2, Error : Role does not exist in system",
+    "blankRoleValidationLine2": "Line : 2, Error : Role must not be blank.",
+    "roleSpecialCharValidation": "Line : 1, Error : Role Name contains invalid characters. Valid characters are a-z, A-Z, 0-9 and @-_$^*.",
+    "userAlreadyExistsValidationLine1": "Line : 1, Error : Failed to create user, user with same username already exists.",
+    "userAlreadyExistsValidationLine2": "Line : 2, Error : Failed to create user, user with same username already exists.",
+    "userAlreadyExistsValidationLine3": "Line : 3, Error : Failed to create user, user with same username already exists.",
+    "emailChangeForExistingUserValidation": "Line : 1, Error : INVALID_REQUEST",
+    "booleanValueValidation": "Line : 1, Error : Invalid value \"Value\" for Can Be Coached/Evaluated"
+  },
+
+  "loginPage": {
+    "wrongCredentialsError" : "You have entered wrong user credentials"
+  },
+
+  "teamPage":{
+    "duplicateTeamError" : "Team Duplicated Successfully"
+  },
+
+  "accountSettings": {
+    "errorDirty" : "Hostname cannot contain profanity. Please use a different name.",
+    "reservedWords" : "This hostname contains text reserved by the system. Please use a different name.",
+    "saveSuccessful" : "Account settings have been configured and saved successfully."
+  }
+}

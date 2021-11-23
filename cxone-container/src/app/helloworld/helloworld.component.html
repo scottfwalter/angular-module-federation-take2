@@ -1,0 +1,71 @@
+<h1>Angular Validation Page</h1>
+
+
+
+<button type="button" (click)="loadFeature()">Load feature module and render component</button>
+<ng-template #container></ng-template>
+
+<br>
+
+<button (click)="updateMessageInZone()">Update Message Inside Zone</button>
+<button (click)="updateMessageOutsideZone()">Update Message Outside Zone</button>
+<button (click)="detectChanges()">Manually detect changes</button>
+
+<h2>Configuration Keys</h2>
+{{configurationKeys}}
+
+<div class="buttons">
+  <button class="cxone-btn btn-medium btn-primary" (click)="requestData()">Test Spinner via HttpClient</button>
+  <button class="cxone-btn btn-medium btn-primary" (click)="fetchData()">Test Spinner Request Via Fetch</button>
+  <button class="cxone-btn btn-medium btn-primary" (click)="convertData()">Test Convert Response Via HttpClient</button>
+</div>
+
+<h2>
+  Localization
+</h2>
+
+<h3>From Core Components</h3>
+{{ 'cxone-components.mycomponent.name' | translate}}
+
+<h3>From Application</h3>
+{{ 'app.hello' | translate}}
+
+<h2>
+  Authenticated Service Calls
+</h2>
+<div class="tab-wrapper">
+  <cxone-tabs>
+    <cxone-tab [title]="'User and Org'">
+      <div>
+        <div *ngFor="let item of userInfo | keyvalue">
+          {{ item.key }} - {{ item.value }}
+        </div>
+      </div>
+    </cxone-tab>
+    <cxone-tab [title]="'Licenses'">
+      <div>{{ licenses | json }}</div>
+    </cxone-tab>
+    <cxone-tab [title]="'Feature Toggles'">
+      <div>{{ featureToggles | json }} </div>
+    </cxone-tab>
+    <cxone-tab [title]="'Permissions'">
+      <div>{{ permissions | json }} </div>
+    </cxone-tab>
+    <cxone-tab [title]="'Notifications ' + notifications.length">
+      <div>
+        <div class="notifications" *ngFor="let item of notifications">
+          {{ item }}
+        </div>
+      </div>
+    </cxone-tab>
+  </cxone-tabs>
+</div>
+
+
+<h2>Icons</h2>
+<h3>Sprite Path</h3>
+<p>{{spritePath}}</p>
+
+<h3>The SVG</h3>
+<cxone-svg-sprite-icon [iconName]="'icon-Smily_happy'" [spritePath]="spritePath" [wrapperClass]="'wrapperClass'">
+</cxone-svg-sprite-icon>

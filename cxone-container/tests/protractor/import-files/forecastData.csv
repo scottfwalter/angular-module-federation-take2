@@ -1,0 +1,19 @@
+# The CSV file contains the fields for the forecast import. Details regarding requirements from each field listed below:,,,,,
+# ,,,,,
+"# Date - Mandatory - Must be a valid date, format is MMM-DD-YYYY (JUL-14-2015). If no date is supplied or the format is incorrect the record with be invalid.",,,,,
+"# Time - Mandatory - Must be a valid time, format is HH:MM in 24 hour format (19:05). If no time is supplied or the format is incorrect the record with be invalid.",,,,,
+# Scheduling Unit - Manadatory - Name of scheduling unit (SU) in the system. Any character allowed in the system is valid. If no SU is supplied or the name doesn't exist in the system the record will be invalid.,,,,,
+# Skill (CT) - Manadatory - Name of skill in the system. Any character allowed in the system is valid. If no skill is supplied or the name doesn't exist in the system the record will be invalid.,,,,,
+# Required Agents - Mandatory - A positive number in a format of 2 digits after the decimal point (xx.xx). If no number is supplied or the format is incorrect the record will be invalid.,,,,,
+# ,,,,,
+# ,,,,,
+# ,,,,,
+# Date,Time,Time Zone,Scheduling Unit,Skill (CT),Required Agents
+Feb-01-2016,00:00,UTC+02:00,g1,english,9
+Feb-01-2016,01:00,UTC+02:00,g1,english,9
+Feb-01-2016,02:00,UTC+02:00,g1,english,9
+Feb-01-2016,03:00,UTC+02:00,g1,english,9
+Feb-01-2016,04:00,UTC+02:00,g1,english,9
+Feb-01-2016,05:00,UTC+02:00,g1,english,9
+Feb-01-2016,06:00,UTC+02:00,g1,english,9
+Feb-01-2016,07:00,UTC+02:00,g1,english,9

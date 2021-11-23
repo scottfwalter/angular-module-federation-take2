@@ -1,0 +1,14 @@
+<h1>App1 Angular {{ngVersion}}</h1>
+<h2>App1 Jedi Name {{jediName}}</h2>
+ddddd1
+<h3>Useless Version {{uselessVersion}}</h3>
+<div>
+    <a routerLink="angular1/hello">Hello</a> |
+    <a routerLink="angular1/goodbye">Goodbye</a>|
+    <a routerLink="angular1/items">Lazy</a>|
+    <a routerLink="angular1/abc">Lazy with Subrouter</a>
+</div>
+
+<button (click)="NavToGoodbye()">navigate by url</button>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,15 @@
+<p (click)="clickit()">APP1 hello works!</p>
+
+<h2 class="mt-5">Counter Service Value: {{ counterService.counter}}</h2>
+<button class="py-2 px-8 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400" (click)="incrementCounter()">Increment Counter</button>
+
+
+
+<button type="button" (click)="loadFeature()">Load feature module and render component</button>
+<ng-template #container></ng-template>
+
+<h2>Licenses</h2>
+{{licenses | json}}
+
+<h2>notifications</h2>
+{{ notifications | json}}

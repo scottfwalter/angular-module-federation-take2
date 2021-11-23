@@ -1,0 +1,22 @@
+.grid-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  section.main-content {
+    display: flex;
+    position: relative;
+    top:56px;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+    main {
+      overflow: auto;
+      background: #eaf1f7;
+      padding: 0 30px;
+      flex: 1;
+    }
+  }
+}
+
+h1 {
+  color: green;
+}

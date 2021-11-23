@@ -1,0 +1,861 @@
+{
+  "cxoneNavigation": {
+    "appPicker": {
+      "header": "Applications",
+      "launchedAppTooltip": "Opens into separate window",
+      "categories": {
+        "others": "OTHERS",
+        "general": "GENERAL",
+        "omnichannel": "OMNICHANNEL ROUTING",
+        "wfo": "WORKFORCE ENGAGEMENT",
+        "analytics": "DATA & ANALYTICS",
+        "automation": "AUTOMATION"
+      },
+      "modules": {
+        "admin": {
+          "title": "Admin",
+          "tooltip": "Admin"
+        },
+        "cxsup": {
+          "title": "Supervisor",
+          "tooltip": "Supervisor"
+        },
+        "acd": {
+          "title": "ACD",
+          "tooltip": "Automatic Call Distribution"
+        },
+        "demo": {
+          "title": "Demo",
+          "tooltip": "Demo"
+        },
+        "wfm": {
+          "title": "WFM",
+          "tooltip": "Workforce Management"
+        },
+        "qm": {
+          "title": "QM",
+          "tooltip": "Quality Management"
+        },
+        "qma": {
+          "title": "QM Analytics",
+          "tooltip": "Quality Analytics"
+        },
+        "myZone": {
+          "title": "My Zone",
+          "tooltip": "My Zone"
+        },
+        "wfi": {
+          "title": "WFI",
+          "tooltip": "WFI"
+        },
+        "reporting": {
+          "title": "Reporting",
+          "tooltip": "Reporting"
+        },
+        "search": {
+          "title": "Search",
+          "tooltip": "Search"
+        },
+        "interactions": {
+          "title": "Interactions",
+          "tooltip": "Interactions"
+        },
+        "tm": {
+          "title": "TM",
+          "tooltip": "Tenant Management"
+        },
+        "dashboard": {
+          "title": "Dashboard",
+          "tooltip": "Dashboard"
+        },
+        "analytics": {
+          "title": "Analytics",
+          "tooltip": "Analytics"
+        },
+        "embeddedClient": {
+          "title": "Embedded Client",
+          "tooltip": "Embedded Client"
+        },
+        "persona": {
+          "title": "Persona",
+          "tooltip": "Persona"
+        },
+        "coaching": {
+          "title": "Coaching",
+          "tooltip": "Coaching"
+        },
+        "voc": {
+          "title": "Feedback Management",
+          "tooltip": "Feedback Management"
+        },
+        "xsight": {
+          "title": "XSight",
+          "tooltip": "XSight"
+        },
+        "max": {
+          "title": "MAX",
+          "tooltip": "MAX"
+        },
+        "supervisor": {
+          "title": "Supervisor",
+          "tooltip": "Supervisor"
+        },
+        "cxOneAttendant": {
+          "title": "CXone Attendant",
+          "tooltip": "CXone Attendant"
+        },
+        "partnerhub": {
+          "title": "PartnerHub",
+          "tooltip": "PartnerHub"
+        },
+        "inview": {
+          "title": "Performance Management",
+          "tooltip": "Performance Management"
+        },
+        "npxview": {
+          "title": "Feedback Management",
+          "tooltip": "Feedback Management"
+        },
+        "digital": {
+          "title": "Digital",
+          "tooltip": "Digital"
+        },
+        "presencesync": {
+          "title": "PresenceSync",
+          "tooltip": "PresenceSync"
+        },
+        "adapter": {
+          "title": "Adapters",
+          "tooltip": "Adapters"
+        },
+        "ssa": {
+          "title": "Self-Service Analytics",
+          "tooltip": "Self-Service Analytics"
+        },
+        "em": {
+          "title": "EM",
+          "tooltip": "Engagement Manager"
+        },
+        "webStudio": {
+          "title": "CXone Studio",
+          "tooltip": "CXone Studio"
+        },
+        "studio": {
+          "title": "Studio Authentication",
+          "tooltip": "Studio Authentication"
+        },
+        "expert": {
+          "title": "CXone Expert",
+          "tooltip": "CXone Expert"
+        }
+      }
+    },
+    "sidebar": {
+      "dashboard": {
+        "myDashboards": {
+          "title": "Dashboards"
+        },
+        "PredefinedDashboard": {
+          "title": "Predefined Dashboards"
+        },
+        "qmSupervisor": {
+          "title": "QM Supervisor"
+        },
+        "manageDashboards": {
+          "title": "Manage Dashboards"
+        }
+      },
+      "hello": {
+        "title": "Hello"
+      },
+      "helloagain": {
+        "title": "Hello Again"
+      },
+      "mylinks": {
+        "title": "My Links"
+      },
+      "mylinks2": {
+        "title": "More Links"
+      },
+      "link1": {
+        "title": "Link1"
+      },
+      "link2": {
+        "title": "Link2"
+      },
+      "link3": {
+        "title": "Link3"
+      },
+      "link4": {
+        "title": "Link4"
+      },
+      "goodbye": {
+        "title": "Goodbye"
+      },
+      "admin": {
+        "userManagement": {
+          "title": "Employees"
+        },
+        "skills": {
+          "title": "WEM Skills"
+        },
+        "groups": {
+          "title": "Groups"
+        },
+        "teams": {
+          "title": "Teams"
+        },
+        "employeeGroups": {
+          "title": "Scheduling Unit"
+        },
+        "roleManagement": {
+          "title": "Roles and Permissions"
+        },
+        "recording": {
+          "title": "Recording"
+        },
+        "businessDataConfiguration": {
+          "title": "Business Data"
+        },
+        "recordingPolicies": {
+          "title": "Recording Policies"
+        },
+        "loginAuthenticatorManagement": {
+          "title": "Login Authenticator"
+        },
+        "accountSettings": {
+          "title": "Account Settings"
+        },
+        "tenantAccountSettings": {
+          "title": "Account Settings"
+        },
+        "dataStreamsDestinations": {
+          "title": "Event Data Stream"
+        },
+        "cxoneDataShare": {
+          "title": "CXone Data Share"
+        },
+        "customerDataShare": {
+          "title": "Customer Data Share"
+        },
+        "security": {
+          "title": "Security"
+        },
+        "viewManagement": {
+          "title": "Views"
+        },
+        "bulkUploadDownload": {
+          "title": "Bulk Upload Portal"
+        },
+        "hierarchies": {
+          "title": "Hierarchies"
+        },
+        "storage": {
+          "title": "Cloud Storage"
+        },
+        "lifecycleManagement": {
+          "title": "Life Cycle Management"
+        },
+        "advancedTtl": {
+          "title": "Life Cycle Management"
+        },
+        "longTermFileRetrievalNew": {
+          "title": "Long-term File Retrieval"
+        },
+        "credentialManagement": {
+          "title": "Credential Management"
+        },
+        "storageSettings": {
+          "title": "Storage Settings"
+        },
+        "fileActivity": {
+          "title": "File Activity"
+        }
+      },
+      "coaching": {
+        "coachingPlans": {
+          "title": "Coaching Plans"
+        },
+        "coachingPackage": {
+          "title": "Coaching Packages"
+        },
+        "coachingManager": {
+          "title": "Coaching Manager"
+        }
+      },
+      "scheduler": {
+        "scheduler": {
+          "title": "Home"
+        },
+        "realTimeAdherence": {
+          "title": "App1 Root"
+        },
+        "intradayDashboard": {
+          "title": "Intraday"
+        },
+        "forecaster": {
+          "title": "Forecasting"
+        },
+        "forecasting": {
+          "title": "Forecasting"
+        },
+        "generatedForecasts": {
+          "title": "App1 Goodbye"
+        },
+        "forecastingProfiles": {
+          "title": "App1 Deep Hello"
+        },
+        "specialDays": {
+          "title": "App 3"
+        },
+        "historicalData": {
+          "title": "App2"
+        },
+        "scheduling": {
+          "title": "Scheduling"
+        },
+        "generateschedule": {
+          "title": "App 4"
+        },
+        "biddingManager": {
+          "title": "Boiler Plate MFE"
+        },
+        "importStaffingJob": {
+          "title": "Import Staffing Plan"
+        },
+        "timeOffRequests": {
+          "title": "Requests"
+        },
+        "requests": {
+          "title": "Requests"
+        },
+        "request-handling": {
+          "title": "Manage Requests"
+        },
+        "approval-rules": {
+          "title": "Approval Rules"
+        },
+        "scheduler-setup": {
+          "title": "Setup"
+        },
+        "activityCodes": {
+          "title": "Activity Codes"
+        },
+        "acdActivitiesMapping": {
+          "title": "ACD Mapping"
+        },
+        "dailyRule": {
+          "title": "Daily Rules"
+        },
+        "weeklyRules": {
+          "title": "Weekly Rules"
+        },
+        "rotationRules": {
+          "title": "Rotation Rules"
+        },
+        "shiftBiddingTemplates": {
+          "title": "Bidding Templates"
+        },
+        "shiftTrading": {
+          "title": "Shift Trading"
+        },
+        "seatLimits": {
+          "title": "Seat Limits"
+        },
+        "intradayManager": {
+          "title": "App1 Hello"
+        },
+        "timeOffPlanning": {
+          "title": "Time-Off Planning"
+        },
+        "summary": {
+          "title": "Summary"
+        },
+        "rules": {
+          "title": "Rules"
+        }
+      },
+      "analytics": {
+        "myTopics": {
+          "title": "My Data"
+        },
+        "settings": {
+          "title": "Settings"
+        },
+        "companyProfile": {
+          "title": "Company Profile"
+        },
+        "corrections": {
+          "title": "Corrections"
+        },
+        "customSentiment": {
+          "title": "Custom Sentiment"
+        },
+        "ignoredPhrases": {
+          "title": "Ignored Phrases"
+        },
+        "templates": {
+          "title": "Templates"
+        },
+        "categoryTemplates": {
+          "title": "Category Templates"
+        },
+        "workspaceTemplates": {
+          "title": "Workspace Templates"
+        },
+        "records": {
+          "title": "Records"
+        },
+        "routing": {
+          "title": "Interaction Routing"
+        },
+        "routingProfile": {
+          "title": "Routing Profile"
+        },
+        "routingCategories": {
+          "title": "Categories"
+        }
+      },
+      "formManager": {
+        "manageForms": {
+          "title": "Manage Forms"
+        },
+        "categoryManager": {
+          "title": "Category Manager"
+        },
+        "qpPlanManager": {
+          "title": "Quality Planner"
+        }
+      },
+      "my-space": {
+        "tasks": {
+          "title": "Tasks"
+        },
+        "evaluations": {
+          "title": "Evaluations"
+        },
+        "recentInteractions": {
+          "title": "Recent Interactions"
+        },
+        "plansMonitoring": {
+          "title": "Plans Monitoring"
+        },
+        "performanceMonitoring": {
+          "title": "Performance Monitoring"
+        },
+        "calibrations": {
+          "title": "Calibrations"
+        },
+        "selfAssessments": {
+          "title": "Self Assessments"
+        },
+        "shiftBidding": {
+          "title": "Shift Bidding"
+        },
+        "groupCoaching": {
+          "title": "Group Coaching"
+        },
+        "pursuits": {
+          "title": "My Pursuits"
+        },
+        "myPersona": {
+          "title": "My Persona"
+        },
+        "marketplace": {
+          "title": "Marketplace"
+        },
+        "mySchedule": {
+          "title": "My Schedule"
+        },
+        "myTimeOffRequests": {
+          "title": "Schedule Requests"
+        },
+        "coachings": {
+          "title": "Coaching"
+        }
+      },
+      "ssa": {
+        "journeyManager": {
+          "title": "Journey Manager"
+        },
+        "journeyResults": {
+          "title": "Journey Insights"
+        },
+        "eventsAnalysis": {
+          "title": "Event Analysis"
+        },
+        "containmentInsights": {
+          "title": "Containment Insights"
+        }
+      },
+      "tenantManagement": {
+        "tenants": {
+          "title": "Tenants"
+        },
+        "tmPartners": {
+          "title": "Partners"
+        },
+        "tmUsers": {
+          "title": "Users"
+        },
+        "tm-brandingProfiles": {
+          "title": "Branding Profiles"
+        },
+        "loginAuthenticatorManagement": {
+          "title": "Login Authenticator"
+        },
+        "partnerTemplate": {
+          "title": "Partner Template"
+        },
+        "presenceSyncSettings": {
+          "title": "Adapters"
+        }
+      },
+      "em": {
+        "acb": {
+          "title": "Program Manager"
+        },
+        "programs": {
+          "title": "Programs"
+        },
+        "activityCodes": {
+          "title": "Activity Code Mapping"
+        },
+        "hoursOfOperations": {
+          "title": "Hours of Operation"
+        },
+        "trade": {
+          "title": "Trade"
+        },
+        "setup": {
+          "title": "Setup"
+        },
+        "adgs": {
+          "title": "ADGs"
+        }
+      },
+      "acd": {
+        "UserList": {
+          "title": "ACD Users"
+        },
+        "contactSettings": {
+          "title": "Contact Settings"
+        },
+        "SkillsList": {
+          "title": "ACD Skills"
+        },
+        "CampaignList": {
+          "title": "Campaigns"
+        },
+        "DispositionList": {
+          "title": "Dispositions"
+        },
+        "PointOfContact": {
+          "title": "Points of Contact"
+        },
+        "EmailDomains": {
+          "title": "Email Domains"
+        },
+        "SMSBrandList": {
+          "title": "SMS Branding"
+        },
+        "SMSRegistrationList": {
+          "title": "SMS Registrations"
+        },
+        "Scripts": {
+          "title": "Scripts"
+        },
+        "ScriptSchedulesList": {
+          "title": "Script Schedules"
+        },
+        "ProfileList": {
+          "title": "Hours of Operation"
+        },
+        "WFDProfileList": {
+          "title": "Workflow Data"
+        },
+        "ChatBrandingProfileList": {
+          "title": "Chat Profiles"
+        },
+        "TagsList": {
+          "title": "Tags"
+        },
+        "outbound": {
+          "title": "Outbound"
+        },
+        "NCSkillControl": {
+          "title": "Skill Control"
+        },
+        "NCSkillChannelSettings": {
+          "title": "Skill Channel Settings"
+        },
+        "MessageTemplateList": {
+          "title": "Message Templates"
+        },
+        "lists": {
+          "title": "Lists"
+        },
+        "CallingLists": {
+          "title": "Calling"
+        },
+        "CallSuppressionManager": {
+          "title": "Call Suppression"
+        },
+        "DncLists": {
+          "title": "DNC"
+        },
+        "UserDefinedFieldsManager": {
+          "title": "Custom Data Definitions"
+        },
+        "ProcessQueue": {
+          "title": "Process Queue"
+        },
+        "acdSettings": {
+          "title": "ACD Settings"
+        },
+        "UnavailableCodes": {
+          "title": "Unavailable Codes"
+        },
+        "StationList": {
+          "title": "Stations"
+        },
+        "AddressBookList": {
+          "title": "Address Books"
+        },
+        "StationProfileList": {
+          "title": "Station Profiles"
+        },
+        "QuickReplyList": {
+          "title": "Quick Replies"
+        },
+        "AgentPatternsDetails": {
+          "title": "Agent Patterns"
+        },
+        "acdConfiguration": {
+          "title": "ACD Configuration"
+        },
+        "Details": {
+          "title": "Business Units"
+        },
+        "ManageGroup": {
+          "title": "DB Connectors"
+        },
+        "AgentMessageList": {
+          "title": "Agent Messaging"
+        },
+        "support": {
+          "title": "Support"
+        },
+        "SoftwareUpdate": {
+          "title": "Software Updates"
+        },
+        "BrowserCheckResult": {
+          "title": "Browser Compatibility Test"
+        },
+        "AgentIssueDashboard": {
+          "title": "Agent Issues"
+        },
+        "BrowseACDFiles": {
+          "title": "Browse ACD Files"
+        },
+        "internalAdmin": {
+          "title": "Internal Admin"
+        },
+        "BusinessUnits": {
+          "title": "Business Units"
+        },
+        "DNIS": {
+          "title": "DNIS"
+        },
+        "DialingPatterns": {
+          "title": "Dialing Patterns"
+        },
+        "AgentPatterns": {
+          "title": "Agent Patterns"
+        },
+        "Partners": {
+          "title": "Partners"
+        },
+        "OutboundTelecomRoutes": {
+          "title": "Telecom Routes"
+        },
+        "OutboundTelecomTrafficTypeDefaultRoutes": {
+          "title": "Telecom Traffic Type Default Routes"
+        },
+        "LockScriptSaving": {
+          "title": "Lock Script Saving"
+        },
+        "NiceConfigurations": {
+          "title": "NICE Integration Configurations"
+        },
+        "GDPR": {
+          "title": "GDPR Request"
+        },
+        "dfoSettings": {
+          "title": "DFO"
+        },
+        "sla": {
+          "title": "SLA"
+        },
+        "business_hours": {
+          "title": "Hours of Operation"
+        },
+        "custom_fields": {
+          "title": "Custom Fields"
+        },
+        "intelligent-routing-general": {
+          "title": "Routing"
+        },
+        "intelligent-routing-queues": {
+          "title": "Routing Queues"
+        },
+        "channels-all": {
+          "title": "Points of Contact Digital"
+        },
+        "channel-integrations": {
+          "title": "Bring Your Own Channel"
+        },
+        "roles": {
+          "title": "Roles"
+        },
+        "tags": {
+          "title": "Tags"
+        },
+        "quick_responses": {
+          "title": "Quick Responses"
+        },
+        "custom_field_form": {
+          "title": "Forms"
+        },
+        "surveyGeneral": {
+          "title": "Satisfaction Surveys"
+        },
+        "Locations": {
+          "title": "Locations"
+        }
+      },
+      "supervisor": {
+        "agents": {
+          "title": "Agents"
+        }
+      },
+      "reporting": {
+        "Dashboards": {
+          "title": "Dashboards"
+        },
+        "partnerLogReader": {
+          "title": "Partner Log Reader"
+        },
+        "PrebuiltReports": {
+          "title": "Prebuilt Reports"
+        },
+        "ACD": {
+          "title": "ACD"
+        },
+        "WFO": {
+          "title": "General"
+        },
+        "customReporting": {
+          "title": "ACD Custom Reports"
+        },
+        "ReportTemplateList": {
+          "title": "Report Templates"
+        },
+        "AdHocReportExecutedList": {
+          "title": "Executed Reports"
+        },
+        "AdHocReportScheduleList": {
+          "title": "Schedules"
+        },
+        "FtpAccountList": {
+          "title": "SFTP Accounts"
+        },
+        "ReportTemplateCategoryList": {
+          "title": "Categories"
+        },
+        "ReportTemplateHeaderList": {
+          "title": "Headers"
+        },
+        "dataDownload": {
+          "title": "ACD Data Download"
+        },
+        "ReportSchedulesList": {
+          "title": "Report Schedules"
+        },
+        "ScriptScheduleRunHistory": {
+          "title": "Schedule Run History Report"
+        },
+        "DataDownload": {
+          "title": "Data Download"
+        },
+        "outbound": {
+          "title": "Outbound"
+        },
+        "callSuppressionAuditHistoryReport": {
+          "title": "Call Suppression Audit History Report"
+        },
+        "abandonRateComplianceReport": {
+          "title": "Abandon Rate Compliance Report"
+        },
+        "outboundReportStore": {
+          "title": "Outbound Report Store"
+        },
+        "wfi": {
+          "title": "Workforce Intelligence"
+        },
+        "RuleActionHistory": {
+          "title": "Rule Action History"
+        },
+        "RuleActionSummaryReport": {
+          "title": "Rule Action Summary Report"
+        },
+        "CallSuppressionAuditHistory": {
+          "title": "Call Suppression Audit History Report"
+        },
+        "AbandonRateCompliance": {
+          "title": "Abandon Rate Compliance Report"
+        },
+        "OutboundReportStore": {
+          "title": "Outbound Report Store"
+        },
+        "DataDownloadCustomReports": {
+          "title": "Data Download Custom Reports"
+        }
+      },
+      "wfi": {
+        "NotificationSettings": {
+          "title": "Notification Settings"
+        },
+        "DataPointList": {
+          "title": "Data Points"
+        },
+        "RuleList": {
+          "title": "Rules"
+        },
+        "PendingRuleActionsList": {
+          "title": "Pending Rule Actions"
+        }
+      },
+      "embedded-client": {
+        "evaluations": {
+          "title": "Evaluations"
+        },
+        "recentInteractions": {
+          "title": "Recent Interactions"
+        },
+        "shiftBidding": {
+          "title": "Shift Bidding"
+        },
+        "mySchedule": {
+          "title": "My Schedule"
+        },
+        "myTimeOffRequests": {
+          "title": "Schedule Requests"
+        },
+        "coachings": {
+          "title": "Coaching"
+        }
+      }
+    }
+  }
+}

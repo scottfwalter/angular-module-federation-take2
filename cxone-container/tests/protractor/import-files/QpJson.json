@@ -1,0 +1,36 @@
+{
+  "interactions":[
+    {
+      "InteractionType":"2",
+      "InteractionID":"6289894530490830838",
+      "SegmentID":"bb_1_6289894530490830838",
+      "MediaTypes":"2",
+      "SegmentGMTEndTime":"2016-05-27 01:39:54.127",
+      "OtherSwitchID":"0",
+      "ICID":"0",
+      "ParticipantType":"1",
+      "CompleteId":"6289894530490830831",
+      "AgentId":"aa_4",
+      "AgentName":"Avivit Sade",
+      "SegmentOpenReasonId":"1",
+      "InteractionQATypeID":"0",
+      "CustomerPhoneNumber":"",
+      "InitiatorUserID":"aa_4",
+      "TenantName":"TES",
+      "InitiatorUserUUID":"11e63eb2-fea2-02b0-bd80-0242ac110003",
+      "InteractionRecordedTypeID":"0",
+      "SegmentLocalStartTime":"2016-05-27 04:37:38.0",
+      "DirectionTypeID":"1",
+      "SwitchID":"1",
+      "DialedNumber":"",
+      "SegmentDuration":"1361260000",
+      "AgentUUID":"11e63eb2-fea2-02b0-bd80-0242ac110003",
+      "Extension":"",
+      "SegmentLocalEndTime":"2016-05-27 04:39:54.127",
+      "SegmentCloseReasonId":"2",
+      "dtModifyDate":"2016-05-29 00:03:12.207",
+      "CompleteGMTStartTime":"2016-05-27 01:37:38.0",
+      "SegmentGMTStartTime":"2016-05-27 01:37:38.0"
+    }
+  ]
+}

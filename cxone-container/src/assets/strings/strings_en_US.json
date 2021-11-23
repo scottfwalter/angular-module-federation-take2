@@ -1,0 +1,4788 @@
+{
+  "app": {
+    "hello": "Hello form the app"
+  },
+  "niceNavigationUi": {
+    "globalNavigation": {
+      "sideBar": {
+        "adminModuleName": "admin",
+        "adminModuleLinks": {
+          "users": "Employees",
+          "skills": "WFO Skills",
+          "groups": "Groups",
+          "teams": "Teams",
+          "employeeGroups": "Scheduling Unit",
+          "roleManagement": "Roles and Permissions",
+          "recordingPolicies": "Recording Policies",
+          "passwordPolicyManagement": "Password Policy",
+          "loginAuthenticatorManagement": "Login Authenticator",
+          "bulkUploadDownload": "Bulk Upload Portal",
+          "accountSettings": "Account Settings",
+          "hierarchies": "Hierarchies",
+          "storage": "Cloud Storage",
+          "lifecycleManagement": "Life Cycle Management",
+          "longTermFileRetrieval": "Long-term File Retrieval",
+          "secureExternalAccess": "Secure External Access",
+          "businessDataConfiguration": "Business Data",
+          "recording": "Recording",
+          "security": "Security",
+          "viewManagement": "Views",
+		  "advancedTtl": "Life Cycle Management",
+		  "storageSettings": "Storage Settings"
+        }
+      }
+    }
+  },
+  "notificationTemplates": {
+    "PUBLISH_SCHEDULE_FOR_SPECIFIC_DATE": {
+      "title": "Schedule changed",
+      "content": "Schedule on %%DATE%% has been changed.",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "PUBLISH_SCHEDULE_BETWEEN_DATE": {
+      "title": "Schedule changed",
+      "content": "Schedule between %%FROM_DATE%% to %%TO_DATE%% has been changed.",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "PUBLISH_EVALUATION_DISPUTE": {
+      "title": "Evaluation back from review",
+      "content": "No action required.",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "PUBLISH_EVALUATION_ACKNOWLEDGE": {
+      "title": "New evaluation arrived",
+      "content": "Your review is required.",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "PUBLISH_EVALUATION_COMPLETED": {
+      "title": "New evaluation arrived",
+      "content": "No action required",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "PUBLISH_COACHING_STARTED": {
+      "title": "New coaching package available",
+      "content": "Your action is required",
+      "link": {
+        "name": "Review",
+        "url": "/qm/#/myCoachings"
+      }
+    },
+    "NEW_TIME_OFF_REQUEST": {
+      "title": "New time off request",
+      "content": "",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "DECLINED_TIME_OFF_REQUEST": {
+      "title": "Time off request was declined",
+      "content": "Request for %%FROM_DATE%% to %%TO_DATE%%.",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "APPROVED_TIME_OFF_REQUEST": {
+      "title": "Time off request was approved",
+      "content": "Request for %%FROM_DATE%% to %%TO_DATE%%.",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    },
+    "CANCELED_TIME_OFF_REQUEST": {
+      "title": "Time off request was canceled",
+      "content": "Request for %%FROM_DATE%% to %%TO_DATE%%.",
+      "link": {
+        "name": "",
+        "url": ""
+      }
+    }
+  },
+  "notification": {
+    "notificationTitle": "You have {{Count}} unread notification"
+  },
+  "selfService": {
+    "installersList": {
+      "fileName": "File Name",
+      "vendor": "Vendor",
+      "version": "Version",
+      "title": "Download ACD Installer"
+    },
+    "acdInstallerTitle": "ACD Installer",
+    "firstParagraph": "The ACD Installer establishes a connection between the ACD (Automated Call Distribution) system and EvolveWFM. EvolveWFM can then receive ACD events and generate RTA (Real Time Adherence) information.",
+    "instructionsHeader": "Installation Instructions",
+    "instructions_1": "1. Download installer distribution from Self Service, On-Prem Integration Area",
+    "instructions_2": "2. UnZip downloaded installer distribution to a convenient location (e.g. C:/Temp/AvayaCMSInstaller)",
+    "instructions_3": "3. To start installation execute install.bat on Windows or install.sh on Linux",
+    "instructions_4": "4. Follow Installer Wizard to configure your Avaya CMS ASC",
+    "generateKeyButton": "Generate Key",
+    "generateKeyHeader": "Generate API Key",
+    "generateKeyExplanation": "You must be an Administrator to generate an API key",
+    "modal": {
+      "title": "Enter your EvolveWFM email address and password, then click Generate",
+      "result": "API Key has been generated successfully",
+      "generateBtnText": "Generate",
+      "email": "Email address",
+      "password": "Password",
+      "copyBtn": "Copy to Clipboard",
+      "generate": "Generate"
+    }
+  },
+  "activityCodes": {
+    "buttons": {
+      "addActivityCode": "New Activity Code",
+      "deleteActivityCode": "Delete"
+    },
+    "deleteMultipleConfirmation1": "The selected activity codes will be removed from this list.",
+    "deleteMultipleConfirmation2": "Instances of these activities may appear in the scheduler and should be removed separately.",
+    "deleteConfirmation1": "You are about to remove the activity code from the system.",
+    "deleteConfirmation2": "Historical instances will remain.",
+    "errorAdd": "An error occurred while creating the activity code.",
+    "errorDelete": "An error occurred while deleting the activity code",
+    "errorMultipleDelete": "An error occurred while deleting the activity codes.",
+    "errorUpdate": "An error occurred while updating the activity code.",
+    "errorRead": "An error occurred while loading activity codes.",
+    "pageTitle": "Activity Codes",
+    "items": "Activity Codes",
+    "item": "activity code",
+    "fieldLabels": {
+      "name": "Activity Code Name",
+      "category": "Display As",
+      "length": "Default Length",
+      "open": "Open",
+      "workHours": "Work Hours",
+      "overtime": "Overtime",
+      "priority": "Priority",
+      "acdEvents": "Acd Events",
+      "shiftType": "Shift Type"
+    },
+    "modal": {
+      "editTitle": "Edit Activity Code",
+      "addTitle": "Create New Activity Code",
+      "errors": {
+        "lengthRange": "Enter between 1 and 1,440 minutes.",
+        "priorityRange": "Priority must be between 1 and 100.",
+        "uniqueTitle": "This name already exists. Try a new one.",
+        "notValidRegex": "These characters cannot be used: ^/!\\+<>?#&,%."
+      },
+      "fieldLabels": {
+        "attributes": "Attributes",
+        "category": "Display as",
+        "length": "Default Length (min.)",
+        "open": "Open",
+        "overtime": "Overtime",
+        "priority": "Priority",
+        "title": "Name",
+        "workHours": "Work Hours",
+        "shiftType": "Can be set as a shift type"
+      },
+      "activate": {
+        "activityExistMsg": "The System has detected that an activity with the same name was created in the past. You can re-activate this activity or create a new one with a different name.",
+        "activateBtn": "Activate"
+      }
+    },
+    "serviceStatusMessages": {
+      "REUSED_EXISTING_ACTIVITY_CODE": "An activity code with the same name existed previously and is being reused.",
+      "ACTIVITY_CODE_EXISTS_WITH_DIFFERENT_ID_SOFT_DELETE_TRUE": "The activity code name cannot be changed to '{{activityCode.title}}'. An activity code with the same name existed previously and has been deleted. You can create a new activity code with this name.",
+      "ACTIVITY_CODE_EXISTS_WITH_SOFT_DELETE": "The name cannot be changed. An activity with the same name existed previously and has been deleted. You can create a new activity with this name.",
+      "NO_ACTIVITY_CODE_EXISTS": "There is no Activity Code Exists with the specified Title.",
+      "ACTIVITY_WITH_TITLE_EXISTS": "Activity with this title already exists.",
+      "ACTIVITY_CODE_EXISTS_WITH_DIFFERENT_ID_SOFT_DELETE_FALSE": "The name cannot be changed. An activity with the same name exists with soft delete false but unique ids doesn't match."
+    },
+    "successAdd": "New activity code has been added successfully",
+    "successDelete": "Activity code has been successfully removed",
+    "successDeleteMultiple": "Activity codes have been successfully removed",
+    "successEdit": "Activity code has been edited successfully"
+  },
+  "activityCodeDropdown": {
+    "placeholder": "Select an activity code..."
+  },
+  "createAccountPage": {
+    "header": "Create Account",
+    "organizationName": "Organization name",
+    "firstName": "Contact first name",
+    "lastName": "Contact last name",
+    "emailAddress": "Contact email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "alreadyHaveAccount": "Already have an account? Log in"
+  },
+  "rolesListPage": {
+    "pageTitle": "Roles & Permissions",
+    "rolesAndPermissions": "Roles & Permissions",
+    "items": "Roles",
+    "item": "role",
+    "roleCount": "{{count}} Roles",
+    "userCount": "",
+    "selectedItems": "{{selectedCount}} selected",
+    "untitledRole": "Untitled Role",
+    "createRole": "New Role",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saveAndActivate": "Save & Activate",
+    "newRolePageTitle": "Create New Role",
+    "editRolePageTitle": "Edit Role",
+    "successMsg": "Role has been saved successfully",
+    "updateSuccessMsg": "Role has been updated successfully",
+    "failureMsg": "Role was not saved",
+    "updateFailureMsg": "Role was not updated",
+    "userAssignmentFailureMsg": "User assignment failed for role",
+    "activateSuccessMsg": "Role has been activated successfully",
+    "deactivateSuccessMsg": "Role has been deactivated successfully",
+    "activateFailureMsg": "Role was not activated",
+    "deactivateFailureMsg": "Role was not deactivated",
+    "removeSelectedUsersMsg": "You are about to remove the selected users. Continue?",
+    "agent": "Agent",
+    "changeAuditHistoryTab": {
+      "noRowsOverlayText": "Change History Data Not Found",
+      "itemsCountLabel": "Changes",
+      "Role": {
+        "applications": "Applications",
+        "dataVisibilityElements": "Data Visibility",
+        "description": "Description",
+        "loginAuthenticatorUuid": "Login Authenticator",
+        "roleName": "roleName",
+        "displayName": "Display Name",
+        "modalDetails": {
+          "oldValue": "OLD VALUE",
+          "newValue": "NEW VALUE",
+          "generalPermissions": "GENERAL PERMISSIONS",
+          "settings": "Settings",
+          "details": "Permission Change Details",
+          "lastModifiedDate": "LAST MODIFIED DATE",
+          "lastModifiedBy": "LAST MODIFIED BY",
+          "none": " None ",
+          "admin": "Admin",
+          "on": "ON",
+          "off": "OFF"
+        }
+      }
+    },
+    "resetPermission": {
+      "resetBtnTxt": "Set to Default",
+      "popoverCancelBtn": "Cancel",
+      "popoverApplyBtn": "Apply",
+      "confirmationMsgForRemoval": "Select the default permission you would like to reset this role's permission to",
+      "warningMsgForRemoval": "Reset to Default Permission?",
+      "resetPermissionInfoMsg": "permissions enabled"
+    },
+    "gridColumnsHeaders": {
+      "roleName": "Role Name",
+      "assignedUsers": "Assigned Employees",
+      "lastModified": "Last Modified Date",
+      "status": "Status",
+      "actions": "Actions",
+      "userName": "Name",
+      "userDisplayName": "UserName"
+    },
+    "filters": {
+      "status": "{{count}} Status",
+      "searchPlaceholder": "Start typing to find role",
+      "userSearchPlaceholder": "Start typing to find users"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "draft": "Draft",
+      "all": "All"
+    },
+    "tabLabels": {
+      "general": "General",
+      "permissions": "Permissions",
+      "restrictedAccess": "Restricted Access",
+      "assignedUsers": "Assigned Users",
+      "changeAuditHistory": "Change History"
+    },
+    "userLabels": {
+      "unassignedUsersLabel": "All Unassigned Users ({0})",
+      "assignedUsersLabel": "Assigned Users ({0})",
+      "selectAllLabelWithoutCount": "Select All",
+      "selectAllLabelWithCount": "Select All ({0})"
+    },
+    "generalInfo": {
+      "roleName": "Name",
+      "roleDescription": "Description",
+      "loginAuthenticator": "Use the following Authenticator",
+      "loginAuthenticatorPlaceholder": "Select Authenticator",
+      "parentAccess": "Parent Access",
+      "attributes": "Attributes"
+    },
+    "roleStates": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "draft": "Draft"
+    },
+    "moreMenu": {
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "clone": "Duplicate"
+    },
+    "popover": {
+      "warningMessage": "All changes will be lost",
+      "confirmMessage": "Are you sure you want to exit without saving?"
+    },
+    "ModalMessages": {
+      "transition": {
+        "title": "Unsaved Data",
+        "unsavedChanges": "If you leave the page, your changes will be lost.",
+        "areYouSureLeavePage": "Are you sure you want to continue?"
+      }
+    },
+    "saveDuplicateRoleModal": {
+      "addHeader": "Duplicate Role",
+      "subHeading": "ROLE NAME",
+      "successMsg": "Role Duplicated Successfully",
+      "failureMsg": "Error while Duplicating Role",
+      "errors": {
+        "uniqueTitle": "This name already exists. Try a new one."
+      }
+    },
+    "DataRestrictions": {
+      "teams": "Teams",
+      "campaigns": "Campaigns"
+    },
+    "permissionsRestricted": "Permissions in this role are also subject to these data restrictions:",
+    "dataVisibilityLabel": "Permissions assigned to this role will be restricted to the following"
+  },
+  "teamsListPage": {
+    "pageTitle": "Teams",
+    "teams": "Teams",
+    "teamCount": "{{count}} Teams",
+    "itemsCount": "Viewing {{count}}",
+    "totalItemsCount": "{{count}} Total",
+    "userCount": "",
+    "selectedItems": "{{selectedCount}} selected",
+    "untitledTeam": "Untitled Team",
+    "createTeam": "New Team",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saveAndActivate": "Save & Activate",
+    "newTeamPageTitle": "Create New Team",
+    "bulkOperationBtn": {
+      "activate": "Activate",
+      "deactivate": "Deactivate"
+    },
+    "filters": {
+      "status": "{{count}} Status",
+      "team": "{{count}} Teams"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "all": "All"
+    },
+    "tabLabels": {
+      "general": "General",
+      "assignedUsers": "Assigned Users",
+      "unavailableCodes": "Unavailable Codes",
+      "teamProperties": "Team Properties",
+      "contactSettings": "Contact Settings",
+      "features": "Features",
+      "changeAuditHistory": "Change History",
+      "zeroRow": "0 Total"
+    },
+    "changeAuditHistoryTab": {
+      "Team": {
+        "id": "Id",
+        "name": "Name",
+        "description": "Description",
+        "status": "Status",
+        "leadUserId": "Lead User Id",
+        "isDefault": "Is Default",
+        "createdBy": "Created By",
+        "lastModified": "Last Modified",
+        "acdInfos": "ACD Infos",
+        "customAttributes": {
+          "inViewChatMessaging": "inView Chat Messaging",
+          "niceScreenRecording": "Screen Recording",
+          "inViewCoaching": "inView Coaching",
+          "niceAudioRecording": "Audio Recording",
+          "niceWfmWorloadManager": "WFM Worload Manager",
+          "niceQuaityManagement": "Quaity Management",
+          "inViewPerformanceMangement": "inView Performance Mangement",
+          "niceQualityOptimization": "Quality Optimization",
+          "maxReleasePreview": "Max Release Preview",
+          "inViewGamification": "inView Gamification",
+          "niceWfmEssentials": "WFM Essentials",
+          "niceWfmAdvanced": "WFM Advanced",
+          "niceWfoAdvanced": "WFO Advanced"
+        }
+      },
+      "noRowsOverlayText": "Change History Data Not Found",
+      "itemsCountLabel": "Changes"
+    },
+    "generalInfo": {
+      "teamName": "Team Name",
+      "heading": "Team Information",
+      "teamDescription": "Description",
+      "teamLead": "Team Lead",
+      "mandatorySymbol": "*"
+    },
+    "users": {
+      "searchPlaceholder": "Start typing to find users",
+      "noItemsOverlay": "No users have been added yet",
+      "noItemsOverlayGrid": "No users found using this filter",
+      "noUsersSubText": "Select \"Add Users\" above to add some",
+      "columns": {
+        "name": "Name",
+        "username": "Username",
+        "email": "Email",
+        "team": "Team",
+        "status": "State"
+      },
+      "popovers": {
+        "messageAddedUser": "You must reassign this user to another team to remove them.",
+        "messageNewUser": "Remove user from this team?",
+        "bulkMessageAddedUser": "You must reassign the user(s) to another team to remove them.",
+        "bulkMessageNewUser": "Remove users from this team?"
+      },
+      "userSelectionModal": {
+        "noUserAddedText": "No users added yet",
+        "noUserSelectedText": "No users selected yet"
+      },
+      "modal": {
+        "noItemsOverlay": "No users are available to assign",
+        "title": "Add Users"
+      },
+      "buttons": {
+        "addUsers": "Add Users",
+        "removeUsers": "Remove Users"
+      }
+    },
+    "unavailableCodes": {
+      "searchPlaceholder": "Start typing to find unavailable code",
+      "noItemsOverlay": "No unavailable codes have been added yet",
+      "noItemsOverlayGrid": "No unavailable codes found using this filter",
+      "noUCSubText": "Select \"Add Unavailable Code\" above to add some",
+      "columns": {
+        "name": "Name",
+        "afterContactWork": "After Contact Work",
+        "agentTimeout": "Agent Timeout (Min)"
+      },
+      "popovers": {
+        "bulkRemoveConfirmation": "Remove selected unavailable codes from this team?"
+      },
+      "modal": {
+        "noItemsOverlay": "No unavailable codes are available to assign",
+        "title": "Add Unavailable Code",
+        "noUnavailableCodesAddedText": "No unavailable codes added yet",
+        "noUnavailableCodesSelectedText": "No unavailable codes selected yet"
+      },
+      "buttons": {
+        "addUnavailableCode": "Add Unavailable Code",
+        "removeUnavailableCode": "Remove Unavailable Code"
+      }
+    },
+    "features": {
+      "enabledFeatures": "Enabled Features",
+      "performanceOptimization": "Performance Optimization",
+      "inViewPerfManagement": "inView Performance Management",
+      "gamification": "Gamification",
+      "chatMessage": "Chat Message",
+      "coaching": "Coaching",
+      "maxReleasePreview": "MAX Release Preview",
+      "maxPreview": "MAX Preview",
+      "NICEWFO": "WFO ENTERPRISE",
+      "niceAudioRecording": "Audio Recording",
+      "niceScreenRecording": "Screen Recording",
+      "niceQualityManagement": "Quality Management",
+      "niceQualityOptimization": "Quality Optimization",
+      "niceWfmAdvanced": "WFM Advanced",
+      "niceWfmEssentials": "WFM Essentials",
+      "niceWfmWorkloadManager": "Workload Manager",
+      "niceWfoEssentials": "WFO Essentials",
+      "niceWfoAdvanced": "WFO Advanced"
+    },
+    "createSuccessMessage": "Team has been created successfully.",
+    "updateFailureMsg": "Team was not saved",
+    "popover": {
+      "warningMessage": "All changes will be lost",
+      "confirmMessage": "Are you sure you want to exit without saving?"
+    },
+    "ModalMessages": {
+      "transition": {
+        "title": "Unsaved Data",
+        "unsavedChanges": "If you leave the page, your changes will be lost.",
+        "areYouSureLeavePage": "Are you sure you want to continue?"
+      }
+    },
+    "saveDuplicateTeamModal": {
+      "addHeader": "Duplicate Team",
+      "subHeading": "TEAM NAME",
+      "successMsg": "Team Duplicated Successfully",
+      "failureMsg": "Error while Duplicating Team",
+      "errors": {
+        "uniqueTitle": "This name already exists. Try a new one."
+      }
+    },
+    "teamProperties": {
+      "contactHandlingTab": {
+        "contactHandling": "Contact Handling",
+        "contactHandlingSubTitle": "Team Defaults",
+        "teamDefaultsSingleChannel": "Team Defaults (Single Channel Handling)",
+        "teamDefaults": "Team Defaults",
+        "deliveryMode": "DELIVERY MODE",
+        "voice": "VOICE",
+        "chats": "CHAT",
+        "singleChannelChatLbl": "Concurrent Chats",
+        "emails": "EMAILS",
+        "singleChannelEmailLbl": "Auto-Parked Emails",
+        "workItems": "WORK ITEMS",
+        "requestContact": "REQ CONTACT",
+        "contactAutoFocus": "AUTO-FOCUS",
+        "totalContactCount": "TOTAL CONTACT COUNT",
+        "contactHandlingSettings": "Contact Handling Settings",
+        "assignedUsers": "Assigned Users",
+        "noAssignedUsers": "No users assigned yet.",
+        "first": "First",
+        "last": "Last"
+      }
+    },
+    "activateSuccessMsg": "Team activated successfully",
+    "deactivateSuccessMsg": "Team deactivated successfully",
+    "activateFailureMsg": "Cannot activate team",
+    "deactivateFailureMsg": "Cannot deactivate team",
+    "bulkActivationSuccessMsg": "team(s) activated successfully",
+    "bulkDeactivationSuccessMsg": "team(s) deactivated successfully",
+    "bulkActivationByPassMsg": "team(s) already active",
+    "bulkDeactivationByPassMsg": "team(s) already inactive",
+    "bulkActivationFailureMsg": "Cannot activate {0} team(s) due to internal error",
+    "bulkDeactivationFailureMsg": "Cannot deactivate {0} team(s) due to internal error",
+    "userAssignmentFailureMsg": "User assignment failed",
+    "userLabels": {
+      "unassignedUsersLabel": "All Unassigned Users",
+      "assignedUsersLabel": "Assigned Users",
+      "userSearchPlaceholder": "Start typing to find users"
+    },
+    "removeSelectedUsersMsg": "You are about to remove selected users. Continue?",
+    "removeSelectedUnavailableCodeMsg": "You are about to remove selected unavailable codes. Continue?"
+  },
+  "groupsListPage": {
+    "pageTitle": "Groups",
+    "groups": "Groups",
+    "itemsCount": "Viewing {{count}}",
+    "totalItemsCount": "{{count}} Total",
+    "userCount": "",
+    "selectedItems": "{{selectedCount}} selected",
+    "untitledTeam": "Untitled Group",
+    "createGroup": "New Group",
+    "cancel": "Cancel",
+    "save": "Save",
+    "confirm": "Confirm",
+    "newGroupPageTitle": "Create New Group",
+    "create": "Create",
+    "filters": {
+      "status": "{{count}} Status",
+      "group": "{{count}} Groups"
+    },
+    "tabLabels": {
+      "general": "General",
+      "assignedUsers": "Assigned Users",
+      "zeroRow": "0 Total"
+    },
+    "generalInfo": {
+      "groupName": "Group Name",
+      "mandatorySymbol": "*"
+    },
+    "users": {
+      "searchPlaceholder": "Start typing to find users",
+      "noItemsOverlay": "No users have been added yet",
+      "noItemsOverlayGrid": "No users found using this filter",
+      "noUsersSubText": "Select \"Add Users\" above to add some",
+      "columns": {
+        "name": "Name",
+        "username": "Username",
+        "email": "Email",
+        "group": "Group",
+        "status": "State"
+      },
+      "popovers": {
+        "messageAddedUser": "You must reassign this user to another group to remove them.",
+        "messageNewUser": "Remove user from this group?",
+        "bulkMessageAddedUser": "You must reassign the user(s) to another group to remove them.",
+        "bulkMessageNewUser": "Remove users from this group?"
+      },
+      "userSelectionModal": {
+        "noUserAddedText": "No users added yet",
+        "noUserSelectedText": "No users selected yet"
+      },
+      "modal": {
+        "noItemsOverlay": "No users are available to assign",
+        "title": "Add Users"
+      },
+      "buttons": {
+        "addUsers": "Add Users",
+        "removeUsers": "Remove Users"
+      }
+    },
+    "createSuccessMessage": "Group has been created successfully.",
+    "updateFailureMsg": "Group was not saved",
+    "popover": {
+      "warningMessage": "All changes will be lost",
+      "confirmMessage": "Are you sure you want to exit without saving?"
+    },
+    "ModalMessages": {
+      "transition": {
+        "title": "Unsaved Data",
+        "unsavedChanges": "If you leave the page, your changes will be lost.",
+        "areYouSureLeavePage": "Are you sure you want to continue?"
+      }
+    },
+    "userAssignmentFailureMsg": "User assignment failed",
+    "userLabels": {
+      "unassignedUsersLabel": "All Unassigned Users",
+      "assignedUsersLabel": "Assigned Users",
+      "userSearchPlaceholder": "Start typing to find users"
+    },
+    "removeSelectedUsersMsg": "You are about to remove selected users. Continue?",
+    "removeSelectedUnavailableCodeMsg": "You are about to remove selected unavailable codes. Continue?"
+  },
+  "passwordPolicyPage": {
+    "pageTitle": "Password Policy",
+    "save": "Save",
+    "cancel": "Cancel",
+    "passwordComplexity": {
+      "title": "Password Complexity",
+      "requireLowerCase": "Require Lower Case (a-z)",
+      "requireUpperCase": "Require Upper Case (A-Z)",
+      "requireNumeric": "Require Numeric (0-9)",
+      "nonAlphaNumeric": "Require Non-Alphanumeric (!,@,# etc.)"
+    },
+    "minimumPasswordLength": "Minimum Password Length",
+    "popover": {
+      "warningMessage": "All changes will be lost",
+      "confirmMessage": "Are you sure you want to exit without saving?"
+    },
+    "messages": {
+      "updateSuccess": "Password Policy updated successfully",
+      "updateFailure": "Update Password Policy action has failed",
+      "loadFailure": "Unable to load Password Policy details"
+    },
+    "ModalMessages": {
+      "transition": {
+        "title": "Unsaved Data",
+        "unsavedChanges": "If you leave the page, your changes will be lost.",
+        "areYouSureLeavePage": "Are you sure you want to continue?"
+      }
+    }
+  },
+  "teamsPage": {
+    "pageTitle": "Teams",
+    "itemsCount": "{{count}} Teams",
+    "createTeam": "New Team",
+    "noItemsOverlay": "No team assigned yet.",
+    "cancel": "Cancel",
+    "create": "Create",
+    "save": "Save",
+    "teamStrToReplace": "team(s)",
+    "searchPlaceHolder": "Start typing to find team",
+    "teamNamePlaceHolder": "Untitled Team",
+    "successMsg": "Team created successfully",
+    "failureMsg": "Failed to create team.Try again",
+    "gridColumnsHeaders": {
+      "teamName": "Name",
+      "status": "Status",
+      "actions": "Actions",
+      "employees": "Users"
+    },
+    "filters": {
+      "status": "{{count}} Status",
+      "searchPlaceholder": "Start typing to find a team"
+    },
+    "moreMenu": {
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "clone": "Duplicate"
+    },
+    "teamStates": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "newTeamNamePlaceholder": "Untitled Team",
+    "teamLeadPlaceHolder": "Select a team lead...",
+    "addHeader": "Create New Team",
+    "editTeam": "Edit Team",
+    "employeesTab": {
+      "header": "Employees",
+      "assignedEmployeesTxt": "Assigned Employees",
+      "addEmployeesBtn": "Add Employees",
+      "selectEmployeesTxt": "Select employees",
+      "selectedTxt": "Selected:"
+    },
+    "contactHandlingInfoTab": {
+      "header": "Contact Handling"
+    },
+    "failedLoadTeams": "Failed to load team. Try again.",
+    "messages": {
+      "updateSuccess": "Team updated successfully",
+      "updateFailure": "Unable to update Team details"
+    }
+  },
+  "employeeGroupsPage": {
+    "pageTitle": "Scheduling Unit",
+    "items": "units",
+    "item": "scheduling unit",
+    "errorDelete": "No row was selected for deletion",
+    "errorDeleteNoId": "This scheduling unit was already deleted, please refresh the page.",
+    "bulkOperationsBtns": {
+      "deleteBtn": "Delete"
+    },
+    "gridColumnsHeaders": {
+      "id": "ID",
+      "name": "Name",
+      "employees": "Employees",
+      "timeZone": "Time Zone",
+      "unit": "Unit"
+    },
+    "deleteSelectedGroupMsg": "These units will be deleted from all employees. Are you sure?",
+    "popover": {
+      "message": "Warning! Deleting this item will move all assigned employees to the default scheduling unit and may impact their scheduling."
+    },
+    "errorMessages": {
+      "required": "You left the field blank",
+      "minLength": "Your entry is too short",
+      "maxLength": "Your entry is too long",
+      "uniqueGroupName": "This name already exists. Try a new one.",
+      "defaultGroupName": "The name of the default group cannot be edited",
+      "defaultGroupAddEmployees": "To move employees, edit the target Scheduling Unit and add the employees to it.",
+      "cannotDeleteDefaultGroup": "The default group cannot be deleted"
+    },
+    "formLabels": {
+      "groupName": "Scheduling unit name",
+      "users": "Employees",
+      "timeZone": "Time zone"
+    },
+    "addNewGroup": "New Unit",
+    "totalItems": "{{count}} Scheduling Units",
+    "createNewGroupModal": {
+      "addHeader": "Create New Scheduling Unit",
+      "editHeader": "Edit Scheduling Unit",
+      "groupNamePlaceholder": "Untitled Unit",
+      "generalInfoTab": {
+        "header": "Operating Hours",
+        "firstDayOfWeekInstruction": "FIRST DAY OF THE WEEK",
+        "timeZoneInstruction": "TIME ZONE",
+        "operationWorkingHoursHeader": "Operation Working Hours",
+        "day": "DAY",
+        "workHours": "WORK HOURS",
+        "from": "START FROM",
+        "to": "TO",
+        "hour": "Hour",
+        "hours": "Hours",
+        "allDayWorkingHours": "All Day",
+        "amountOfHours": {
+          "numOfHours": "({{hours}} Hours)",
+          "closed": "(closed)"
+        },
+        "daysOfWeek": {
+          "monday": "Monday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday",
+          "thursday": "Thursday",
+          "friday": "Friday",
+          "saturday": "Saturday",
+          "sunday": "Sunday"
+        }
+      },
+      "employeesTab": {
+        "header": "Employees",
+        "assignedEmployeesTxt": "Assigned Employees",
+        "addEmployeesBtn": "Add Employees",
+        "selectEmployeesTxt": "Select employees",
+        "selectedTxt": "Selected:"
+      },
+      "successAdd": "New schedule unit has been added successfully",
+      "successEdit": "Schedule unit has been edited successfully"
+    }
+  },
+  "expiredInvitationPage": {
+    "sorryHeader": "We're Sorry...",
+    "explanationText1": "Your invitation has expired.",
+    "explanationText2": "We have notified the sender, and you will probably get a new invitation soon."
+  },
+  "filter": {
+    "clearall": "Clear All",
+    "close": "Close"
+  },
+  "generateSchedulesPage": {
+    "labels": {
+      "pageTitle": "Automatic Scheduling Generator",
+      "newJobButtonText": "Generate New Schedules",
+      "items": "schedule generation jobs",
+      "selectedItems": "{{selectedCount}} selected",
+      "gridColumnsHeaders": {
+        "schedulingUnit": "Scheduling Unit",
+        "schedulingDate": "Scheduling Date",
+        "initiatedBy": "Initiated by",
+        "jobDate": "Job Date",
+        "status": "Status"
+      },
+      "gridNoRowsOverlay": "No scheduling job has been generated yet"
+    },
+    "statuses": {
+      "GENERATION_STARTING": "Generation Starting...",
+      "GENERATION_STARTED": "Generation Started.",
+      "GENERATION_SCHEDULING": "Creating Schedules...",
+      "GENERATION_SCHEDULING_COMPLETE": "Scheduling Complete.",
+      "GENERATION_STORING_SCHEDULES": "Storing Schedules...",
+      "GENERATION_STORING_SCHEDULES_COMPLETE": "Storing Schedules Complete.",
+      "GENERATION_CANCELLING": "Canceling Generation...",
+      "GENERATION_CANCELLED": "Generation Cancelled.",
+      "GENERATION_COMPLETED": "Succeeded. {{message}}",
+      "GENERATION_COMPLETED_WITH_WARNINGS": "Partially succeeded. {{message}}",
+      "GENERATION_ERRORED": "Failed. {{message}}"
+    },
+    "statusDetails": {
+      "internalError": "Internal error",
+      "suNotFound": "Scheduling unit not found",
+      "noUsersHaveSkills": "None of the employees have skills",
+      "someUsersHaveNoSkills": "Some employees have no skills",
+      "noUsersAssignedToSu": "No employees assigned to scheduling unit",
+      "noUsersInSuAssignedWeeklyRules": "No employees in {{suName}} have weekly rules",
+      "someUsersInSuNotAssignedWeeklyRules": "No schedules for employees in {{suName}} without weekly rules"
+    },
+    "modal": {
+      "header": "Generate New Schedules",
+      "schedulingUnit": "Scheduling Unit",
+      "from": "Start:",
+      "to": "End:",
+      "selectDatePlaceholder": "Select date",
+      "oneWeek": "1W",
+      "twoWeeks": "2W",
+      "threeWeeks": "3W",
+      "oneMonth": "1M",
+      "loadForecastDataBtn": "Load Forecast Data",
+      "forecastDataTabHeader": "Forecast Data",
+      "attention": "Attention!",
+      "schedulesExistPopoverTxt": "Some of the dates you have selected already have schedules. This job will overwrite those schedules and will automatically publish the updated schedules to the employee if their schedules were previously published.",
+      "missingForecastDataPopoverTxt": "Some of the dates do not contain forecast data. Schedules for these dates will not reflect demand requirements.",
+      "generateAnywayBtn": "Generate Anyway",
+      "noForecastDataTxt": "There is no forecast data for this date range.",
+      "forecastDataLoads": "Forecast data found.",
+      "importForecastData": "Import forecast file and try again...",
+      "goToImportForecastPageBtn": "Go to Import Forecast page"
+    },
+    "serviceStatusMessages": {
+      "jobAddedSuccessfully": "New job was added successfully"
+    }
+  },
+  "loginPage": {
+    "Email": "Email address",
+    "Password": "Password",
+    "errorMsg": "Whoops! Wrong username/password.",
+    "headerText": "Log In",
+    "loginBtnText": "Sign in",
+    "autoLogoutMsg": "You have been automatically logged out from the system. Please log in again.",
+    "forgotYourPassword": "Forgot your password?",
+    "errorMessage": "You have entered a wrong email address or password",
+    "timeoutMessage": "We could not connect to the server. Please check that your internet connection is enabled and that your firewall is not blocking access."
+  },
+  "successPage": {
+    "welcomeMsg": "Hello {{username}} "
+  },
+  "setPasswordPage": {
+    "passwordFieldPlaceholder": "New Password",
+    "confirmPasswordFieldPlaceholder": "Confirm new password",
+    "setPasswordheaderText": "Set your password",
+    "resetPasswordHeaderText": "Reset your password",
+    "submitBtnText": "Reset Password"
+  },
+  "recordingConfigPage": {
+    "pageTitle": "Recording Rules",
+    "sliderTitle": "Voice Calls",
+    "wrapUp": {
+      "label": "After Call Work",
+      "TimeUnit": "seconds",
+      "invalidValue": "Enter an integer between 1-600 seconds"
+    },
+    "popover": {
+      "message1": "All changes will be lost",
+      "message2": "Are you sure you want to exit without saving?"
+    },
+    "messages": {
+      "updateSuccess": "Recording rules updated successfully.",
+      "updateFailure": "Update recording configurations action has failed!"
+    },
+    "ModalMessages": {
+      "transition": {
+        "title": "Unsaved Data",
+        "unsavedChanges": "If you leave the page, your changes will be lost.",
+        "areYouSureLeavePage": "Are you sure you want to continue?"
+      },
+      "saveFailure": {
+        "title": "System Error",
+        "msgLine1": "An internal server error occurred.",
+        "msgLine2": "Try again later."
+      },
+      "saveRefreshed": {
+        "title": "Error Saving Rule",
+        "msgLine1": "Another user recently changed the recording rules.",
+        "msgLine2": "Refresh the page."
+      }
+    },
+    "rules": {
+      "VOICE_PLUSE_SCREEN": "Include screen",
+      "VOICE": "Voice calls"
+    }
+  },
+  "skillsPage": {
+    "pageTitle": "Skills",
+    "pageTitle_NEW": "WFO Skills",
+    "newSkillBtn": "New Skill",
+    "newSkillBtn_NEW": "New WFO Skill",
+    "items": "skills",
+    "item": "skill",
+    "errorRetriveAcdSkills": "Could not retrieve IC ACD skills",
+    "errorDelete": "No row was selected for deletion",
+    "gridColumnsHeaders": {
+      "name": "Name",
+      "employees": "Employees",
+      "acdSkillCount": "ACD Skill Mappings",
+      "channel": "Channel"
+    },
+    "skillNamePlaceholder": "Untitled Skill",
+    "deleteSelectedSkillsMsg": "You are about to delete the selected skills. Continue?",
+    "popover": {
+      "message": "This skill will be deleted from all employees. Are you sure?",
+      "warningMessage": "Changing the channel will remove the skills you selected. Continue?"
+    },
+    "createNewSkillModal": {
+      "addHeader": "Create New Skill",
+      "addHeader_NEW": "Create New WFO Skill",
+      "editHeader": "Edit Skill",
+      "editHeader_NEW": "Edit WFO Skill",
+      "skillPlaceholder": "Untitled Skill",
+      "popover": {
+        "message1": "All changes will be lost",
+        "message2": "Are you sure you want to exit without saving?"
+      },
+      "employeesTab": {
+        "header": "Employees",
+        "assignedEmployeesTxt": "Assigned Employees",
+        "addEmployeesBtn": "Add Employees",
+        "selectEmployeesTxt": "Select employees",
+        "selectedTxt": "Selected:",
+        "AlreadyAssignedUsers": "Already assigned employees"
+      },
+      "generalTab": {
+        "acdChannelHeader": "Assign to Channel",
+        "acdSkillMap": "Map to ACD Skills",
+        "acdSkillIdInUse": "ACD Skill ID \"{{value}}\" is already in use by this skill.",
+        "acdSkillIdInUseByOtherSkill": "ACD Skill ID \"{{value}}\" is already in use by the skill \"{{skill}}\".",
+        "header": "General",
+        "channels": {
+          "Phone": "Phone",
+          "Chat": "Chat",
+          "Email": "Email/Fax",
+          "SMS": "SMS",
+          "VoiceMail": "Voicemail",
+          "FaceToFace": "Face to Face",
+          "Other": "Other"
+        }
+      }
+    },
+    "successAdd": "New skill has been added successfully",
+    "successEdit": "Skill has been edited successfully"
+  },
+  "bulkUploadDownloadManagementPage": {
+    "title": "Bulk Upload Portal",
+    "leftDashboardHeader": "Bulk Uploads",
+    "leftDashboardText": "Bulk upload multiple records for any items in the list, all in one place. This can be used to add new records, or to update existing records already created on the platform",
+    "templateDownloadHeading": "This package contains all the templates used on the page.",
+    "entityDownloadHeading": "Downloads all currently existing items in this list (i.e. users, teams, roles, etc.)",
+    "rightDashboardHeader": "You must have at least one file added to begin upload process",
+    "uploadSuccessMsg": "Uploading (count) files, this process may take several minutes",
+    "uploadfailureMsg": "One or more file upload failed",
+    "dragAndFropText": "Drag & drop to upload or",
+    "browsFileText": "browse for files",
+    "fileProcessingMsg": "files processing",
+    "inProcessFileTxt": "In Progress",
+    "tabLabels": {
+      "upload": "Upload",
+      "activity": "Activity"
+    },
+    "uploadStatus": {
+      "clearAllBtnTxt": "Clear All"
+    },
+    "btn": {
+      "templateDownloadBtn": "Download All Templates",
+      "entityDownloadBtn": "Download All Existing",
+      "singleTemplateDownloadBtn": "Download Template",
+      "singleEntityDownloadBtn": "Download Existing Records",
+      "uploadImmediately": "Upload Files",
+      "uploadAfterReview": "Review Files Before Uploading"
+    },
+    "admin": {
+      "name": "admin",
+      "employees": {
+        "name": "employees"
+      },
+      "teams": {
+        "name": "teams"
+      },
+      "teamsUsersMapping": {
+        "name": "team assignment"
+      },
+      "skillsUsersMapping": {
+        "name": "skill assignment"
+      }
+    },
+    "acd": {
+      "name": "acd"
+    },
+    "activity": {
+      "item": "activity",
+      "headers": {
+        "uploadDate": "Upload Date",
+        "area": "Area Uploaded",
+        "user": "User",
+        "status": "Status"
+      },
+      "successStatus": "Successfully Uploaded",
+      "errorStatusSingle": "Error Found",
+      "errorStatusMultiple": "Errors Found",
+      "inProgressStatus": "Upload In Progress",
+      "reviewBtn": "Review Errors"
+    },
+    "uploadSuccessMessage": "Upload has been initiated",
+    "uploadFailureMessage": "Failed to initiate upload",
+    "downloadRecordsSuccessMsg": "Successfully downloaded existing records",
+    "downloadRecordsFailureMsg": "Failed to download existing records",
+    "downloadRecordsProgressMsg": "An existing download is in progress",
+    "reviewErrorsPage": {
+      "pageTitle": "Employees Upload Errors",
+      "pageTrailer": "Upload Errors",
+      "trailer": "Upload",
+      "downloadErrors": "Download Errors",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "entities": {
+        "user": {
+          "entityName": "Employees"
+        },
+        "team": {
+          "entityName": "Teams"
+        },
+        "user-team": {
+          "entityName": "Team Assignment"
+        },
+        "user-skills": {
+          "entityName": "Skill Assignment"
+        }
+      },
+      "errorReport": "error-report",
+      "rowHeader": "Row",
+      "errorHeader": "Error",
+      "commonErrorMessage": "Processing Error",
+      "errorFieldStartLineSingle": "Error in field",
+      "errorFieldStartLineMultiple": "Error in fields",
+      "validationErrors": {
+        "mandatoryFieldError": "The field can not be empty",
+        "emailFieldError": "The field allows email format",
+        "booleanFieldError": "The field allows only true or false",
+        "numberFieldError": "The field allows only number",
+        "nameFieldError": "The field does not allow \\ / ! + < > ? # & , % \" "
+      },
+      "downloadErrorsSuccessMsg": "Errors downloaded successfully",
+      "downloadErrorsFailureMsg": "Failed to download errors"
+    }
+  },
+  "userManagementPage": {
+    "pageTitle": "Employees",
+    "newUserBtn": "New Employee",
+    "importUsersBtn": "Import Employees",
+    "userListHeader": "Employees in {{orgName}}:",
+    "items": "employees",
+    "item": "employee",
+    "selectedItems": "{{selectedCount}} selected",
+    "gridColumnsHeaders": {
+      "name": "Name",
+      "email": "Email",
+      "acdLogin": "ACD Login",
+      "role": "Role",
+      "state": "State",
+      "group": "Scheduling Unit",
+      "userName": "Username"
+    },
+    "filters": {
+      "schedulingUnits": "{{count}} Scheduling units",
+      "skills": "{{count}} Skills",
+      "groups": "{{count}} Groups",
+      "searchPlaceholder": "Start typing to find user",
+      "label": "Show",
+      "teams": "{{count}} Teams"
+    },
+    "popover": {
+      "acdLoginLbl": "ACD Login",
+      "hireDateLbl": "Hire date: {{value}}",
+      "rankLbl": "Rank: {{value}}",
+      "skillsLbl": "Skills: {{value}}"
+    },
+    "preferencesTab": {
+      "shiftPreferencesTitle": "Shift Preferences",
+      "TimePreferencesTitle": "Time off preferences",
+      "TimePreferencesSubTitle": "No days off avaliable",
+      "PossibleDaysOff": "Possible days off",
+      "day": "day",
+      "shiftTime": "shift time",
+      "noOptionsAvailable": "This employee is assigned to rules with no flexibility so shifts are fixed, no preferencing available",
+      "noOptionsAvailableForShift": "No Shift Assigned."
+    },
+    "userStates": {
+      "active": "Active",
+      "pending": "Pending",
+      "unregistered": "Invite",
+      "inviting": "Sending",
+      "deleted": "Inactive",
+      "locked": "Unlock",
+      "all": "All"
+    },
+    "userRoles": {
+      "agent": "Agent"
+    },
+    "bulkOperationsBtns": {
+      "inviteBtn": "Invite",
+      "deleteBtn": "Delete",
+      "deactivateBtn": "Deactivate",
+      "activateBtn": "Activate",
+      "tooltips": {
+        "invite": "Invite employee",
+        "delete": "Delete employee"
+      }
+    },
+    "status": {
+      "invite": "Invite"
+    },
+    "tabLabels": {
+      "general": "General",
+      "skills": "Skills",
+      "availability": "Availability",
+      "preferences": "Preferences",
+      "changeAuditHistory": "Change History",
+      "acd": "ACD",
+      "contactHandling": "Contact Settings",
+      "secondaryRoles": "Secondary Roles",
+      "accessKeys": "Access Keys"
+    },
+    "changeAuditHistory": {
+      "noRowsOverlayText": "Change History data not found",
+      "itemsCountLabel": "Changes",
+      "User": {
+        "userName": "User Name",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "emailAddress": "Email Address",
+        "role": "Primary Role",
+        "secondaryRoleIds": "Secondary Roles",
+        "mobileNumber": "Mobile Number",
+        "hireDate": "Hire Date",
+        "rank": "Rank",
+        "teamId": "Assigned to Team",
+        "groupIds": "Assigned to Group",
+        "externalIdentity": "External Identifier",
+        "status": "Status",
+        "acdInfos": "ACD Infos",
+        "customAttributes": {
+          "canBeScheduled": "Can Be Scheduled",
+          "canBeCoachedOrEvaluated": "Can Be Coached Or Evaluated",
+          "canBeRecorded": "Can Be Recorded",
+          "canBeAnalyzed": "Can Be Analyzed",
+          "osLogin": "OS Login"
+        }
+      }
+    },
+    "deleteSelectedUsersMsg": "You are about to delete the selected employees. This action can't be undone. Continue?",
+    "deleteSingleUsersMsg": "You are about to delete this employee. This action cannot be undone. Continue?",
+    "inviteSelectedUsersMsg": "The selected employees will be invited to join this application. Continue?",
+    "activateSelectedUsersMsg": "The selected employees will be activated. Continue?",
+    "reinviteUsersMsg": "Invitation expired. Verify the email address and try again.",
+    "reinviteBtnText": "Resend",
+    "inviteUsersSuccessMsg": "Employees were successfully invited",
+    "inviteUsersWarnMsg": "Employees were already Active",
+    "inviteUsersFailureMsg": "Inviting employees failed",
+    "inviteSingleUserSuccessMsg": "Employee was successfully invited",
+    "activateSingleUserSuccessMsg": "Employee was activated successfully",
+    "activateSingleUserFailureMsg": "Employee could not be activated",
+    "createAndInviteSingleUserSuccessMsg": "Employee created and invited successfully",
+    "inviteSingleUserFailureMsg": "Employee could not be invited",
+    "deleteSingleUserSuccessMsg": "Employee was deleted successfully. Future schedules of this employee have been deleted.",
+    "deleteSingleUserFailureMsg": "Employee could not be deleted",
+    "deleteUsersSuccessMsg": "{{numOfUsers}} employees were deleted successfully. Future schedules of these employees have been deleted.",
+    "deleteUsersFailureMsg": "{{numOfFailedToDeleteUsers}} out of {{totalExpected}} employees could not be deleted",
+    "deleteLoggedInUser": "You cannot delete your own employee",
+    "reactivateUser": "User Activated Successfully",
+    "activateUsersSuccessMsg": "Employees activated Successfully",
+    "activateUsersFailureMsg": "Employees can not be activated due to internal error",
+    "unlockUser": {
+      "popover": {
+        "warningMessage": "This account is locked due to too many failed login attempts.",
+        "confirmMessage": "Do you want to unlock this user?"
+      },
+      "messages": {
+        "unlockSuccess": "Employee unlocked successfully.",
+        "unlockFailure": "Unable to unlock the employee."
+      },
+      "lockSubtitle": "(Account Locked)"
+    },
+    "actionPopover": {
+      "deactivateUser": "Deactivate",
+      "activateUser": "Activate",
+      "resendInvitation": "Resend Invite",
+      "inviteUser": "Invite"
+    }
+  },
+  "dailyRulesPage": {
+    "pageTitle": "Daily Rules",
+    "newRuleBtn": "New Rule",
+    "deleteBtn": "Delete",
+    "userListHeader": "Employees in {{orgName}}:",
+    "items": "rules",
+    "item": "daily rule",
+    "selectedItems": "{{selectedCount}} selected",
+    "gridColumnsHeaders": {
+      "name": "NAME",
+      "shiftLength": "SHIFT LENGTH",
+      "shiftStartTime": "SHIFT START TIME",
+      "assignedToWeeklyRule": "ASSIGNED TO WEEKLY RULE"
+    },
+    "deleteSelectedRulesMsg": "You are about to delete the selected daily rules. Continue?",
+    "deleteSingledRulesMsg": "You are about to delete this daily rule. Continue?",
+    "errorAdd": "An error occurred while creating the daily rule.",
+    "errorDelete": "An error occurred while deleting the daily rule.",
+    "errorUpdate": "An error occurred while updating the daily rule.",
+    "errorRead": "An error occurred while loading daily rules.",
+    "successAdd": "New daily rule has been added successfully",
+    "successDelete": "Daily rule has been successfully removed",
+    "successEdit": "Daily rule has been edited successfully"
+  },
+  "importUsersModal": {
+    "header": "Import Employees",
+    "weSupportMessage": "Import employees by uploading a CSV file.",
+    "downloadMessage1": "You can download a template of a CSV file",
+    "downloadMessage2": "",
+    "downloadLink": "here.",
+    "selectFileMessage": "",
+    "successMsg": "Employees imported successfully.",
+    "errorMsg": "Failed to import employees.",
+    "importErrorsList": {
+      "header": "Import Errors",
+      "invalidUser": "Role does not exist in system",
+      "invalidUserRole": "Role and user state mismatch",
+      "userAlreadyExists": "Failed to create user, user with same username already exists.",
+      "userCreateFailed": "Failed to create user, please check the inputs",
+      "invalidUserStatus": "Email address of an active user cannot be changed.",
+      "cannotChangeOwnRole": "You cannot change your own role."
+    }
+  },
+  "createDailyRuleModal": {
+    "shiftLength": "Shift Length:",
+    "shiftType": "Shift Type:",
+    "hours": "hours",
+    "shiftStartBetween": "Shift starts between",
+    "startTimeIncrement": "Start time increment:",
+    "createDailyRuleHeader": "Create New Daily Rule",
+    "editDailyRuleHeader": "Edit Daily Rule",
+    "addActivities": "ADD ACTIVITIES",
+    "activitiesCodes": "Activity codes",
+    "relativeStart": "Relative start",
+    "slack": "Slack",
+    "updateDailyRuleHeader": "#fffff",
+    "length": "Length",
+    "earliestStart": "EARLIEST START",
+    "latestStart": "LATEST START",
+    "startIncrement": "START INCREMENT",
+    "ruleDescription": "RULE DESCRIPTION",
+    "successMsg": "Employee was created successfully!",
+    "updateErrorMsg": "Failed to create new employee.",
+    "updateSuccessMsg": "Employee was updated successfully!",
+    "namePlaceholder": "Untitled Daily Rule"
+  },
+  "createUserModal": {
+    "updateUserHeader": "Edit Employee",
+    "createUserHeader": "Create New Employee",
+    "createAndInvite": "Create & Invite",
+    "popoverMessage1": "All changes will be lost.",
+    "popoverMessage2": "Are you sure you want to exit without saving?",
+    "errorMsg": "Failed to create new employee.",
+    "successMsg": "Employee was created successfully!",
+    "updateErrorMsg": "Failed to create new employee.",
+    "updateMfaErrorMsg": "Failed to update MFA details.",
+    "updateSuccessMsg": "Employee was updated successfully!",
+    "teamErrorMsg": "Team is required.",
+    "acdLoginId": "ACD Login ID",
+    "acdLoginIdInUse": "ACD Login ID \"{{value}}\" is already in use by this page.",
+    "maxLimitOfACD": "You cannot enter more than {{items}} items",
+    "reviveUserAlert": "An account with this email address already exists. Do you want to re-activate this account?",
+    "reviveUserAlertWithUserName": "An account with this username already exists and has been deleted. Do you want to reactivate it?",
+    "verificationEmailWillBeSent": "Verification email will be sent to this address upon saving.",
+    "resendVerificationEmail": "Resend Verification Email",
+    "resendVerificationEmailFailureMsg": "Failed to resend verification email",
+    "verificationEmailSent": "Email was sent successfully!",
+    "formLabels": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "username": "Username",
+      "mobileNumber": "Mobile Number",
+      "timeZone": "Time Zone",
+      "osLogin": "OS Login",
+      "assignToGroup": "Assigned to scheduling unit",
+      "assignToGroups": "Assigned to groups",
+      "assignToSkills": "Assigned to skills",
+      "assignToTeams": "Assigned to team",
+      "assignToGroupPlaceHolder": "No scheduling unit assigned",
+      "maxHoursPerWeek": "Max. Hours/Week",
+      "rank": "Rank",
+      "rankInterval": "1-999",
+      "timeZonePlaceHolder": "Time Zone",
+      "country": "Country",
+      "countryPlaceholder": "Select country",
+      "hireDate": "Hire Date",
+      "role": "Primary Role",
+      "rolePlaceholder": "Select role",
+      "teamPlaceholder": "Select team",
+      "timeZonePlaceholder": "Select TimeZone",
+      "userPicture": "Profile Picture",
+      "upload": "Upload",
+      "create": "Create Employee",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "statusIconHoverTip": {
+        "pending": "Email is pending verification.",
+        "complete": "Email has been verified."
+      },
+      "roles": {
+        "agent": "Agent",
+        "manager": "Manager",
+        "admin": "Administrator"
+      },
+      "groupsDropDown": "{{selectedCount}} Groups",
+      "skillsDropDown": "{{selectedCount}} Skills",
+      "wfoSkillsDropDown": "Showing {{totalCount}} skills",
+      "wfoSkillsDropDownLimitTo": "Showing {{limitCount}}/{{totalCount}} skills. Type to search",
+      "customAttributes": {
+        "heading": "ATTRIBUTES",
+        "canBeEvaluatedLabel": "Can be Evaluated/Coached",
+        "canBeScheduled": "Can be Scheduled",
+        "canBeRecorded": "Can be Recorded",
+        "canBeAnalyzed": "Can be Analyzed",
+        "nonBillableUser": "Non Billable User "
+      },
+      "mfaSecret": "MFA Secret",
+      "mfaTimeStep": "MFA TOKEN PERIOD",
+      "mfaTimeStepUnit": "seconds",
+      "mfaTimeStepInterval": "15-300",
+      "clearButton": "Clear",
+      "generateButton": "Generate",
+      "externalIdentity": "External Identity"
+    },
+    "skillsTab": {
+      "header": "Select Skills",
+      "assignedTxt": "Assigned Skills",
+      "addBtn": "Add",
+      "selectTxt": "Select employees",
+      "selectedTxt": "Selected:"
+    },
+    "contactHandlingTab": {
+      "refusalTimeouts": "Refusal Timeouts",
+      "contactRefusalTimeouts": "Contact Refusal Timeouts",
+      "contactHandlingSCH": "Single Channel Handling",
+      "chat": "Chat",
+      "phone": "Phone",
+      "workItem": "Work Items",
+      "voicemail": "Voice Mail",
+      "sms": "SMS",
+      "email": "Email",
+      "defaultDialing": "Default Dialing",
+      "dialingPattern": "Dialing Pattern",
+      "contactHandlingSettings": "Contact Handling Settings",
+      "contactHandling": "Contact Handling",
+      "omnichannelHandling": "Omnichannel Handling",
+      "singleChannel": "Single Channel Handling",
+      "deliveryMode": "Delivery Mode",
+      "totalContactCount": "Total Contact count",
+      "voice": "Voice",
+      "voiceTooltip": "Includes phone and voicemail",
+      "chats": "Chats",
+      "emails": "Emails",
+      "workItems": "Work Items",
+      "workItemTooltip": "Includes Social and others.",
+      "requestContact": "Req Contact",
+      "requestContactTooltip": "Allows the agent to request the next available contact instead of receiving the contact directly from routing.",
+      "contactAutoFocus": "Auto-Focus",
+      "contactAutoFocusTooltip": "Forces the focus of the Agent in MAX to the new contact when the Accept button is pushed. Disabled when Delivery Mode set to Single Contact.",
+      "seconds": "Seconds",
+      "none": "None",
+      "concurrentChats": "Concurrent Chats",
+      "autoParkedEmails": "Auto-Parked Emails",
+      "customFields": "Custom Fields",
+      "maxReleasePreview": "Max release preview",
+      "custom_1": "Custom 1",
+      "custom_2": "Custom 2",
+      "custom_3": "Custom 3",
+      "custom_4": "Custom 4",
+      "custom_5": "Custom 5",
+      "maxFields": "MAX",
+      "maxReleasePreviewForAllAgents": "MAX Release Preview for All Agents is enabled on this Tenant",
+      "maxReleasePreviewTooltip": "MAX Preview is only available for a limited time following a major release.",
+      "teamDefaults": "Team Defaults",
+      "deliveryModeTooltip": "Single Contact delivery mode: The agent only gets one contact at a time. Omnichannel delivery mode: The agent can handle multiple concurrent contacts of different channel types.",
+      "totalContactCountTooltip": "Number of contacts an agent can handle at one time."
+    },
+    "secondaryRolesTab": {
+      "secondaryRoles": "Secondary Roles",
+      "secondaryRolesDropdown": "Select Roles",
+      "addRoles": "Add Role",
+      "itemscount": "{{count}} Assigned Roles",
+      "roleName": "Role Name",
+      "rolesList": "Roles List",
+      "assignedRoles": "Assigned Roles | {{count}} Total",
+      "errorMsg": "Maximum number of secondary role (10) selected",
+      "noItemsOverlay": "No roles assigned yet"
+    }
+  },
+  "profileDetailsModal": {
+    "profileDetailsHeader": "My Profile"
+  },
+  "changePasswordModal": {
+    "changePasswordHeader": "Change password",
+    "updateErrorMsg": "Failed to update employee password.",
+    "updateSuccessMsg": "Employee password was updated successfully!",
+    "formLabels": {
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm new password"
+    }
+  },
+  "formExample": {
+    "enterYourName": "Enter your name:",
+    "enterYourEmail": "Enter your email address:",
+    "enterYourAge": "Enter your age:",
+    "createPassword": "Create a password:",
+    "confirmPassword": "Confirm your password:",
+    "errorMessages": {
+      "required": "You left the field blank...",
+      "minLength": "Your field is too short",
+      "maxLength": "Your field is too long",
+      "email": "Your email address is not valid",
+      "password": " Your password must consist of alphabetical or numeric characters. It must also contain at least one special character, a number as well as an uppercase letter.",
+      "match": "This password does not match the password entered before",
+      "minLengthPassword": "Your password must be at least 8 characters",
+      "maxLengthPassword": "This is too long password...",
+      "minAge": "You must be at least 10 years old!",
+      "maxAge": "You must be less than 80 years old!",
+      "number": "Numbers only dude!"
+    }
+  },
+  "generalErrorMessages": {
+    "required": "This field is required.",
+    "minLength": "Your entry is too short",
+    "nameFieldValidation": "Oops, you can’t use \\ ! < > ? % \" ",
+    "nameFieldValidation2": "Oops, you can’t use \\ / ! + < > ? # & , % \" ",
+    "maxLength": "Your entry is too long",
+    "email": "The email address you entered is not valid",
+    "emailExists": "The email address already exists. Try a new one",
+    "userNameExists": "The user name already exists. Try a new one",
+    "number": "Numbers only!",
+    "pattern": "Incorrect format for this field",
+    "password": "Your password must be at least 8 characters, including at least 1 number and 1 capital letter",
+    "match": "This password does not match the previous password",
+    "minLengthPassword": "Your password must be at least 8 characters",
+    "maxLengthPassword": "Your password is too long",
+    "min": "Number is too small",
+    "max": "Number is too large",
+    "uniqueString": "This name already exists. Try a new one.",
+    "lowerThen": "The minimum value cannot exceed the maximum value",
+    "weeklyMaxLowerThanSumDailyMin": "The minimum number of days required by the daily rules exceeds the maximum number of days in the weekly rule.",
+    "weeklyMinGreaterThanSumDailyMax": "The minimum number of days in the weekly rule exceeds the maximum number of days required by the daily rules.",
+    "weeklyMaxHoursLowerThanSumDailyMinLength": "Total hours of minimum daily combinations cannot be larger than the maximum total hours per week",
+    "weeklyMinHoursGreaterThanSumDailyMaxLength": "Total hours of maximum daily combinations cannot be smaller than the minimum total hours per week",
+    "uniqueDaysCounterLowerThanSumDailyMin": "The minimum number of days exceeds the total number of unique days.",
+    "possibleDaysLowerThanMinDays": "The number of possible days does not meet the minimum number of days required by the weekly rule.",
+    "uniqueDaysCounterLowerThanWeeklyMin": "The minimum number of days in the weekly rule exceeds the number of unique days.",
+    "noAddedShiftPatters": "You must select at least one daily rule",
+    "shiftLengthLowerThanActivityLength": "Sum of activity length and relative start cannot be larger than shift length",
+    "shiftLengthLowerThanTotalActivityLength": "The total length of the activities cannot exceed the length of the shift",
+    "relativeStartLowerThanSlack": "The slack cannot be greater than the relative start value",
+    "activitiesOverlap": "Activities cannot overlap",
+    "serverError": "Unknown server error",
+    "notValidRegex": "These characters cannot be used: ^/!\\+<>?#&,%.",
+    "uniqueTitle": "This name already exists. Try a new one.",
+    "timeRangeOutsideOfRange": "Invalid hire date",
+    "invalidFileFormat": "Invalid File Format",
+    "integerInvalid": "Must be an integer.",
+    "refusalTimeRange": "Value must be between 15 and 300",
+    "invalidMobileNumber": "The mobile number you entered is not valid",
+    "userActivityBlocked": "Employee creation and editing is temporarily unavailable during this scheduled maintenance. Normal service will be restored shortly.",
+    "invalidMfaSecret": "Invalid MFA Secret",
+    "invalidTotalContactCount": "Total Contact Count value must be less than sum of all contact counts",
+    "nonBillableMaxCountReached": "Total number of NonBillable users can't be more than 5",
+    "invalidMediaSum": "All channels cannot be set to off. The sum of all contacts must be greater than 0."
+  },
+  "metainfo": {
+    "hello": {
+      "title": "Hello Component"
+    }
+  },
+  "metaInfo": {
+    "selfService": {
+      "title": "Support - Downloads"
+    },
+    "title": "Nice SaaS WFM ",
+    "description": "Nice SaaS WFM",
+    "faviconUrl": "assets/img/favicon-16x16.png",
+    "login": {
+      "title": "Login",
+      "description": "Nice SaaS WFM"
+    },
+    "success": {
+      "title": "Success",
+      "description": "Nice SaaS WFM"
+    },
+    "examples": {
+      "title": "Examples",
+      "description": "Nice SaaS WFM"
+    },
+    "form_example": {
+      "title": "Form Examples",
+      "description": "Nice SaaS WFM"
+    },
+    "userManagement": {
+      "title": "Employees",
+      "description": "Nice SaaS WFM"
+    },
+    "createAccount": {
+      "title": "Create Account",
+      "description": "Nice SaaS WFM"
+    },
+    "activityCodes": {
+      "title": "Activity Codes",
+      "description": "Nice SaaS WFM"
+    },
+    "acdActivitiesMapping": {
+      "title": " ACD Mapping",
+      "description": "Nice SaaS WFM"
+    },
+    "dailyRule": {
+      "title": "Daily Rules",
+      "description": "Nice SaaS WFM"
+    },
+    "employeeGroups": {
+      "title": "Scheduling Unit",
+      "description": "Nice SaaS WFM"
+    },
+    "roleManagement": {
+      "title": "Roles",
+      "description": "Nice SaaS WFM"
+    },
+    "passwordPolicyManagement": {
+      "title": "Password Policy",
+      "description": "Nice SaaS WFM"
+    },
+    "customRoles": {
+      "title": "Roles"
+    },
+    "createRoles": {
+      "title": "Create Role",
+      "description": "Nice SaaS WFM"
+    },
+    "updateRoles": {
+      "title": "Update Role",
+      "description": "Nice SaaS WFM"
+    },
+    "expiredInvitation": {
+      "title": "Expired Invitation",
+      "description": "Nice SaaS WFM"
+    },
+    "generateschedule": {
+      "title": "Generate Schedule",
+      "description": "Nice SaaS WFM"
+    },
+    "mySchedule": {
+      "title": "My Schedule",
+      "description": "Nice SaaS WFM"
+    },
+    "myDashboard": {
+      "title": "My Dashboard",
+      "description": "Nice SaaS WFM"
+    },
+    "qpManager": {
+      "title": "Quality Planner",
+      "description": "Nice SaaS WFM"
+    },
+    "formExecutor": {
+      "title": "Form Executor",
+      "description": "Nice SaaS WFM"
+    },
+    "recoverPassword": {
+      "title": "Recover Password",
+      "description": "Nice SaaS WFM"
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "description": "Nice SaaS WFM"
+    },
+    "scheduler": {
+      "title": "Schedule Manager",
+      "description": "Nice SaaS WFM"
+    },
+    "setPassword": {
+      "title": "Set Password",
+      "description": "Nice SaaS WFM"
+    },
+    "skills": {
+      "title": "Skills",
+      "description": "Nice SaaS WFM"
+    },
+    "UIKitGallery": {
+      "title": "UI Kit Gallery",
+      "description": "Nice SaaS WFM",
+      "userRoles": "{{selectedCount}} Employee roles"
+    },
+    "weeklyRules": {
+      "title": "Weekly Rules",
+      "description": "Nice SaaS WFM"
+    },
+    "manageForms": {
+      "title": "Manage Forms",
+      "description": "Nice SaaS WFM"
+    },
+    "templateManager": {
+      "title": "Template Manager",
+      "description": "Nice SaaS WFM"
+    },
+    "formDesigner": {
+      "title": "Form Designer",
+      "description": "Nice SaaS WFM"
+    },
+    "forecastData": {
+      "title": "Import Forecast Data",
+      "description": "Nice SaaS WFM"
+    },
+    "groups": {
+      "title": "Groups",
+      "description": "Nice SaaS WFM"
+    },
+    "accountSettings": {
+      "title": "Account Settings",
+      "description": "Nice SaaS WFM"
+    },
+    "realTimeAdherence": {
+      "title": "Real Time Adherence",
+      "description": "Real Time Adherence"
+    },
+    "teams": {
+      "title": "Teams",
+      "description": "Teams"
+    },
+    "createTeam": {
+      "title": "Create Team",
+      "description": "Teams"
+    },
+    "updateTeam": {
+      "title": "Update Team",
+      "description": "Teams"
+    },
+    "bulkUploadDownload": {
+      "title": "Bulk Upload Download",
+      "description": "Bulk Upload Download"
+    },
+    "reviewErrors": {
+      "title": "Bulk Upload Download - Review Errors",
+      "description": "Bulk Upload Download - Review Errors"
+    },
+    "reviewErrorsV2": {
+      "title": "Bulk Upload Download - Review Errors",
+      "description": "Bulk Upload Download - Review Errors"
+    },
+    "hierarchies": {
+      "title": "Hierarchies",
+      "description": "Hierarchies"
+    },
+    "hierarchyManager": {
+      "title": "Hierarchy Manager",
+      "description": "Hierarchy Manager"
+    },
+    "security": {
+      "title": "Security",
+      "description": "Security"
+    },
+    "viewManagement": {
+      "title": "Views",
+      "description": "Views"
+    },
+    "viewCreate": {
+      "title": "Create View",
+      "description": "Views"
+    }
+  },
+  "commonButtons": {
+    "SingleContactDefault": "Single Contact (Default)",
+    "Omnichannel": "Omnichannel",
+    "SingleContact": "Single Contact",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "no": "No",
+    "noDefault": "No (Default)",
+    "yes": "Yes",
+    "yesDefault": "Yes (Default)",
+    "save": "Save",
+    "delete": "Delete",
+    "invite": "Invite",
+    "edit": "Edit",
+    "update": "Update",
+    "upload": "Upload",
+    "today": "Today",
+    "showAll": "Show All",
+    "clearAll": "Clear All",
+    "close": "Close",
+    "create": "Create",
+    "selectAll": "Select All",
+    "generate": "Generate",
+    "chooseFile": "Select File",
+    "add": "Add",
+    "publish": "Publish",
+    "set": "Set",
+    "day": "Day",
+    "week": "Week",
+    "refresh": "Refresh"
+  },
+  "defaultValues": {
+    "defaultNumeric": "{{numericValue}} (Default)"
+  },
+  "languages": {
+    "english": "English",
+    "russian": "Russian",
+    "spanish": "Spanish",
+    "chinese": "Chinese"
+  },
+  "weekDays": {
+    "sunday": "Sunday",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday"
+  },
+  "weekShortDays": {
+    "SUN": "SUN",
+    "MON": "MON",
+    "TUE": "TUE",
+    "WED": "WED",
+    "THU": "THU",
+    "FRI": "FRI",
+    "SAT": "SAT"
+  },
+  "scheduler": {
+    "noeditsAllowed": "Partially displayed shifts are not editable. Please change the dates to edit the shift.",
+    "netstaffing": {
+      "diff": "Diff",
+      "req": "Req",
+      "staff": "Staff"
+    },
+    "publishModal": {
+      "header": "Publish New Schedules",
+      "publishConformation": "Some of the dates you have selected were already published. The employees will be updated with the new agenda in case of a schedule changes.",
+      "noSchedulesToPublish": "There are no schedules on the selected date range.",
+      "attention": "Attention!",
+      "publishAnywayBtn": "Publish Anyway",
+      "schedulingUnit": "Scheduling Unit",
+      "from": "Start:",
+      "to": "End:",
+      "selectDatePlaceholder": "Select date",
+      "oneWeek": "1W",
+      "twoWeeks": "2W",
+      "threeWeeks": "3W",
+      "oneMonth": "1M",
+      "successMessage": "Dates published successfully"
+    },
+    "employeeCount": "{{count}} users",
+    "filters": {
+      "schedulingUnits": "{{count}} Scheduling units",
+      "skills": "{{count}} Skills",
+      "groups": "{{count}} Groups",
+      "searchPlaceholder": "Start typing to find user"
+    },
+    "activityModal": {
+      "activityCodePlaceholder": "Select an activity code",
+      "addTitle": "Add Activity - {{userName}}",
+      "comment": "Comments",
+      "commentPlaceholder": "Add comments...",
+      "editTitle": "Edit Activity - {{userName}}",
+      "error": {
+        "conflict": "Conflict detected. This activity will replace overlapping activities.",
+        "invaliddatetime": "The date and/or time specified is not valid.",
+        "daterange": "Select a date: today, yesterday or tomorrow.",
+        "openhours": "You cannot schedule when not open",
+        "endBeforeStart": "The end date must be the same or later than the start date.",
+        "timeRangeOutsideOfRange": "The activity must start or end within the timeline range ({{start}} - {{end}}).",
+        "activityOverlappingTimeRange": "This activity is outside the retrieved schedule and may replace existing activities."
+      },
+      "end": "End",
+      "remaining": "{{currentLength}} characters remaining",
+      "remove": "Remove",
+      "start": "Start"
+    },
+    "allDay": "All Day",
+    "cancel": "Cancel",
+    "closed": "You cannot add Shifts and Activities when the organization is closed.",
+    "employeeName": "Name",
+    "hotkeys": {
+      "nextHotKey": "Next day",
+      "previousHotKey": "Previous day",
+      "refreshHotKey": "Reload the schedules from the database",
+      "saveHotKey": "Save schedule changes",
+      "todayHotKey": "Go to today"
+    },
+    "hours": "Hours",
+    "menuItems": {
+      "addActivity": "Add Activity",
+      "addShift": "Add Shift",
+      "copyActivity": "Copy Activity",
+      "copyShift": "Copy Shift",
+      "editActivity": "Edit Activity",
+      "editShift": "Edit Shift",
+      "pasteActivity": "Paste Activity",
+      "pasteShift": "Paste Shift",
+      "removeActivity": "Remove Activity",
+      "removeShift": "Remove Shift",
+      "cancel": "Close"
+    },
+    "name": "Name",
+    "organizationClosed": "Organization Closed",
+    "publish": "Publish",
+    "save": "Save",
+    "saveAndPublish": "Save & Publish",
+    "scheduler": "Schedule Manager",
+    "settings": "Schedule Manager Setup",
+    "setupModal": {
+      "tabs": {
+        "netStaffing": {
+          "title": "Net Staffing",
+          "range": {
+            "min": "Understaffing",
+            "mid": "Balanced",
+            "max": "Overstaffing"
+          }
+        }
+      },
+      "saveSuccess": "Schedule Manager settings have been saved successfully.",
+      "saveFailure": "An error occurred while saving Schedule Manager settings."
+    },
+    "shiftModal": {
+      "addTitle": "Add Shift - {{userName}}",
+      "comment": "Comments",
+      "commentPlaceholder": "Your comments...",
+      "editTitle": "Edit Shift - {{userName}}",
+      "shiftType": "Shift Type",
+      "error": {
+        "conflict": "Conflict detected. This activity will replace overlapping activities.",
+        "invalidtime": "The time specified is not valid.",
+        "endBeforeStart": "The end date must be the same or later than the start date.",
+        "timeRangeOutsideOfRange": "The shift must start or end within the timeline range ({{start}} - {{end}}).",
+        "shiftOverlappingTimeRange": "This shift is outside the retrieved schedule and may replace existing shifts."
+      },
+      "end": "End",
+      "remaining": "{{currentLength}} characters remaining",
+      "remove": "Remove",
+      "start": "Start"
+    },
+    "toasts": {
+      "saveSuccessMessage": "Schedule changes have been saved successfully.",
+      "noShiftPaste": "Cannot paste a shift that goes beyond the visible range.",
+      "noShiftCopy": "Cannot copy a shift that goes beyond the visible range.",
+      "noActivityPaste": "Cannot paste an activity that goes beyond the visible range.",
+      "multipleShifts": "Attention!  There are multiple shifts for the same day.",
+      "overlappingShiftsActivities": "Attention!  There are overlapping shifts and/or activities",
+      "noEdit": "Cannot edit a shift or activity that goes beyond the visible range.",
+      "noRemove": "Cannot remove a shift or activity that goes beyond the visible range.",
+      "noAddActivity": "Cannot add an activity to a shift that goes beyond the visible range."
+    },
+    "today": "Today",
+    "unavailable": "Unavailable",
+    "unsaved": "Exit without saving changes?",
+    "dailyView": "Daily View",
+    "weeklyView": "Weekly View"
+  },
+  "globalNavigation": {
+    "wfmHeader": {
+      "contactUs": "Contact Us",
+      "wfmText": "EVOLVE WFM",
+      "logoutOption": "Logout",
+      "changePasswordOption": "Change Password",
+      "accountSetupOption": "Account Setup",
+      "myProfileOption": "My Profile",
+      "help": "Help",
+      "selfService": "Support - Downloads"
+    },
+    "sideBar": {
+      "setupAppName": "ADMIN",
+      "setupAppLinks": {
+        "users": "Employees",
+        "skills": "WFO Skills",
+        "groups": "Groups",
+        "accountSettings": "Account Settings"
+      },
+      "schedulerAppName": "SCHEDULER",
+      "schedulerAppLinks": {
+        "activityCodes": "Activity Codes",
+        "realTimeAdherence": "Real Time Adherence",
+        "acdActivitiesMapping": "ACD Mapping",
+        "managementUnits": "Scheduling Unit",
+        "scheduler": "Schedule Manager",
+        "generateSchedule": "Generate Schedule",
+        "dailyRule": "Daily Rules",
+        "weeklyRules": "Weekly Rules",
+        "forecastData": "Import Forecast Data"
+      },
+      "mySpaceAppName": "MY SPACE",
+      "mySpaceAppLinks": {
+        "mySchedule": "My Schedule",
+        "myDashboard": "My Dashboard"
+      },
+      "formManagerAppName": "FORM MGMT.",
+      "formManagerAppLinks": {
+        "manageForms": "Manage Forms",
+        "formDesigner": "Form Designer",
+        "qpManager": "Quality Planner",
+        "templateManager": "Template Manager"
+      }
+    }
+  },
+  "mySchedule": {
+    "errorRead": "An error occurred while loading the schedule.",
+    "pageTitle": "My Schedule",
+    "userName": "{{userName}}"
+  },
+  "formExecutorPage": {
+    "pageTitle": "Form Data",
+    "submitBtn": "Submit",
+    "sentToAgentMsg": "Sent to Agent",
+    "acknowledgeMsg": "Acknowledged",
+    "executionErrorMsg": "Failed to send",
+    "acknowledgeErrorMsg": "Failed to acknowledge",
+    "executionRetrieveErrorMsg": "Failed to retrieve data with execution id : {{executor}}.",
+    "roleNotSupportedMsg": "Role not supported : {{role}}.",
+    "noFormAssociatedMsg": "No Form associated, please associate form."
+  },
+  "myProfile": {
+    "userName": "USERNAME",
+    "tenantName": "ACCOUNT"
+  },
+  "contactUs": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "subject": "Subject",
+    "updateSuccessMsg": "Your message has been sent successfully"
+  },
+  "userAgenda": {
+    "header": "Agenda",
+    "noEvents": "No schedules",
+    "shiftStart": "Shift Start",
+    "shiftEnd": "Shift End"
+  },
+  "userDaySchedule": {
+    "shiftStart": "Shift Start"
+  },
+  "scheduleEventTooltip": {
+    "shiftTitle": "Shift"
+  },
+  "datePicker": {
+    "nextDay": "Next day",
+    "openCalendar": "Open calendar",
+    "previousDay": "Previous day",
+    "today": "Today"
+  },
+  "timePicker": {
+    "openTimePicker": "Open time chooser"
+  },
+  "wfmDatetimePicker": {
+    "nextDay": "Next day",
+    "openCalendar": "Open calendar",
+    "openTimeChooser": "Open time picker",
+    "previousDay": "Previous day",
+    "today": "Today"
+  },
+  "recoverPassword": {
+    "recoverMessage": "Recover your password in three easy steps:",
+    "step1": "Type in the email you registered with below",
+    "step2": "We'll email you a link to reset your password",
+    "step3": "Use this link to reset your password",
+    "successMessage": "A message with the reset password link was sent to your email",
+    "forgetPassword": "Forget your password",
+    "forgetPasswordExplenation": "Submit your email and we will send you a link to reset your password.",
+    "resetBtn": "Send Reset Link",
+    "back": "Back to sign in",
+    "checkYourEmail": "Check your email",
+    "mailSuccessSent": "We sent you an email with a link to reset your password",
+    "successSend": "Reset password request sent successfully"
+  },
+  "errors": {
+    "LoginFailed": {
+      "code": "LoginFailed",
+      "message": "Login failed"
+    },
+    "GeneralError": {
+      "code": "General Error",
+      "message": "General error"
+    },
+    "LoginServerError": {
+      "code": "Login Server Error",
+      "message": "This page is unavailable. Please check your connection and try again."
+    },
+    "GeneralErrorWithDetails": {
+      "code": "General Error",
+      "message": "General error {{ details }}"
+    },
+    "InvalidParameters": {
+      "code": "InvalidParameters",
+      "message": "Invalid parameters"
+    },
+    "UnauthorizedUser": {
+      "code": "UnauthorizedUser",
+      "message": "Unauthorized employee"
+    },
+    "BAD_REQUEST": {
+      "code": "INTERNAL_ERROR",
+      "message": "There is no response from the server. Please try again later."
+    },
+    "wrongCredentials": "You have entered a wrong email address or password",
+    "platform_user_manager_service_1": {
+      "code": "INTERNAL_SERVER_ERROR",
+      "message": "Internal server error."
+    },
+    "platform_user_manager_service_2": {
+      "code": "INTERNAL_ERROR",
+      "message": "Internal error."
+    },
+    "platform_user_manager_service_3": {
+      "code": "GROUP_NOT_EXISTS",
+      "message": "Scheduling unit does not exist."
+    },
+    "platform_user_manager_service_4": {
+      "code": "GROUP_NAME_ALREADY_EXISTS",
+      "message": "This name already exists. Try a new one."
+    },
+    "platform_user_manager_service_5": {
+      "code": "TENANT_OR_USER_ALREADY_EXISTS",
+      "message": "This tenant or employee already exists. Try a new one."
+    },
+    "platform_user_manager_service_6": {
+      "code": "USER_ALREADY_EXISTS",
+      "message": "The user name already exists. Try a new one"
+    },
+    "platform_user_manager_service_7": {
+      "code": "FILE_NOT_EXITS",
+      "message": "File does not exist."
+    },
+    "platform_user_manager_service_8": {
+      "code": "USER_NOT_EXISTS",
+      "message": "Employee does not exists"
+    },
+    "platform_user_manager_service_9": {
+      "code": "NO_USERS_TO_INVITE",
+      "message": "There are no employees to invite."
+    },
+    "platform_user_manager_service_10": {
+      "code": "FAILED_TO_CREATE_USER",
+      "message": "Failed to create employee."
+    },
+    "platform_user_manager_service_11": {
+      "code": "INVALID_USER_STATUS",
+      "message": "Invalid Employee Status"
+    },
+    "platform_user_manager_service_12": {
+      "code": "ORGANIZATION_NAME_NOT_VALID",
+      "message": "Invalid organization name."
+    },
+    "platform_user_manager_service_13": {
+      "code": "USER_EMAIL_IS_NOT_VALID",
+      "message": "Invalid email."
+    },
+    "platform_user_manager_service_14": {
+      "code": "USER_FIRST_NAME_NOT_VALID",
+      "message": "Invalid employee first name."
+    },
+    "platform_user_manager_service_15": {
+      "code": "USER_LAST_NAME_NOT_VALID",
+      "message": "Invalid employee last name."
+    },
+    "platform_user_manager_service_16": {
+      "code": "CANNOT_DELETE_DEFAULT_GROUP",
+      "message": "Cannot delete the default scheduling unit."
+    },
+    "platform_user_manager_service_17": {
+      "code": "GROUP_ID_IS_MISSING",
+      "message": "scheduling unit ID is missing."
+    },
+    "platform_user_manager_service_18": {
+      "code": "USER_MAX_HOURS_NOT_IN_RANGE",
+      "message": "Employee maximum hours not in range."
+    },
+    "platform_user_manager_service_19": {
+      "code": "USER_PASSWORD_NOT_VALID",
+      "message": "Employee password is invalid."
+    },
+    "platform_user_manager_service_20": {
+      "code": "CANNOT_UPDATE_DEFAULT_GROUP_NAME",
+      "message": "Cannot update default group."
+    },
+    "platform_user_manager_service_21": {
+      "code": "CANNOT_REMOVE_USERS_FROM_DEFAULT_GROUP",
+      "message": "Cannot remove employees from default group."
+    },
+    "platform_user_manager_service_22": {
+      "code": "WRONG_USER_PASSWORD",
+      "message": "Incorrect employee password."
+    },
+    "platform_user_manager_service_23": {
+      "code": "USER_DOESNT_EXIST",
+      "message": "Employee does not exist."
+    },
+    "platform_user_manager_service_24": {
+      "code": "CANNOT_DELETE_HIMSELF",
+      "message": "You cannot delete your own employee"
+    },
+    "platform_user_manager_service_25": {
+      "code": "CANNOT_DELETE_THE_ONLY_ADMINISTRATOR",
+      "message": "You cannot delete the only administrator"
+    },
+    "platform_user_manager_service_26": {
+      "code": "CANNOT_DELETE_ALREADY_DELETED_USER",
+      "message": "You cannot delete a employee that was already deleted"
+    },
+    "platform_user_manager_service_27": {
+      "code": "INVALID_PASSWORD_TOKEN",
+      "message": "Invalid password token"
+    },
+    "platform_user_manager_service_28": {
+      "code": "FAILED_TO_CREATE_ACCOUNT",
+      "message": "Failed to create account"
+    },
+    "platform_user_manager_service_29": {
+      "code": "CUSTOM_ATTRIBUTE_TYPE_DOES_NOT_EXIST",
+      "message": "Custom attribute type does not exist"
+    },
+    "platform_user_manager_service_30": {
+      "code": "INVALID_TENANT_NAME",
+      "message": "Organization name is invalid"
+    },
+    "platform_user_manager_service_31": {
+      "code": "WRONG_FILE_TYPE",
+      "message": "The file format is not supported"
+    },
+    "platform_user_manager_service_32": {
+      "code": "USER_RANK_NOT_VALID",
+      "message": "Invalid rank for employee"
+    },
+    "platform_user_manager_service_33": {
+      "code": "NOT_ALLOWED_TO_CHANGE_ROLE",
+      "message": "You do not have permission to change the role"
+    },
+    "platform_user_manager_service_34": {
+      "code": "NOT_ALLOWED_TO_CHANGE_YOUR_OWN_ROLE",
+      "message": "You cannot change your own role"
+    },
+    "platform_user_manager_service_35": {
+      "code": "CANNOT_DELETE_LAST_ADMIN",
+      "message": "Cannot delete last admin."
+    },
+    "platform_user_manager_service_36": {
+      "code": "GROUP_NAME_NOT_VALID",
+      "message": "This name already exists. Try a new one."
+    },
+    "platform_user_manager_service_37": {
+      "code": "CURRENT_AND_NEW_PASSWORDS_ARE_THE_SAME",
+      "message": "Cannot change passwords because previous and new ones are the same."
+    },
+    "platform_user_manager_service_39": {
+      "code": "INVALID_EMAIL_OR_PASSWORD",
+      "message": "You have entered a wrong email address or password"
+    },
+    "platform_user_manager_service_40": {
+      "code": "EMPTY_EMAIL_LIST",
+      "message": "Empty email list"
+    },
+    "platform_user_manager_service_41": {
+      "code": "ROLE_DOES_NOT_EXIST",
+      "message": "Role does not exist"
+    },
+    "platform_user_manager_service_42": {
+      "code": "INVALID_ACD_LOGIN_ID",
+      "message": "Invalid ACD login id"
+    },
+    "platform_user_manager_service_43": {
+      "code": "ATTRIBUTE_VALUE_ALREADY_EXIST",
+      "message": "Attribute value already exist"
+    },
+    "platform_user_manager_service_44": {
+      "code": "ACD_LOGIN_ID_ALREADY_EXIST",
+      "message": "ACD login ID already exist"
+    },
+    "platform_user_manager_service_45": {
+      "code": "BAD_REQUEST",
+      "message": "New Employee will exceed the limit of users, please contact sales at {{email}}"
+    },
+    "platform_user_manager_service_46": {
+      "code": "BAD_REQUEST",
+      "message": "New Employee will exceed the limit of users, please contact sales at CXoneSalesTeam@niceincontact.com"
+    },
+    "platform_user_manager_service_47": {
+      "code": "FAILED_TO_REVIVE_USER",
+      "message": "Failed to revive employee"
+    },
+    "platform_user_manager_service_48": {
+      "code": "UNABLE_TO_PARSE_DATE_FORMAT_MISMATCH",
+      "message": "Unable to parse date format"
+    },
+    "platform_user_manager_service_49": {
+      "code": "INVALID_FUTURE_DATED_LAST_ACCESS_TIME",
+      "message": "Invalid last access time"
+    },
+    "platform_user_manager_service_50": {
+      "code": "USER_NAME_NOT_VALID",
+      "message": "Invalid employee name"
+    },
+    "platform_user_manager_service_51": {
+      "code": "USER_EMAIL_ALREADY_EXISTS",
+      "message": "Email already exist"
+    },
+    "platform_user_manager_service_52": {
+      "code": "USERNAME_ALREADY_EXISTS",
+      "message": "Employee name already exist"
+    },
+    "platform_user_manager_service_57": {
+      "code": "INVALID_USER_ROLE",
+      "message": "Invalid role for employee"
+    },
+    "platform_user_manager_service_59": {
+      "code": "USERNAME_NOT_IN_VALID_EMAIL_FORMAT",
+      "message": "Invalid email format for employee"
+    },
+    "platform_user_manager_service_60": {
+      "code": "DISPLAY_NAME_ALREADY_EXISTS",
+      "message": "Display name for employee is already exist"
+    },
+    "platform_user_manager_service_61": {
+      "code": "DISPLAY_NAME_CANNOT_BE_NULL",
+      "message": "Display name is required for employee"
+    },
+    "platform_user_manager_service_62": {
+      "code": "DISPLAY_NAME_CANNOT_BE_EMPTY",
+      "message": "Display name is required for employee"
+    },
+    "platform_user_manager_service_64": {
+      "code": "MULTIPLE_USER_WITH_SAME_USERNAME_FOUND",
+      "message": "Found multiple employee with same user name"
+    },
+    "platform_user_manager_service_65": {
+      "code": "TEAM_NOT_FOUND_FOR_ID",
+      "message": "Team not found for given ID"
+    },
+    "platform_user_manager_service_66": {
+      "code": "INVALID_SEARCH_CRITERIA",
+      "message": "Invalid search criteria"
+    },
+    "platform_user_manager_service_67": {
+      "code": "INVALID_TEAM_NAME",
+      "message": "Invalid team name"
+    },
+    "platform_user_manager_service_68": {
+      "code": "TEAM_ALREADY_EXISTS",
+      "message": "Team already exists"
+    },
+    "platform_user_manager_service_69": {
+      "code": "TEAM_LEAD_USER_DOES_NOT_EXIST",
+      "message": "Team lead does not exist"
+    },
+    "platform_user_manager_service_70": {
+      "code": "TEAM_LEAD_USER_NOT_PROVIDED",
+      "message": "Team without team lead"
+    },
+    "platform_user_manager_service_71": {
+      "code": "TENANT_SCHEMA_OR_USER_ID_DOES_NOT_EXIST",
+      "message": "Tenant schema or employee id does not exist"
+    },
+    "platform_user_manager_service_72": {
+      "code": "INVALID_INPUT_OR_DUPLICATE_CLAIM_DATA",
+      "message": "Invalid input or duplicate claim data"
+    },
+    "platform_user_manager_service_73": {
+      "code": "REDIS_CACHING_ERROR",
+      "message": "Issue with redis cache"
+    },
+    "platform_user_manager_service_74": {
+      "code": "REDIS_RETRIVAL_ERROR",
+      "message": "Issue with redis cache"
+    },
+    "platform_user_manager_service_75": {
+      "code": "ROLE_MISSING",
+      "message": "Role is missing"
+    },
+    "platform_user_manager_service_76": {
+      "code": "ROLE_RESPONSE_OBJECT_NOT_FOUND",
+      "message": "Issue with getting role detail"
+    },
+    "platform_user_manager_service_77": {
+      "code": "SERVICE_USER_AUTHENTICATION_FAILED",
+      "message": "Error while authenticating employee"
+    },
+    "platform_user_manager_service_78": {
+      "code": "ROLE_RESPONSE_OBJECT_NOT_FOUND",
+      "message": "Issue with getting role detail"
+    },
+    "platform_user_manager_service_81": {
+      "code": "IMPERSONATE_USER_UPDATE_NOT_ALLOWED",
+      "message": "Updating impersonate user is not allowed"
+    },
+    "platform_user_manager_service_83": {
+      "code": "REDIS_TEMPLATE_CREATION_ERROR",
+      "message": "Issue with redis cache"
+    },
+    "platform_user_manager_service_84": {
+      "code": "INVALID_JOINT_USER_ATTRIBUTES",
+      "message": "Invalid joint user attribute"
+    },
+    "platform_user_manager_service_85": {
+      "code": "INVALID_IMPORT_RUN_ID",
+      "message": "Invalid import run ID"
+    },
+    "platform_user_manager_service_86": {
+      "code": "NO_REPORTS_FOUND_FOR_GIVEN_IMPORT_RUN",
+      "message": "No report found for given import run"
+    },
+    "platform_user_manager_service_88": {
+      "code": " PERMISSION_DENIED",
+      "message": "permission denied"
+    },
+    "platform_user_manager_service_94": {
+      "code": "INVALID_INPUT",
+      "message": "Invalid input"
+    },
+    "platform_user_manager_service_95": {
+      "code": "RECORD_NOT_FOUND",
+      "message": "Record not found"
+    },
+    "platform_user_manager_service_96": {
+      "code": "RECORD_ALREADY_EXISTS",
+      "message": "Record already exist"
+    },
+    "platform_user_manager_service_99": {
+      "code": "AWS_USERPOOL_DELETION_FAILED",
+      "message": "User pool deletion failed"
+    },
+    "platform_user_manager_service_100": {
+      "code": "EMPTY_APPLICATION_lIST",
+      "message": "Application list is empty"
+    },
+    "platform_user_manager_service_101": {
+      "code": "INVALID_ROLE_STATUS",
+      "message": "Invalid status for role"
+    },
+    "INVALID_ROLE_STATUS": {
+      "code": "INVALID_ROLE_STATUS",
+      "message": "Invalid status for role"
+    },
+    "platform_user_manager_service_102": {
+      "code": "INVALID_ROLE_MODIFIABLE_FLAG",
+      "message": "Invalid modifiable flag for role"
+    },
+    "platform_user_manager_service_111": {
+      "code": "INVALID_ROLENAME",
+      "message": "Role name is invalid"
+    },
+    "platform_user_manager_service_112": {
+      "code": "INVALID_USERNAME_ROLENAME",
+      "message": "Invalid employee name and role name"
+    },
+    "platform_user_manager_service_114": {
+      "code": "INVALID_ROLE_PERMISSION",
+      "message": "Invalid permission for role"
+    },
+    "platform_user_manager_service_115": {
+      "code": "INVALID_ROLE_ID",
+      "message": "Invalid role ID"
+    },
+    "platform_user_manager_service_116": {
+      "code": "INVALID_LICENSE",
+      "message": "Invalid license"
+    },
+    "platform_user_manager_service_117": {
+      "code": "INVALID_CUSTOM_ATTRIBUTE_NAME",
+      "message": "Invalid custom attribute name"
+    },
+    "platform_user_manager_service_118": {
+      "code": "ATTRIBUTE_NAME_WITH_SPACE",
+      "message": "Space is not allowed in attribute name"
+    },
+    "platform_user_manager_service_125": {
+      "code": "INVALID_USER_ROLE_STATUS",
+      "message": "Please assign employee to an active role before re-activating"
+    },
+    "platform_user_manager_service_127": {
+      "code": "FAILED_TO_CREATE_ROLE",
+      "message": "Failed to create role"
+    },
+    "platform_user_manager_service_128": {
+      "code": "FAILED_TO_EDIT_ROLE",
+      "message": "Failed to edit role"
+    },
+    "platform_user_manager_service_132": {
+      "code": "INVALID_TEAM_STATUS",
+      "message": "Invalid status for team"
+    },
+    "platform_user_manager_service_133": {
+      "code": "TEAM_LEAD_USER_NOT_ACTIVE",
+      "message": "Team lead employee is not active"
+    },
+    "platform_user_manager_service_134": {
+      "code": "INVALID_REQUEST",
+      "message": "Invalid request"
+    },
+    "platform_user_manager_service_135": {
+      "code": "INVALID_LOGIN_AUTHENTICATOR",
+      "message": "Invalid login authenticator"
+    },
+    "platform_user_manager_service_137": {
+      "code": "INVALID_LOGIN_AUTHENTICATOR_ATTRIBUTE",
+      "message": "Invalid login authenticator attribute"
+    },
+    "platform_user_manager_service_138": {
+      "code": "INVALID_CUSTOM_ATTRIBUTE_ENTITY_NAME",
+      "message": "Invalid custom attribute entity name"
+    },
+    "platform_user_manager_service_140": {
+      "code": "INVALID_MFA_DETAILS",
+      "message": "Invalid MFA details"
+    },
+    "platform_user_manager_service_143": {
+      "code": "NOT_ALLOWED_TO_CHANGE_TEAM_STATUS",
+      "message": "Not allowed to change team status"
+    },
+    "platform_user_manager_service_152": {
+      "code": " USER_IS_TEAM_LEAD",
+      "message": "Can not delete Employee who is a team lead"
+    },
+    "platform_user_manager_service_155": {
+      "code": "NO_USER_TO_UPDATE_EMAIL",
+      "message": "employee not exist to update email"
+    },
+    "platform_user_manager_service_156": {
+      "code": "NO_EMAIL_TO_UPDATE",
+      "message": "Email is required to update"
+    },
+    "platform_user_manager_service_160": {
+      "code": "USER_EMAIL_UPDATE_FAILED",
+      "message": "Email updation failed"
+    },
+    "platform_user_manager_service_164": {
+      "code": "INVALID_TIME_ZONE",
+      "message": "Invalid time zone value"
+    },
+    "PARENT_CUSTOM_ATTRIBUTE_WITH_INVALID_VALUE": {
+      "code": "INVALID_CUSTOM_ATTRIBUTE",
+      "message": "Invalid Custom Attribute Value"
+    },
+    "wfo_user_manager_service_1": {
+      "code": "INTERNAL_SERVER_ERROR",
+      "message": "Internal server error."
+    },
+    "wfo_user_manager_service_2": {
+      "code": "INTERNAL_ERROR",
+      "message": "Internal error."
+    },
+    "wfo_user_manager_service_3": {
+      "code": "SKILLS_ALREADY_EXISTS",
+      "message": "This name already exists. Try a new one."
+    },
+    "wfo_user_manager_service_4": {
+      "code": "SKILL_NOT_EXISTS",
+      "message": "Skill does not exist."
+    },
+    "wfo_user_manager_service_5": {
+      "code": "TOO_MANY_SKILLS_ASSIGNED_TO_USER",
+      "message": "A employee cannot have more than 50 skills."
+    },
+    "wfo_user_manager_service_6": {
+      "code": "SKILL_NAME_NOT_VALID",
+      "message": "The Skill name is not valid"
+    },
+    "wfo_user_manager_service_8": {
+      "code": "INVALID_INPUT",
+      "message": "Invalid input"
+    },
+    "wfo_service_schedule_manager_1": {
+      "code": "OBJECT_IS_NULL",
+      "message": "Weekly rule is empty"
+    },
+    "wfo_service_schedule_manager_2": {
+      "code": "WRONG_REQUEST_OBJECT(",
+      "message": "wrong weekly rule"
+    },
+    "wfo_service_schedule_manager_3": {
+      "code": "WRONG_WEEKLY_RULE_DAYS_RANGE",
+      "message": "wrong weekly rule days range"
+    },
+    "wfo_service_schedule_manager_4": {
+      "code": "WRONG_WEEKLY_RULE_HOURS_RANGE",
+      "message": "wrong weekly rule hours range"
+    },
+    "wfo_service_schedule_manager_5": {
+      "code": "VALUE_OF_MAX_SHIFTS_OF_WEEKLY_RULE_IS_LOWER_THAN_TOTAL_OF_MIN_DAYS_DAILY_RULE",
+      "message": "VALUE OF MAX SHIFTS OF WEEKLY RULE IS LOWER THAN TOTAL OF MIN DAYS DAILY RULE"
+    },
+    "wfo_service_schedule_manager_6": {
+      "code": "VALUE_OF_MIN_SHIFTS_OF_WEEKLY_RULE_IS_GREATER_THAN_TOTAL_OF_MAX_DAYS_DAILY_RULE",
+      "message": "VALUE OF MIN SHIFTS OF WEEKLY RULE IS GREATER THAN TOTAL OF MAX DAYS DAILY RULE"
+    },
+    "wfo_service_schedule_manager_7": {
+      "code": "TOTAL_SUM_OF_DAILY_MIN_HOURS_IS_BIGGER_THAN_WEEKLY_MAX_HOURS",
+      "message": "TOTAL SUM OF DAILY MIN HOURS IS BIGGER THAN WEEKLY MAX HOURS"
+    },
+    "wfo_service_schedule_manager_8": {
+      "code": "TOTAL_SUM_OF_DAILY_MAX_HOURS_IS_LOWER_THAN_WEEKLY_MIN_HOURS",
+      "message": "TOTAL SUM OF DAILY MAX HOURS IS LOWER THAN WEEKLY MIN HOURS"
+    },
+    "wfo_service_schedule_manager_9": {
+      "code": "TOTAL_SUM_OF_POSSIBLE_DAYS_IS_LOWER_THAN_THE_CORRESPONDING_MIN_DAY_OF_THE_DAILY_RULE",
+      "message": "TOTAL SUM OF POSSIBLE DAYS IS LOWER THAN THE CORRESPONDING MIN DAY OF THE DAILY RULE"
+    },
+    "wfo_service_schedule_manager_10": {
+      "code": "TOTAL_SUM_OF_ALL_UNIQUE_POSSIBLE_DAYS_IS_LOWER_THAN_THE_TOTAL_SUM_OF_MIN_SHIFTS_PER_DAILY_RULE",
+      "message": "TOTAL SUM OF ALL UNIQUE POSSIBLE DAYS IS LOWER THAN THE TOTAL SUM OF MIN SHIFTS PER DAILY RULE"
+    },
+    "wfo_service_schedule_manager_11": {
+      "code": "NO_NAME_FOR_WEEKLY_RULE_WAS_GIVEN",
+      "message": "NO NAME FOR WEEKLY RULE WAS GIVEN"
+    },
+    "wfo_service_schedule_manager_12": {
+      "code": "DAILY_RULES_ARE_EMPTY",
+      "message": "DAILY RULES ARE EMPTY"
+    },
+    "wfo_service_schedule_manager_13": {
+      "code": "TOTAL_SUM_OF_ALL_UNIQUE_POSSIBLE_DAYS_IS_LOWER_THAN_MINIMUM_SHIFTS_PER_WEEK",
+      "message": "TOTAL SUM OF ALL UNIQUE POSSIBLE DAYS IS LOWER THAN MINIMUM SHIFTS PER WEEK"
+    },
+    "wfo_service_schedule_manager_14": {
+      "code": "DATE_FORMAT_IS_INVALID",
+      "message": "The date format is invalid"
+    },
+    "wfo_service_schedule_manager_15": {
+      "code": "TIME_PERIOD_BETWEEN_TWO_DATES_IS_INVALID",
+      "message": "The time period between two dates is invalid"
+    },
+    "wfo_service_schedule_manager_16": {
+      "code": "INTERNAL_SERVER_ERROR",
+      "message": "An internal server error has occurred"
+    },
+    "wfo_service_schedule_manager_17": {
+      "code": "INTERNAL_ERROR",
+      "message": "An internal error has occured"
+    },
+    "wfo_service_schedule_manager_18": {
+      "code": "IMPORT_GET_PARSER_ERROR",
+      "message": "The file format is not supported"
+    },
+    "wfo_service_schedule_manager_19": {
+      "code": "IMPORT_GET_NEXT_RECORDS_ERROR",
+      "message": "Records in the file could not be read"
+    },
+    "wfo_service_schedule_manager_20": {
+      "code": "FILE_PARSING_ERROR_WRONG_COLUMNS_NUMBER_OR_NAME",
+      "message": "Could not find expected column titles. Look at sample file."
+    },
+    "wfo_service_schedule_manager_21": {
+      "code": "SKILLS_DOES_NOT_EXIST",
+      "message": "Skills are missing from the system"
+    },
+    "wfo_service_schedule_manager_22": {
+      "code": "IMPORT_SUS_NOT_EXISTS",
+      "message": "Scheduling Units are missing from the file"
+    },
+    "wfo_service_schedule_manager_23": {
+      "code": "EARLIEST_DAILY_START_IS_AFTER_LATEST_START",
+      "message": "Earliest daily start is after latest start"
+    },
+    "wfo_service_schedule_manager_24": {
+      "code": "INCREMENT_FORMAT_IS_WRONG",
+      "message": "Increment format is wrong"
+    },
+    "wfo_service_schedule_manager_25": {
+      "code": "DAILY_RULE_START_TIMES_ARE_NOT_WITHIN_THE_CORRECT_RANGE",
+      "message": "Daily rule start times are not within the correct range"
+    },
+    "wfo_service_schedule_manager_26": {
+      "code": "DAILY_ACTIVITY_LENGTH_IS_BIGGER_THAN_DAILY_RULE_LENGTH",
+      "message": "Daily activity length is bigger than daily rule length"
+    },
+    "wfo_service_schedule_manager_27": {
+      "code": "SLACK_FORMAT_IS_WRONG",
+      "message": "Slack format is wrong"
+    },
+    "wfo_service_schedule_manager_28": {
+      "code": "RELATIVE_START_TIME_IS_LOWER_THAN_SLACK_TIME(",
+      "message": "Relative start time is lower slack time"
+    },
+    "wfo_service_schedule_manager_29": {
+      "code": "SUM_OF_LENGTHS_OF_ACTIVITIES_IS_BIGGER_THAN_DAILY_LENGTH",
+      "message": "Sum of lengths of activities is bigger than daily length"
+    },
+    "wfo_service_schedule_manager_30": {
+      "code": "NO_VALID_ACTIVITIES_COMBINATION_EXIST",
+      "message": "No valid activities combination exist"
+    },
+    "wfo_service_schedule_manager_31": {
+      "code": "ACTIVITY_CODE_EXCEEDED_DAILY_RULE_SHIFT",
+      "message": "Activity code exceeded daily rule shift"
+    },
+    "wfo_service_schedule_manager_34": {
+      "code": "WRONG_FILE_FORMAT",
+      "message": "The file format is not supported"
+    },
+    "wfo_service_schedule_manager_35": {
+      "code": "ACTIVITY_CODE_NAME_NOT_VALID",
+      "message": "The Activity Code name is not valid"
+    },
+    "wfo_service_schedule_manager_36": {
+      "code": "NO_ASSIGNED_TIME_ZONE_FOR_THE_SU",
+      "message": "Time zone in schedule unit is wrong"
+    },
+    "wfo_service_schedule_manager_42": {
+      "code": "OPEN_ACTIVITY_CODE_CANNOT_BE_DELETED",
+      "message": "Cannot delete the default activity code"
+    },
+    "wfo_form_designer_service_1": {
+      "code": "THEME_ID_ERROR",
+      "message": "Please select a template"
+    },
+    "wfo_form_designer_service_2": {
+      "code": "THEME_ID_INVALID_ERROR",
+      "message": "Template Id is invalid"
+    },
+    "wfo_form_designer_service_3": {
+      "code": "FORM_DATA_ERROR",
+      "message": "FORM_DATA_ERROR"
+    },
+    "wfo_form_designer_service_4": {
+      "code": "FORM_NAME_ERROR",
+      "message": "FORM_NAME_ERROR"
+    },
+    "wfo_form_designer_service_5": {
+      "code": "FORM_STATUS_ERROR",
+      "message": "FORM_STATUS_ERROR"
+    },
+    "wfo_form_designer_service_6": {
+      "code": "THEME_DATA_ERROR",
+      "message": "THEME_DATA_ERROR"
+    },
+    "wfo_form_designer_service_7": {
+      "code": "THEME_NAME_ERROR",
+      "message": "THEME_NAME_ERROR"
+    },
+    "wfo_form_designer_service_8": {
+      "code": "THEME_LOGO_ERROR",
+      "message": "THEME_LOGO_ERROR"
+    },
+    "wfo_form_designer_service_9": {
+      "code": "ELEMENT_TYPE_EMPTY_ERROR",
+      "message": "ELEMENT_TYPE_EMPTY_ERROR"
+    },
+    "wfo_form_designer_service_10": {
+      "code": "ELEMENT_TYPE_INVALID_ERROR",
+      "message": "ELEMENT_TYPE_INVALID_ERROR"
+    },
+    "wfo_form_designer_service_11": {
+      "code": "FORM_ID_EMPTY_ERROR",
+      "message": "FORM_ID_EMPTY_ERROR"
+    },
+    "wfo_form_designer_service_12": {
+      "code": "FORM_ID_DOES_NOT_EXIST_ERROR",
+      "message": "FORM_ID_DOES_NOT_EXIST_ERROR"
+    },
+    "wfo_form_designer_service_13": {
+      "code": "FORM_STATUS_EMPTY_ERROR",
+      "message": "FORM_STATUS_EMPTY_ERROR"
+    },
+    "wfo_form_designer_service_14": {
+      "code": "FORM_STATUS_INVALID_ERROR",
+      "message": "FORM_STATUS_INVALID_ERROR"
+    },
+    "wfo_form_designer_service_15": {
+      "code": "DUPLICATE_FORM_NAME_ERROR",
+      "message": "Form Name already exist"
+    },
+    "wfo_form_designer_service_16": {
+      "code": "THEME_ID_DOES_NOT_EXIST_ERROR",
+      "message": "THEME_ID_DOES_NOT_EXIST_ERROR"
+    },
+    "wfo_form_designer_service_17": {
+      "code": "THEME_ID_EMPTY_ERROR",
+      "message": "THEME_ID_EMPTY_ERROR"
+    },
+    "wfo_form_designer_service_18": {
+      "code": "FORM_DATA_EMPTY_ERROR",
+      "message": "FORM_DATA_EMPTY_ERROR"
+    },
+    "wfo_form_designer_service_19": {
+      "code": "EMPTY_FILE_ERROR",
+      "message": "EMPTY_FILE_ERROR"
+    },
+    "wfo_form_designer_service_20": {
+      "code": "WRONG_FILE_TYPE",
+      "message": "WRONG_FILE_TYPE"
+    },
+    "platform_lib_1": {
+      "code": "INTERNAL_SERVER_ERROR",
+      "message": "Internal server error."
+    },
+    "platform_lib_2": {
+      "code": "INTERNAL_ERROR",
+      "message": "Internal error."
+    },
+    "hierarchy_manager_service_1": {
+      "code": "INTERNAL_SERVER_ERROR",
+      "message": "Internal server error."
+    },
+    "hierarchy_manager_service_2": {
+      "code": "INVALID_INPUT",
+      "message": "Invalid input"
+    },
+    "hierarchy_manager_service_3": {
+      "code": "INVALID_REQUEST",
+      "message": "Invalid request"
+    },
+    "hierarchy_manager_service_12": {
+      "code": "INVALID_SEARCH_REQUEST_KEY",
+      "message": "Invalid search key"
+    },
+    "hierarchy_manager_service_23": {
+      "code": "INVALID_SEARCH_DIRECTION",
+      "message": "Invalid search direction"
+    },
+    "hierarchy_manager_service_31": {
+      "code": "HIERARCHY_NAME_EXISTS",
+      "message": "Hierarchy name already exists"
+    },
+    "user_upload_100": {
+      "code": "INVALID_FIRST_NAME",
+      "message": "First name is either empty or has an invalid value"
+    },
+    "user_upload_101": {
+      "code": "INVALID_LAST_NAME",
+      "message": "Last name is either empty or has an invalid value"
+    },
+    "user_upload_102": {
+      "code": "INVALID_USERNAME",
+      "message": "Username is either empty or has an invalid value(username already exists)"
+    },
+    "user_upload_103": {
+      "code": "INVALID_ROLE_NAME",
+      "message": "Role name is either empty or has an invalid value"
+    },
+    "user_upload_104": {
+      "code": "INVALID_EMAIL_ADDRESS",
+      "message": "Email Address is either empty or has an invalid value"
+    },
+    "user_upload_105": {
+      "code": "INVALID_MOBILE_NUMBER",
+      "message": "Invalid mobile number, must contain only numbers and '-' '+' symbol"
+    },
+    "user_upload_106": {
+      "code": "INVALID_RANK",
+      "message": "Invalid Rank value, should be between 1 to 999"
+    },
+    "user_upload_107": {
+      "code": "INVALID_TEAM_NAME",
+      "message": "Team name is invalid or the team does not exist"
+    },
+    "user_upload_108": {
+      "code": "INVALID_ACD_LOGIN_ID",
+      "message": "User already exists"
+    },
+    "user_upload_109": {
+      "code": "INVALID_EXTERNAL_IDENTITY",
+      "message": "Invalid external identity value"
+    },
+    "user_upload_110": {
+      "code": "INVALID_CAN_BE_COACHED_OR_EVALUATED_VALUE",
+      "message": "Invalid value, should be TRUE OR FALSE"
+    },
+    "user_upload_111": {
+      "code": "INVALID_CAN_BE_SCHEDULED_VALUE",
+      "message": "Invalid value, should be TRUE OR FALSE"
+    },
+    "user_upload_112": {
+      "code": "INVALID_CAN_BE_RECORDED_VALUE",
+      "message": "Invalid value, should be TRUE OR FALSE"
+    },
+    "user_upload_113": {
+      "code": "INVALID_CAN_BE_ANALYZED_VALUE",
+      "message": "Invalid value, should be TRUE OR FALSE"
+    },
+    "user_upload_114": {
+      "code": "INVALID_CAN_BE_MEASURED_VALUE",
+      "message": "Invalid value, should be TRUE OR FALSE"
+    },
+    "user_upload_115": {
+      "code": "INVALID_OS_LOGIN_VALUE",
+      "message": "Invalid OS Login value"
+    },
+    "user_upload_119": {
+      "code": "user_upload_119",
+      "message": "Invalid Hire date, required format is MMM-DD-YYYY (JUL-14-2015)"
+    },
+    "team_upload_100": {
+      "code": "INVALID_REQUEST",
+      "message": "Request validation failed"
+    },
+    "team_upload_101": {
+      "code": "INVALID_TEAM_NAME",
+      "message": "Team Name is either empty or has invalid value"
+    },
+    "team_upload_102": {
+      "code": "INVALID_REQUEST_CONTACT",
+      "message": "Request Contact should be TRUE or FALSE"
+    },
+    "team_upload_103": {
+      "code": "INVALID_WFO_ADVANCED",
+      "message": "WFO Advanced should be TRUE or FALSE"
+    },
+    "team_upload_104": {
+      "code": "INVALID_QUALITY_MANAGEMENT",
+      "message": "Quality Management should be TRUE or FALSE"
+    },
+    "team_upload_105": {
+      "code": "INVALID_INVIEW_PERFORMANCE_MGMT",
+      "message": "inView Performance Management should be TRUE or FALSE"
+    },
+    "team_upload_106": {
+      "code": "INVALID_INVIEW_GAMIFICATION",
+      "message": "inView Gamification should be TRUE or FALSE"
+    },
+    "team_upload_107": {
+      "code": "INVALID_INVIEW_COACHING",
+      "message": "inView Coaching should be TRUE or FALSE"
+    },
+    "team_upload_108": {
+      "code": "INVALID_INVIEW_CHAT",
+      "message": "inView Chat Message should be TRUE or FALSE"
+    },
+    "team_upload_109": {
+      "code": "INVALID_AUDIO_RECORDING",
+      "message": "Audio Recording should be TRUE or FALSE"
+    },
+    "team_upload_110": {
+      "code": "INVALID_SCREN_RECORDING",
+      "message": "Screen Recording should be TRUE or FALSE"
+    },
+    "team_upload_111": {
+      "code": "INVALID_QUALITY_OPTIMIZATION",
+      "message": "Quality Optimization should be TRUE or FALSE"
+    },
+    "team_upload_112": {
+      "code": "INVALID_WFM_ADVANCED",
+      "message": "WFM Advanced should be TRUE or FALSE"
+    },
+    "team_upload_113": {
+      "code": "INVALID_WFM_ESSENTIALS",
+      "message": "WFM Essentials should be TRUE or FALSE"
+    },
+    "team_upload_114": {
+      "code": "INVALID_WORKLOAD_MANAGER",
+      "message": "Workload Manager should be TRUE or FALSE"
+    },
+    "team_upload_115": {
+      "code": "INVALID_WFO_ESSENTIALS",
+      "message": "WFO Essentials should be TRUE or FALSE"
+    },
+    "team_upload_116": {
+      "code": "INVALID_DELIVERY_MODE",
+      "message": "Invalid Delivery Mode value"
+    },
+    "team_upload_117": {
+      "code": "INVALID_AUTO_AUTO_FOCUS",
+      "message": "Auto Focus should be TRUE or FALSE"
+    },
+    "team_upload_118": {
+      "code": "INVALID_VOICE",
+      "message": "Voice should be a number"
+    },
+    "team_upload_119": {
+      "code": "INVALID_CHAT",
+      "message": "Chat should be a number"
+    },
+    "team_upload_120": {
+      "code": "INVALID_EMAILS",
+      "message": "Emails should be a number"
+    },
+    "team_upload_121": {
+      "code": "INVALID_WORK_ITEM",
+      "message": "Work Item should be a number"
+    },
+    "team_upload_122": {
+      "code": "INVALID_TOTAL_CONTACT_COUNT",
+      "message": "Total Contact Count should be a number"
+    },
+    "team_upload_123": {
+      "code": "INVALID_SINGLE_CHANNEL_CHAT",
+      "message": "Single Channel - Concurrent Chats should be a number"
+    },
+    "team_upload_124": {
+      "code": "INVALID_SINGLE_CHANNEL_EMAILS",
+      "message": "Single Channel - Auto Parked Emails should be a number"
+    },
+    "team_upload_125": {
+      "code": "INVALID_TEAM_LEAD",
+      "message": "Team Lead not present"
+    },
+    "team_upload_126": {
+      "code": "PARENT_CUSTOM_ATTRIBUTE_WITH_INVALID_VALUE",
+      "message": "Invalid Parent Or Child Attribute Value"
+    },
+    "user_team_upload_003": {
+      "code": "MISSING_TEAM_NAME",
+      "message": "Team Name cannot be empty"
+    },
+    "user_team_upload_004": {
+      "code": "MISSING_ASSIGNED_USERS",
+      "message": "Assigned Users cannot be empty"
+    },
+    "user_team_upload_005": {
+      "code": "TEAM_DOES_NOT_EXIST",
+      "message": "Team does not exist"
+    },
+    "user_team_upload_006": {
+      "code": "USER_DOES_NOT_EXIST",
+      "message": "User(s) not present"
+    },
+    "user_skills_upload_003": {
+      "code": "MISSING_SKILL_ID",
+      "message": "Skill Id cannot be empty"
+    },
+    "user_skills_upload_004": {
+      "code": "MISSING_SKILL_NAME",
+      "message": "Skill Name cannot be empty."
+    },
+    "user_skills_upload_005": {
+      "code": "MISSING_ASSIGNED_USERS",
+      "message": "Assigned Users cannot be empty"
+    },
+    "user_skills_upload_007": {
+      "code": "INVALID_SKILL_NAME",
+      "message": "Invalid skill name"
+    },
+    "user_skills_upload_008": {
+      "code": "USER_DOES_NOT_EXIST",
+      "message": "User(s) not present"
+    },
+    "user_skills_upload_009": {
+      "code": "USER_SKILL_ALREADY_EXISTS",
+      "message": "User(s) already assigned to skill"
+    },
+    "user_skills_upload_010": {
+      "code": "SKILL_ID_NOT_FOUND",
+      "message": "Skill Id not found"
+    }
+  },
+  "accountSetupModal": {
+    "header": "Account Setup",
+    "name": "DISPLAY NAME",
+    "timeZone": "TIME ZONE",
+    "successMsg": "Account info was updated successfully"
+  },
+  "launchStudioModal": {
+    "header": "Studio Authentication",
+    "launchStudioTitle": "Your Session ID will be copied to your clipboard.",
+    "launchStudioInfo": "Open Studio and click on the ‘Login with Session ID’ button to automatically login to Studio using your contact center suite credentials.",
+    "infoMsg": "Session ID has been successfully copied to your clipboard",
+    "footerMessage": "Don't show this message again"
+  },
+  "weeklyRulesPage": {
+    "pageTitle": "Weekly Rules",
+    "newRuleBtn": "New Rule",
+    "items": "rules",
+    "item": "weekly rule",
+    "general": "General",
+    "selectedItems": "{{selectedCount}} selected",
+    "gridColumnsHeaders": {
+      "name": "Name",
+      "minDays": "Min Days",
+      "maxDays": "Max Days",
+      "minHours": "Min Hours",
+      "maxHours": "Max Hours",
+      "employees": "Employees"
+    },
+    "tabs": {
+      "general": "General",
+      "shiftPatterns": "Shift Patterns",
+      "employee": "Employee"
+    },
+    "errorAdd": "An error occurred while creating the weekly rule.",
+    "errorDelete": "An error occurred while deleting the weekly rule.",
+    "errorUpdate": "An error occurred while updating the weekly rule.",
+    "errorRead": "An error occurred while loading weekly rules.",
+    "successAdd": "New Weekly rule has been added successfully",
+    "successDelete": "Weekly rule has been successfully removed",
+    "successEdit": "Weekly rule has been edited successfully",
+    "deleteConfirmationText": "The selected weekly rule will be removed.",
+    "deleteSelectedRulesMsg": "You are about to delete the selected weekly rules. Continue?",
+    "deleteSingleRuleMsg": "You are about to delete this weekly rule. Continue?",
+    "modal": {
+      "workRules": "Work Rules",
+      "daysPerWeek": "Shifts per Week",
+      "hours": "hours",
+      "days": "days",
+      "hoursPerWeek": "Total hours per week",
+      "editTitle": "Edit Weekly Rule",
+      "addTitle": "Create New Weekly Rule",
+      "ruleDescription": "RULE DESCRIPTION",
+      "minDays": "MIN",
+      "maxDays": "MAX",
+      "addShiftPatterns": "ADD SHIFT PATTERNS",
+      "dailyRule": "DAILY RULE",
+      "possibleDays": "POSSIBLE DAYS",
+      "add": "Add",
+      "employeesAssignedToThisRule": "Employees assigned to this rule",
+      "addEmployees": "Add employees",
+      "namePlaceholder": "Untitled Weekly Rule",
+      "errors": {
+      },
+      "dailyRulesDropdown": {
+        "placeholder": "Select a daily rule..."
+      },
+      "fieldLabels": {
+        "name": "Name",
+        "description": "Rule Description",
+        "minDays": "Min Days",
+        "maxDays": "Max Days",
+        "addShift": "Add shift patterns",
+        "dailyRule": "Daily Rule",
+        "possibleDays": "Possible Days"
+      }
+    }
+  },
+  "forecastDataPage": {
+    "pageTitle": "Forecast Data",
+    "importBtn": "Import Forecast",
+    "items": "forecasts",
+    "selectedItems": "{{selectedCount}} selected",
+    "gridColumnsHeaders": {
+      "dateRange": "Forecast Date Range",
+      "fileName": "Forecast File Name",
+      "importDate": "Import Date",
+      "importedBy": "Imported by",
+      "status": "Status"
+    },
+    "gridNoRowsOverlay": "No forecast data was imported yet",
+    "statuses": {
+      "succeeded": "Succeeded",
+      "failed": "Failed",
+      "partial": "Partially succeeded. {{successRowsCount}} out of {{totalRowsCount}} records imported.",
+      "na": "N/A"
+    },
+    "importModal": {
+      "header": "Import Forecast Data",
+      "firstParagraph": "Import forecast data by uploading a CSV file",
+      "downloadMessage1": "You can download a template of a CSV file",
+      "downloadLink": "here.",
+      "secondParagraph": "Make sure there is forecast data for the entire date range",
+      "successMsg": "Forecast data imported successfully",
+      "warnMsg": "The Import forecast data process was completed with errors",
+      "errorMsg": "Failed to import forecast data"
+    },
+    "importErrorsListModal": {
+      "header": "Import Errors",
+      "rowsWereImportedSuccessfully": "{{succeededRowsCount}} out of {{totalRowsCount}} were imported successfully",
+      "tooMuchErrors": "Import stopped. Large number of errors found. Showing the first {{amountOfRows}}"
+    }
+  },
+  "weekdayTimeBlocksDirective": {
+    "allDay": "All Day",
+    "closed": "Closed",
+    "removeAllTimeBlocksTooltip": "Remove all"
+  },
+  "noItemsOverlay": {
+    "grid": "No {{itemLabel}} is defined yet",
+    "modal": {
+      "employeeTab": "No employees assigned yet"
+    }
+  },
+  "uikitGallery": {
+    "userCount": "{{count}} Employees",
+    "selectedCount": "{{count}} Selected",
+    "searchPlaceholder": "Start typing to find user"
+  },
+  "filters": {
+    "scheduleUnitSelectedItems": "Scheduling Units"
+  },
+  "groupsPage": {
+    "pageTitle": "Groups",
+    "newGroupBtn": "New Group",
+    "items": "groups",
+    "item": "group",
+    "errorDelete": "No row was selected for deletion",
+    "gridColumnsHeaders": {
+      "name": "Name",
+      "employees": "Employees"
+    },
+    "deleteSelectedGroupsMsg": "You are about to delete the selected groups. Continue?",
+    "filters": {
+      "status": "{{count}} Status",
+      "group": "{{count}} Groups"
+    },
+    "popover": {
+      "message": "This group will be deleted from all employees. Are you sure?"
+    },
+    "createNewGroupModal": {
+      "addHeader": "Create New Group",
+      "editHeader": "Edit Group",
+      "groupNamePlaceholder": "Untitled Group",
+      "popover": {
+        "message1": "All changes will be lost",
+        "message2": "Are you sure you want to exit without saving?"
+      },
+      "employeesTab": {
+        "header": "Employees",
+        "assignedEmployeesTxt": "Assigned Employees",
+        "addEmployeesBtn": "Add Employees",
+        "selectEmployeesTxt": "Select employees",
+        "selectedTxt": "Selected:",
+        "AlreadyAssignedUsers": "Already assigned employees"
+      }
+    },
+    "successAdd": "New group has been added successfully",
+    "successEdit": "Group has been edited successfully"
+  },
+  "accountSettingsPage": {
+    "pageTitle": "Admin Account Settings",
+    "cancel": "Cancel",
+    "save": "Save",
+    "hostConfigurationSectionHeader": "Hosting",
+    "stylingSectionHeader": "Styling",
+    "bannerSectionHeader": "Login Banner",
+    "bannerWillClear": "Turning off the banner will clear any saved banner settings.",
+    "customHostnameEntryFieldLabel": "Custom Host Name",
+    "fontColorFieldLabel": "Banner Text",
+    "backgroundColorFieldLabel": "Banner Background",
+    "hostnameLengthValidationError": "Hostname cannot exceed 63 characters in length.",
+    "hostnameCharValidationError": "Hostname cannot contain any special characters (#?!@%^).”",
+    "errorMsg": "Hostname failed to save.",
+    "errorDuplicate": "This hostname already exists. Please use a different name.",
+    "errorDirty": "Hostname cannot contain profanity. Please use a different name.",
+    "errorReserved": "This hostname contains text reserved by the system. Please use a different name.",
+    "saveSuccess": "Account settings have been configured and saved successfully.",
+    "saveFailure": "An error occurred while saving your entry.",
+    "popover": {
+      "warningMessage": "All changes will be lost",
+      "confirmMessage": "Are you sure you want to exit without saving?"
+    },
+    "ModalMessages": {
+      "transition": {
+        "title": "Unsaved Data",
+        "unsavedChanges": "If you leave the page, your changes will be lost.",
+        "areYouSureLeavePage": "Are you sure you want to continue?"
+      }
+    }
+  },
+  "realTimeAdherence": {
+    "pageTitle": "Real Time Adherence",
+    "gridItemCount": "RTA events",
+    "gridColumnsHeaders": {
+      "name": "NAME",
+      "shouldBeOn": "EXPECTED ACTIVITY",
+      "butActuallyIn": "ACTUAL ACTIVITY",
+      "timeInState": "TIME IN STATE",
+      "adherence": "OUT OF ADHERENCE INFO"
+    },
+    "popover": {
+      "employeeEmail": "Email",
+      "acd": "ACD",
+      "acdLoginIds": "ACD Login IDs",
+      "eventId": "Event ID",
+      "unknownState": "Unmapped event",
+      "unknownStatusMessage": "This ACD event is not mapped to an Evolve WFM activity",
+      "goToAcd": "Go to ACD activities mapping",
+      "noAcdLoginID": "No ACD login ID",
+      "noAcdLoginIDMessage": "This agent does not have an ACD login ID in the Evolve WFM employee record",
+      "goToEmployee": "Go to employee record"
+    }
+  },
+  "acdActivitiesMapping": {
+    "pageTitle": "ACD activity mapping",
+    "newMappingBtn": "New Mapping",
+    "items": "mappings",
+    "errorDelete": "No row was selected for deletion",
+    "gridColumnsHeaders": {
+      "name": "Name",
+      "eventID": "Event ID",
+      "eventReason": "Event reason",
+      "activityCode": "Activity code",
+      "state": "state"
+    },
+    "deleteSelectedAcdActivitiesMappingMsg": "You are about to delete the selected mappings. Continue?",
+    "popover": {
+      "message": "This event mapping will be deleted. Are you sure?"
+    },
+    "createNewAcdActivitiesMappingModal": {
+      "addHeader": "Create ACD event mapping",
+      "editHeader": "Edit ACD event mapping",
+      "eventMappingNamePlaceholder": "Untitled event mapping",
+      "eventId": "Event ID",
+      "eventIdPlaceholder": "Type ACD event ID",
+      "combinationExistErrMsg": "The combination of event ID and event reason already exist. Try a new one.",
+      "eventReason": "Event Reason",
+      "eventReasonPlaceholder": "Type ACD event reason",
+      "activityCode": "Activity Code",
+      "activityCodePlaceholder": "Select activity code",
+      "activityCodeRequireMsg": "You must select an activity code",
+      "state": "state",
+      "popover": {
+        "message1": "All changes will be lost",
+        "message2": "Are you sure you want to exit without saving?"
+      }
+    },
+    "successAdd": "New mapping has been added successfully",
+    "successEdit": "Mapping has been edited successfully"
+  },
+  "add-entity-ui": {
+    "entityCount": "",
+    "selectAllLabel": "Select All"
+  },
+  "generic-users": {
+    "searchPlaceholder": "Start typing to find users",
+    "noItemsOverlay": "No users have been added yet",
+    "noItemsOverlayGrid": "No users found using this filter",
+    "noUsersSubText": "Select \"Add Users\" above to add some",
+    "itemsCount": "Viewing {{count}}",
+    "totalItemsCount": "{{count}} Total",
+    "userCount": "",
+    "tabLabels": {
+      "general": "General",
+      "assignedUsers": "Assigned Users",
+      "zeroRow": "0 Total"
+    },
+    "columns": {
+      "name": "Name",
+      "username": "Username",
+      "email": "Email",
+      "status": "State",
+      "role": "Role"
+    },
+    "popovers": {
+      "messageAddedUser": "You must reassign this user to another role to remove them.",
+      "messageNewUser": "Remove user from this role?",
+      "bulkMessageAddedUser": "You must reassign the user(s) to another role to remove them.",
+      "bulkMessageNewUser": "Remove users from this role?"
+    },
+    "userSelectionModal": {
+      "noUserAddedText": "No users added yet",
+      "noUserSelectedText": "No users selected yet"
+    },
+    "modal": {
+      "noItemsOverlay": "No users have been added yet",
+      "title": "Add Users"
+    },
+    "buttons": {
+      "addUsers": "Add Users",
+      "removeUsers": "Remove Users"
+    }
+  },
+  "hierarchiesPage": {
+    "pageTitle": "Hierarchies",
+    "newHierarchy": "New Hierarchy",
+    "itemsCount": "{{count}} Hierarchies",
+    "searchPlaceholder": "Start typing to find hierarchy",
+    "noItemsOverlay": "No hierarchies defined yet",
+    "saveAndActivate": "Save & Activate",
+    "save": "Save",
+    "cancel": "Cancel",
+    "createSuccessMessage": "Hierarchy has been created successfully.",
+    "updateSuccessMessage": "Hierarchy has been updated successfully.",
+    "createErrorMessage": "There was some problem in creating hierarchy. Please try later.",
+    "updateErrorMessage": "There was some problem in updating hierarchy. Please try later.",
+    "openHierarchyErrorMessage": "There was some problem in viewing this hierarchy. Please try later.",
+    "hierarchyManager": {
+      "pageTitle": "Hierarchies",
+      "newHierarchy": "Create New Hierarchy",
+      "cancel": "Cancel",
+      "hierarchyNamePlaceholder": "Hierarchy Name",
+      "hierarchyType": "Select Hierarchy Type",
+      "errorMessages": {
+        "typeRequired": "This field is required",
+        "nameRequired": "This field is required",
+        "duplicateName": "This name already exists. Try a new one."
+      }
+    },
+    "gridColumnHeaders": {
+      "hierarchyName": "HIERARCHY NAME",
+      "hierarchyType": "TYPE",
+      "lastModifiedBy": "LAST MODIFIED BY",
+      "lastModifiedDate": "LAST MODIFIED",
+      "hierarchyStatus": "STATUS",
+      "hierarchyActions": "ACTIONS"
+    },
+    "hierarchyStatus": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "hierarchyTypeCamelCase": {
+      "Organizational": "Organizational"
+    },
+    "hierarchyHamburgerMenu": {
+      "activate": "Activate",
+      "deactivate": "Deactivate"
+    },
+    "hierarchyManagerToastMessages": {
+      "successDeactivatingHierarchy": "Hierarchy has been deactivated successfully.",
+      "failureDeactivatingHierarchy": "There was some problem in deactivating hierarchy. Please try later.",
+      "successActivatingHierarchy": "Hierarchy has been activated successfully.",
+      "failureActivatingHierarchy": "There was some problem in activating hierarchy. Please try later."
+    },
+    "popovers": {
+      "deactivateHierarchy": {
+        "msg": "You are about to deactivate this hierarchy. Do you want to continue?"
+      },
+      "activateHierarchy": {
+        "msg": "Are you sure you want to activate this hierarchy?"
+      },
+      "warningMessage": "All changes will be lost",
+      "confirmMessage": "Are you sure you want to exit without saving?",
+      "deleteNodeWarningChildren": "Deleting this node will delete all children and peers below this node. Do you want to continue ?",
+      "deleteNodeWarning": "You are about to delete this node. Do you want to continue?"
+    },
+    "modalMessages": {
+      "transition": {
+        "title": "Unsaved Data",
+        "unsavedChanges": "If you leave the page, your changes will be lost.",
+        "warningMessage": "Are you sure you want to continue?"
+      }
+    },
+    "components": {
+      "nodeActionComponent": {
+        "title": {
+          "addChild": "Add Child",
+          "addPeer": "Add Peer",
+          "containers": "Containers",
+          "members": "Members",
+          "expandBranch": "Expand Branch",
+          "collapseBranch": "Collapse Branch",
+          "rename": "Rename",
+          "delete": "Delete"
+        }
+      },
+      "members": {
+        "headerText": "Members",
+        "searchPlaceHolder": "Search Members",
+        "type": "USER"
+      },
+      "containers": {
+        "headerText": "Containers",
+        "searchPlaceHolder": "Search Containers",
+        "type": "TEAM"
+      }
+    },
+    "messages": {
+      "error": {
+        "failedToLoadHierarchies": "Failed to load hierarchies. Please try again later."
+      }
+    }
+  },
+  "productCatalog": {
+    "category": {
+      "Admin": {
+        "name": "Admin",
+        "subcategories": {
+          "generalPermissions": {
+            "name": "General Permissions",
+            "privileges": {
+              "automationstudio": {
+                "name": "Manage Automation Studio"
+              },
+              "ExternalBusinessUnit": {
+                "name": "External Business Unit"
+              },
+              "passwordPolicyManagement": {
+                "name": "Password Policy"
+              },
+              "roleManagement": {
+                "name": "Role Management"
+              },
+              "schedulingunit": {
+                "name": "Scheduling Unit"
+              },
+              "schedulingunit:my": {
+                "name": "Can view my Scheduling Unit"
+              },
+              "skill": {
+                "name": "WFO Skills"
+              },
+              "skill:my": {
+                "name": "My WFO Skills"
+              },
+              "user:clientgeneralinfo": {
+                "name": "Can view client info"
+              },
+              "user": {
+                "name": "Employees"
+              },
+              "loginAuthenticatorManagement": {
+                "name": "Login Authenticator"
+              },
+              "activityAuditReport": {
+                "name": "Activity Audit Report Access"
+              },
+              "changeAuditReport": {
+                "name": "Change Audit Report Access"
+              },
+              "Teams": {
+                "name": "Teams"
+              },
+              "accessKey": {
+                "name": "Access Key"
+              },
+              "myAccessKey": {
+                "name": "My Access Key"
+              },
+              "AdminAccountSettings": {
+                "name": "Admin Account Settings"
+              },
+              "bulkUpload": {
+                "name": "Bulk Upload"
+              },
+              "viewManagement": {
+                "name": "View Management"
+              },
+              "group": {
+                "name": "Groups"
+              }
+            }
+          },
+          "userProfile": {
+            "name": "User Profile",
+            "privileges": {
+              "account": {
+                "name": "Can view account settings"
+              },
+              "selfService:support": {
+                "name": "Can access support downloads"
+              },
+              "user:generalinfo": {
+                "name": "Can view general info"
+              },
+              "user:password": {
+                "name": "Can change password"
+              }
+            }
+          },
+          "recordingWidgets": {
+            "name": "Recording Dashboard Widgets",
+            "privileges": {
+              "recordingsOverTime": {
+                "name": "Recordings Over Time"
+              }
+            }
+          },
+          "recordingPolicies": {
+            "name": "Recording",
+            "privileges": {
+              "recording:configuration": {
+                "name": "Recording Policies"
+              },
+              "connectivity:configuration": {
+                "name": "Connectivity Configuration"
+              },
+              "businessdataconfiguration": {
+                "name": "Business Data Configuration"
+              }
+            }
+          },
+          "hierarchyManager": {
+            "name": "Hierarchy Manager",
+            "privileges": {
+              "hierarchyManager": {
+                "name": "Hierarchy Management"
+              }
+            }
+          },
+          "cloudStorage": {
+            "name": "Cloud Storage",
+            "privileges": {
+              "FileRetrieval": {
+                "name": "Long-term File Retrieval"
+              },
+              "FileStorage": {
+                "name": "File Life Cycle Management"
+              },
+              "SecureExternalAccess": {
+                "name": "Secure External Access"
+              }
+            }
+          },
+          "enterpriseApplications": {
+            "name": "Enterprise Applications",
+            "privileges": {
+              "AgentSchedule": {
+                "name": "Agent Schedule"
+              },
+              "NICEEngageSystemUsers": {
+                "name": "System User"
+              }
+            }
+          }
+        }
+      },
+      "ACD": {
+        "name": "ACD",
+        "subcategories": {
+          "acdConfiguration": {
+            "name": "ACD Configuration",
+            "privileges": {
+              "BusinessUnitAcceptableFileExtensions": {
+                "name": "Tenant Acceptable File Ext."
+              },
+              "BusinessUnitExtensibleReports": {
+                "name": "Tenant Extensible Reports"
+              },
+              "BusinessUnitTimeZones": {
+                "name": "Business Unit Time Zones"
+              },
+              "DBConnector": {
+                "name": "DB Connector"
+              },
+              "ImpersonateAgent": {
+                "name": "Agent Session Control Via API"
+              },
+              "DirectDataAccess": {
+                "name": "Direct Data Access"
+              }
+            }
+          },
+          "acdSettings": {
+            "name": "ACD Settings",
+            "privileges": {
+              "AddressBook": {
+                "name": "Address Book"
+              },
+              "AgentPatterns": {
+                "name": "Agent Patterns"
+              },
+              "QuickReplies": {
+                "name": "Quick Replies"
+              },
+              "DefaultDialingPattern": {
+                "name": "Default Dialing Pattern"
+              },
+              "StationProfiles": {
+                "name": "Station Profiles"
+              },
+              "Stations": {
+                "name": "Stations"
+              },
+              "UnavailableCodes": {
+                "name": "Unavailable Codes"
+              },
+              "ACDSMSRegistrations": {
+                "name": "SMS Registrations"
+              },
+              "SMSRegistrationAutoReplies": {
+                "name": "SMS Registration Auto-Replies"
+              }
+            }
+          },
+          "agentVisibility": {
+            "name": "Agent Visibility",
+            "privileges": {
+              "HideAgentCallerId": {
+                "name": "Hide Agent Caller ID"
+              },
+              "HideAgentIdentityInformation": {
+                "name": "Hide Agent Identity Information"
+              },
+              "HideAgentPhoneNumber": {
+                "name": "Hide Agent Phone Number"
+              },
+              "HideAgentPresence": {
+                "name": "Hide Agent Presence"
+              }
+            }
+          },
+          "communications": {
+            "name": "Communications",
+            "privileges": {
+              "AgentMessaging": {
+                "name": "Agent Messaging"
+              },
+              "Lync": {
+                "name": "Skype for Business"
+              }
+            }
+          },
+          "contactSettings": {
+            "name": "Contact Settings",
+            "privileges": {
+              "Campaigns": {
+                "name": "Campaigns"
+              },
+              "ChatProfiles": {
+                "name": "Chat Profiles"
+              },
+              "Dispositions": {
+                "name": "Dispositions"
+              },
+              "HoursOfOperationProfile": {
+                "name": "Hours of Operation"
+              },
+              "WorkflowData": {
+                "name": "Workflow Data"
+              },
+              "PointsOfContact": {
+                "name": "Points of Contact"
+              },
+              "Scripts": {
+                "name": "Scripts"
+              },
+              "ScriptSchedules": {
+                "name": "Script Schedules"
+              },
+              "Skills": {
+                "name": "Skills"
+              },
+              "Tags": {
+                "name": "Tags"
+              },
+              "Users": {
+                "name": "Users"
+              }
+            }
+          },
+          "lists": {
+            "name": "Lists",
+            "privileges": {
+              "CallingList": {
+                "name": "Calling List"
+              },
+              "CallSuppression": {
+                "name": "Call Suppression"
+              },
+              "DoNotCallList": {
+                "name": "Do Not Call List"
+              }
+            }
+          },
+          "maxAgentInterface": {
+            "name": "MAX (Agent Interface)",
+            "privileges": {
+              "AgentMAX": {
+                "name": "Launch MAX"
+              },
+              "AgentPhone": {
+                "name": "Set Phone Number"
+              },
+              "AgentSoftPhone": {
+                "name": "Integrated SoftPhone"
+              },
+              "AgentStation": {
+                "name": "Set Station ID"
+              },
+              "Masking": {
+                "name": "Masking"
+              },
+              "MultiPartyConferencing": {
+                "name": "Multiparty Conferencing"
+              },
+              "MuteAgent": {
+                "name": "Mute"
+              },
+              "RecordContact": {
+                "name": "Record Contact"
+              },
+              "SMS": {
+                "name": "SMS"
+              }
+            }
+          },
+          "outbound": {
+            "name": "Outbound",
+            "privileges": {
+              "AMDTuning": {
+                "name": "Can edit AMD Tuning"
+              },
+              "ComplianceRequiredDelivery": {
+                "name": "Can edit Compliance Required Delivery"
+              },
+              "DialerManager": {
+                "name": "Dialer Manager"
+              },
+              "DialingByProficiency": {
+                "name": "Dialing by Proficiency"
+              },
+              "ForceStopSkill": {
+                "name": "Can force-stop a skill"
+              },
+              "MessageTemplates": {
+                "name": "Message Templates"
+              },
+              "OutboundDialer": {
+                "name": "Outbound Dialer"
+              },
+              "PredictiveDialing": {
+                "name": "Can edit Predictive Dialing"
+              },
+              "SkillChannelSettings": {
+                "name": "SMS Skill Channel Settings"
+              }
+            }
+          },
+          "retentionFiles": {
+            "name": "Storage",
+            "privileges": {
+              "FileRetrieval": {
+                "name": "File Retrieval"
+              },
+              "FilesAndFolders": {
+                "name": "Browse ACD Files"
+              },
+              "FileStorage": {
+                "name": "File Storage"
+              },
+              "SecureExternalAccess": {
+                "name": "Secure External Access"
+              }
+            }
+          },
+          "studio": {
+            "name": "Studio",
+            "privileges": {
+              "FileBrowser": {
+                "name": "File Browser"
+              },
+              "Prompts": {
+                "name": "Record Prompts"
+              },
+              "StudioScripts": {
+                "name": "Studio Scripts"
+              }
+            }
+          },
+          "supervisor": {
+            "name": "Supervisor",
+            "privileges": {
+              "SupervisorAgentTab": {
+                "name": "Agent Tab"
+              },
+              "CallRecordingPlaybackAccess": {
+                "name": "Call Recording Playback Access"
+              },
+              "DownloadCallRecordings": {
+                "name": "Call Recording Download"
+              },
+              "LaunchSupervisor": {
+                "name": "Launch Supervisor"
+              },
+              "Monitoring": {
+                "name": "Monitoring"
+              },
+              "Record": {
+                "name": "Record"
+              },
+              "SupervisorSkillTab": {
+                "name": "Skill Tab"
+              }
+            }
+          },
+          "support": {
+            "name": "Support",
+            "privileges": {
+              "AgentIssues": {
+                "name": "Agent Issues"
+              },
+              "SoftwareUpdates": {
+                "name": "Software Updates"
+              },
+              "SystemNotifications": {
+                "name": "System Notifications"
+              }
+            }
+          },
+          "acdDashboardWidgets": {
+            "name": "ACD Dashboard Widgets",
+            "privileges": {
+              "agentCounter": {
+                "name": "Agent Counter"
+              },
+              "agentList": {
+                "name": "Agent List"
+              },
+              "contactList": {
+                "name": "Contact List"
+              },
+              "contactStatesBySkill": {
+                "name": "Contact States by Skill"
+              },
+              "queueCounter": {
+                "name": "Queue Counter"
+              },
+              "serviceLevel": {
+                "name": "Service Level"
+              },
+              "skillSummary": {
+                "name": "Skill Summary"
+              },
+              "unavailableStatistics": {
+                "name": "Unavailable Statistics"
+              },
+              "callbackRequests": {
+                "name": "Callback Requests"
+              }
+            }
+          },
+          "sfAgentInterface": {
+            "name": "Agent for Salesforce",
+            "privileges": {
+              "AgentSFSoftPhone": {
+                "name": "Integrated SoftPhone"
+              }
+            }
+          },
+          "oscAgentInterface": {
+            "name": "Agent for Oracle Service Cloud",
+            "privileges": {
+              "AgentForOracleServiceCloud": {
+                "name": "Agent for Oracle Service Cloud"
+              },
+              "AgentOSCSoftPhone": {
+                "name": "Integrated SoftPhone"
+              }
+            }
+          },
+          "digitalEngagement": {
+            "name": "Digital Engagement",
+            "privileges": {
+              "deCare": {
+                "name": "Care Module"
+              },
+              "deReports": {
+                "name": "Reports Module"
+              },
+              "deSettings": {
+                "name": "Settings Module"
+              },
+              "deCRM": {
+                "name": "CRM Module"
+              },
+              "deDashboardWidgets": {
+                "name": "Create Dashboard and Widgets"
+              },
+              "deClusterSettings": {
+                "name": "Cluster Report Settings"
+              },
+              "deCreateViews": {
+                "name": "Create My Views"
+              },
+              "deUserAssign": {
+                "name": "User Can Assign To"
+              },
+              "deSearchPosts": {
+                "name": "Search in Posts"
+              },
+              "deSearchCustomers": {
+                "name": "Search in Customers"
+              },
+              "deSearchCases": {
+                "name": "Search in Cases"
+              },
+              "deSearchMessages": {
+                "name": "Search in Messages"
+              },
+              "deRoleSettings": {
+                "name": "User and Role Settings"
+              },
+              "deRoutingSettings": {
+                "name": "Intelligent Routing Settings"
+              },
+              "deTeamSettings": {
+                "name": "Team Settings"
+              },
+              "deBusinessHours": {
+                "name": "Business Hours"
+              },
+              "deChannelsSettings": {
+                "name": "Channels Settings"
+              },
+              "deCustomFieldsSettings": {
+                "name": "Custom Fields Settings"
+              },
+              "deAgentsSettings": {
+                "name": "Agents Settings"
+              },
+              "deEmailAlertSettings": {
+                "name": "Email Alert Settings"
+              },
+              "deTagsSettings": {
+                "name": "Tags Settings"
+              },
+              "deAccountSettings": {
+                "name": "Account Settings"
+              },
+              "deSecuritySettings": {
+                "name": "Security Settings"
+              },
+              "deKnowledgeBase": {
+                "name": "Knowledge Base"
+              },
+              "deAPIAccess": {
+                "name": "API Access"
+              },
+              "deSLASettings": {
+                "name": "SLA Settings"
+              },
+              "deUserStatuses": {
+                "name": "User Statuses"
+              },
+              "deLiveChatSettings": {
+                "name": "Live Chat Settings"
+              },
+              "deSatisfactionSurveys": {
+                "name": "Satisfaction Surveys"
+              },
+              "deRoutingQueues": {
+                "name": "Intelligent Routing Queues"
+              },
+              "deAutomation": {
+                "name": "Automation"
+              },
+              "dePushUpdates": {
+                "name": "Push Updates"
+              }
+            }
+          },
+          "presenceSyncPerm": {
+            "name": "Presence Sync",
+            "privileges": {
+              "PresenceSync": {
+                "name": "Presence Sync"
+              },
+              "PartnerRegistration": {
+                "name": "Partner Registration"
+              },
+              "TenantRegistration": {
+                "name": "Tenant Registration"
+              },
+              "PresenceSyncRules": {
+                "name": "Rules"
+              },
+              "UserMapping": {
+                "name": "User Mapping"
+              }
+            }
+          }
+        }
+      },
+      "WFM": {
+        "name": "WFM",
+        "subcategories": {
+          "forecaster": {
+            "name": "Forecasting",
+            "privileges": {
+              "forecast": {
+                "name": "Generate Forecasts"
+              },
+              "historicalData": {
+                "name": "Historical Data"
+              }
+            }
+          },
+          "timeoffplanning": {
+            "name": "Time-Off Planning",
+            "privileges": {
+              "rulesAndSummary": {
+                "name": "Rules & Summary"
+              }
+            }
+          },
+          "scheduler": {
+            "name": "Scheduling",
+            "privileges": {
+              "schedule:manager": {
+                "name": "Schedule Manager"
+              },
+              "schedule": {
+                "name": "Generate Schedule"
+              },
+              "biddingManager": {
+                "name": "Bidding Manager"
+              },
+              "importstaffing": {
+                "name": "Staffing Plans"
+              }
+            }
+          },
+          "schedulerSetup": {
+            "name": "Setup",
+            "privileges": {
+              "acdActivitiesMapping": {
+                "name": "ACD Activity Mapping"
+              },
+              "activitycode": {
+                "name": "Activity Codes"
+              },
+              "dailyweeklyrule": {
+                "name": "Daily and Weekly Rules"
+              },
+              "shiftBiddingTemplates": {
+                "name": "Shift Bidding Templates"
+              },
+              "shiftTradingConfig": {
+                "name": "Shift Trading"
+              }
+            }
+          },
+          "wfmGeneralPermissions": {
+            "name": "General Permissions",
+            "privileges": {
+              "realTimeAdherence": {
+                "name": "Real Time Adherence"
+              },
+              "intraday": {
+                "name": "Intraday"
+              },
+              "timeOffRequests": {
+                "name": "Requests"
+              }
+            }
+          },
+          "wfmIndividualPermissions": {
+            "name": "My Zone",
+            "privileges": {
+              "schedule:my": {
+                "name": "View Personal Schedule"
+              },
+              "myTimeOffRequests": {
+                "name": "Personal Time Off Requests"
+              },
+              "shiftBidding": {
+                "name": "Submit Shift Bids"
+              },
+              "preferences:my": {
+                "name": "Set Preferences"
+              }
+            }
+          }
+        }
+      },
+      "QM Tools": {
+        "name": "QM Tools",
+        "subcategories": {
+          "coaching": {
+            "name": "Coaching",
+            "privileges": {
+              "coaching:coachingpackage": {
+                "name": "Coaching Packages"
+              },
+              "coaching:coachingplans": {
+                "name": "Coaching Plans"
+              }
+            }
+          },
+          "evaluations": {
+            "name": "Evaluations",
+            "privileges": {
+              "evaluation:evaluationforms": {
+                "name": "Evaluation Forms"
+              },
+              "qualityPlanner": {
+                "name": "Quality Plans"
+              },
+              "manageForms": {
+                "name": "Form Manager"
+              },
+              "evaluation": {
+                "name": "Perform Evaluations"
+              }
+            }
+          },
+          "qmGeneralPermissions": {
+            "name": "General Permissions",
+            "privileges": {
+              "dashboard:my": {
+                "name": "My Dashboard"
+              },
+              "formexecutor": {
+                "name": "Review Evaluations"
+              },
+              "qmSupervisorDashboard": {
+                "name": "QM Supervisor Dashboard"
+              }
+            }
+          },
+          "myzone": {
+            "name": "My Zone",
+            "privileges": {
+              "calibration": {
+                "name": "Calibrations"
+              },
+              "performancemonitoring": {
+                "name": "Performance Monitoring"
+              },
+              "plansmonitoring": {
+                "name": "Plan Monitoring"
+              },
+              "myevaluations": {
+                "name": "Evaluations"
+              },
+              "selfassessment": {
+                "name": "Self Assessments"
+              },
+              "mytasks": {
+                "name": "Tasks"
+              },
+              "coaching": {
+                "name": "Coaching"
+              }
+            }
+          },
+          "categoryManager": {
+            "name": "Category Manager",
+            "privileges": {
+              "analyticsCategoryManager": {
+                "name": "Analytics Category Manager"
+              }
+            }
+          },
+          "qmDashboardWidgets": {
+            "name": "Dashboard Widgets",
+            "privileges": {
+              "topCategoriesWidget": {
+                "name": "Top Categories"
+              },
+              "categoryOverTimeWidget": {
+                "name": "Category Over Time"
+              }
+            }
+          },
+          "qmDataExtractionAPIs": {
+            "name": "Data Extraction APIs",
+            "privileges": {
+              "qmWorkflowsData": {
+                "name": "QM Workflows API"
+              }
+            }
+          }
+        }
+      },
+      "Coaching": {
+        "name": "Coaching",
+        "subcategories": {
+          "coaching": {
+            "name": "Coaching",
+            "privileges": {
+              "coaching:coachingpackage": {
+                "name": "Coaching Packages"
+              },
+              "coaching:coachingplans": {
+                "name": "Coaching Plans"
+              }
+            }
+          },
+          "myzoneCoaching": {
+            "name": "My Zone",
+            "privileges": {
+              "coaching": {
+                "name": "Coaching"
+              }
+            }
+          }
+        }
+      },
+      "WFI": {
+        "name": "WFI",
+        "subcategories": {
+          "wfiGeneralPermissions": {
+            "name": "General Permissions",
+            "privileges": {
+              "DataPoints": {
+                "name": "Data Points"
+              },
+              "NotificationSettings": {
+                "name": "Notification Settings"
+              },
+              "PendingRuleActions": {
+                "name": "Pending Rule Actions"
+              },
+              "Rules": {
+                "name": "Rules"
+              }
+            }
+          }
+        }
+      },
+      "X-Sight AI": {
+        "name": "X-Sight AI",
+        "subcategories": {
+          "xsightAIGeneral": {
+            "name": "General Permissions",
+            "privileges": {
+              "xsight:samdataexploration": {
+                "name": "SAM Data Exploration"
+              },
+              "xsight:ifmdataexploration": {
+                "name": "IFM Data Exploration"
+              },
+              "xsight:projectworkspace": {
+                "name": "Project Workspace"
+              },
+              "xsight:amlreports": {
+                "name": "AML Reports"
+              },
+              "xsight:fraudreports": {
+                "name": "Fraud Reports"
+              }
+            }
+          }
+        }
+      },
+      "Search & Playback": {
+        "name": "Search & Playback",
+        "subcategories": {
+          "searchPermissions": {
+            "name": "Search",
+            "privileges": {
+              "search": {
+                "name": "Can search recordings"
+              },
+              "deleteRecordings": {
+                "name": "Can delete recordings"
+              }
+            }
+          },
+          "playerPermissions": {
+            "name": "Player",
+            "privileges": {
+              "player": {
+                "name": "Can play/download recordings"
+              }
+            }
+          },
+          "myZonePermissions": {
+            "name": "My Zone",
+            "privileges": {
+              "viewMyInteractions": {
+                "name": "Recent Interactions"
+              }
+            }
+          },
+          "recordingDataExtractionAPIs": {
+            "name": "Data Extraction APIs",
+            "privileges": {
+              "interactionMetaDataAPI": {
+                "name": "Interaction MetaData API"
+              }
+            }
+          }
+        }
+      },
+      "Dashboard": {
+        "name": "Dashboard",
+        "subcategories": {
+          "dashboardGeneralPermissions": {
+            "name": "General Permissions",
+            "privileges": {
+              "dashboard": {
+                "name": "Dashboard"
+              }
+            }
+          }
+        }
+      },
+      "inView": {
+        "name": "inView",
+        "subcategories": {
+          "inviewGeneralPermissions": {
+            "name": "General Permissions",
+            "privileges": {
+              "inView": {
+                "name": "inView"
+              }
+            }
+          }
+        }
+      },
+      "Analytics": {
+        "name": "Analytics",
+        "subcategories": {
+          "userAccess": {
+            "name": "User Settings",
+            "privileges": {
+              "analyticsAccess": {
+                "name": "Analytics Access"
+              }
+            }
+          },
+          "transcriptUploadAccess": {
+            "name": "Transcript Upload Access",
+            "privileges": {
+              "analyticsTranscriptUpload": {
+                "name": "Transcript Upload"
+              }
+            }
+          },
+          "analyticsDashboardWidgets": {
+            "name": "Dashboard Widgets",
+            "privileges": {
+              "analyticsFrustration": {
+                "name": "Frustration"
+              },
+              "analyticsWhatPeopleAreTalkingAbout": {
+                "name": "inView"
+              },
+              "analyticsSentimentTrend": {
+                "name": "inView"
+              }
+            }
+          },
+          "autoDiscovery": {
+            "name": "AutoDiscovery",
+            "privileges": {
+              "analyticsAutoDiscovery": {
+                "name": "AutoDiscovery Access"
+              }
+            }
+          }
+        }
+      },
+      "PM": {
+        "name": "PM",
+        "subcategories": {
+          "pmGeneralPermissions": {
+            "name": "PM Dashboard Widgets",
+            "privileges": {
+              "pmAgentPerformance": {
+                "name": "My Performance"
+              },
+              "pmPerformanceSummary": {
+                "name": "Performance Summary"
+              },
+              "pmPerformanceTrend": {
+                "name": "Performance Trend"
+              },
+              "pmPerformanceGauge": {
+                "name": "Performance Gauge"
+              }
+            }
+          },
+          "pmGoalsPermissions": {
+            "name": "Goal Manager",
+            "privileges": {
+              "pmGlobalGoalsManagement": {
+                "name": "Global Goals"
+              },
+              "pmTeamGoalsManagement": {
+                "name": "Team Goals"
+              }
+            }
+          },
+          "myZonePm": {
+            "name": "My Zone",
+            "privileges": {
+              "myPursuits": {
+                "name": "My Pursuits"
+              },
+              "myTransactions":{
+              	"name" : "Transactions"
+              },
+              "1on1Coaching": {
+                "name": "1-on-1 Coaching"
+              }
+            }
+          },
+          "pmCoaching": {
+            "name": "Coaching",
+            "privileges": {
+              "pmCoachingManager": {
+                "name": "Coaching Manager"
+              }
+            }
+          },
+          "pmMetrics": {
+            "name": "Metrics",
+            "privileges": {
+              "pmCustomMetrics": {
+                "name": "Custom Metrics"
+              }
+            }
+          },
+          "gamificationPursuitsPermissions": {
+            "name": "Gamification",
+            "privileges": {
+              "gamificationPursuitsManagement": {
+                "name": "Pursuits"
+              },
+              "gamificationRewardsTransaction":{
+              	"name" : "Transactions"
+              }
+            }
+          }
+        }
+      },
+      "Feedback Management": {
+        "name": "Feedback Management",
+        "subcategories": {
+          "satmetrixGeneralPermissions": {
+            "name": "General Permissions",
+            "privileges": {
+              "satmetrix": {
+                "name": "Feedback Management"
+              }
+            }
+          }
+        }
+      },
+      "Reporting": {
+        "name": "Reporting",
+        "subcategories": {
+          "customreports": {
+            "name": "Custom Reports",
+            "privileges": {
+              "AdHocReports": {
+                "name": "Custom Reports"
+              },
+              "AdHocReportsCategories": {
+                "name": "Categories"
+              },
+              "AdHocReportsHeaders": {
+                "name": "Headers"
+              },
+              "AdHocReportsScheduling": {
+                "name": "Schedules"
+              },
+              "SFTPAccounts": {
+                "name": "SFTP Accounts"
+              }
+            }
+          },
+          "datadownloadreports": {
+            "name": "Data Download",
+            "privileges": {
+              "DataDownload": {
+                "name": "Data Download"
+              },
+              "ReportSchedules": {
+                "name": "Report Schedules"
+              },
+              "SchedulesReport": {
+                "name": "Schedules Report"
+              }
+            }
+          },
+          "outboundreports": {
+            "name": "Outbound",
+            "privileges": {
+              "AbandonRateComplianceReport": {
+                "name": "Abandon Rate Compliance"
+              },
+              "DialerDispositions": {
+                "name": "Dialer Dispositions"
+              },
+              "OutboundReportStore": {
+                "name": "Outbound Report Store"
+              }
+            }
+          },
+          "generalBIPermissions": {
+            "name": "General BI Permissions",
+            "privileges": {
+              "ReportViewer": {
+                "name": "Report Viewer"
+              }
+            }
+          },
+          "BIReports": {
+            "name": "BI Reports",
+            "privileges": {
+              "WFMAdherenceReport": {
+                "name": "WFM Adherence Report"
+              },
+              "QMEvaluationReport": {
+                "name": "QM Evaluation Report"
+              },
+              "WFMTimeUtilizationReport": {
+                "name": "WFM Time Utilization Report"
+              }
+            }
+          },
+          "prebuiltreports": {
+            "name": "Prebuilt Reports",
+            "privileges": {
+              "ActiveAgentsReport": {
+                "name": "Active Agents"
+              },
+              "ActiveContactsReport": {
+                "name": "Active Contacts"
+              },
+              "AgentbyTeamReport": {
+                "name": "Agent by Team"
+              },
+              "AgentSnapshotReport": {
+                "name": "Agent Snapshot"
+              },
+              "AgentSummaryReport": {
+                "name": "Agent Summary"
+              },
+              "AgentTimeCardReport": {
+                "name": "Agent Time Card"
+              },
+              "AgentUnavailableTimeReport": {
+                "name": "Agent Unavailable Time"
+              },
+              "AnalyticsContactReport": {
+                "name": "Categorized Interactions Report"
+              },
+              "BillingReport": {
+                "name": "Billing Report"
+              },
+              "CallQualityExplorer": {
+                "name": "Call Quality Explorer"
+              },
+              "CampaignPerformanceReport": {
+                "name": "Campaign Performance"
+              },
+              "CampaignSummaryByCampaign": {
+                "name": "Campaign Summary by Campaign"
+              },
+              "CampaignSummaryBySkill": {
+                "name": "Campaign Summary by Skill"
+              },
+              "ConfiguredStationsReport": {
+                "name": "Configured Stations"
+              },
+              "ContactHistoryReport": {
+                "name": "Contact History"
+              },
+              "EmailInterruptions": {
+                "name": "Email Interruptions"
+              },
+              "EmpirixData": {
+                "name": "Empirix Data"
+              },
+              "ForcedLogoutReport": {
+                "name": "Forced Agent Logout"
+              },
+              "IVRPressPath": {
+                "name": "IVR Press Path"
+              },
+              "PromiseKeeperReport": {
+                "name": "Promise Keeper"
+              },
+              "SkillByCampaignReport": {
+                "name": "Skill by Campaign"
+              },
+              "SkillPerformanceReport": {
+                "name": "Skill Performance"
+              },
+              "SkillProficienciesDetailReport": {
+                "name": "Skill Proficiencies Detail"
+              },
+              "SkillProficienciesSummaryReport": {
+                "name": "Skill Proficiencies Summary"
+              },
+              "SupervisorSnapshotReport": {
+                "name": "Supervisor Snapshot"
+              },
+              "TeamUnavailableCodesReport": {
+                "name": "Team Unavailable Codes"
+              }
+            }
+          },
+          "wfireports": {
+            "name": "Workforce Intelligence",
+            "privileges": {
+              "RuleActionHistory": {
+                "name": "Rule Action History"
+              },
+              "RuleSummaryReport": {
+                "name": "Rule Summary Report"
+              }
+            }
+          },
+          "partnerlogreader": {
+            "name": "Partner Log Reader",
+            "privileges": {
+              "LogViewer": {
+                "name": "Partner Log Reader"
+              }
+            }
+          }
+        }
+      },
+      "Partners": {
+        "name": "partners",
+        "subcategories": {
+          "partnerPerm": {
+            "name": "Partner",
+            "privileges": {
+              "PartnerHub": {
+                "name": "Partner Hub"
+              },
+              "PocProvisioning": {
+                "name": "POC Provisioning"
+              },
+              "LogViewer": {
+                "name": "Partner Log Reader"
+              }
+            }
+          }
+        }
+      },
+      "ADAPTERS": {
+        "name": "Adapters",
+        "subcategories": {
+          "psaGeneralPermission": {
+            "name": "General",
+            "privileges": {
+              "Adapters": {
+                "name": "Adapters"
+              },
+              "ADAccountMapping": {
+                "name": "Account Mapping"
+              }
+            }
+          },
+          "presenceSyncPermission": {
+            "name": "Presence Sync",
+            "privileges": {
+              "ADPresenceSyncRules": {
+                "name": "Rules"
+              },
+              "ADUserMapping": {
+                "name": "User Mapping"
+              }
+            }
+          },
+          "directorySyncPerm": {
+            "name": "Directory Sync",
+            "privileges": {
+              "ADDirectorySyncConfiguration": {
+                "name": "Directory Sync Configuration"
+              }
+            }
+          }
+        }
+      }
+    },
+    "action": {
+      "View": "View",
+      "Edit": "Edit",
+      "Viewer": "Viewer",
+      "Editor": "Editor",
+      "Create": "Create",
+      "Deactivate": "Deactivate",
+      "Download": "Download",
+      "Delete": "Delete",
+      "Favorites": "Favorites",
+      "Close": "Close",
+      "Monitor": "Monitor",
+      "Coach": "Coach",
+      "Barge": "Barge",
+      "Take Over": "Take Over",
+      "Debug": "Debug",
+      "Imp/Exp": "Imp/Exp",
+      "Create/Edit": "Create/Edit",
+      "Lock Override": "Lock Override",
+      "Search": "Search",
+      "Invite": "Invite",
+      "Import": "Import",
+      "Update": "Update",
+      "Manage": "Manage",
+      "Evaluate": "Evaluate",
+      "Replace": "Replace",
+      "Hard Delete": "Hard Delete",
+      "Initiate": "Initiate",
+      "Force Logout": "Force Logout",
+      "Terminate Agent": "Terminate Agent",
+      "Terminate Contact": "Terminate Contact",
+      "Agent View": "Agent View",
+      "Supervisor View": "Supervisor View",
+      "Manager View": "Manager View",
+      "Administrator": "Administrator",
+      "Assigned to User": "Assigned to User",
+      "Play Any": "Play Any",
+      "Take Ownership": "Take Ownership",
+      "Admin": "Admin",
+      "on": "On",
+      "off": "Off",
+      "Use": "Use",
+      "Assign": "Assign",
+      "Map": "Map"
+    }
+  },
+  "viewsPage": {
+    "pageTitle": "Views",
+    "overlayNoRowsMsg": "No views to display",
+    "createView": "New View",
+    "filters": {
+      "viewCountLabel": " Views",
+      "viewCountNull": "0 Views",
+      "searchPlaceholder": "Start typing to find view"
+    },
+    "userStates": {
+      "all": "All"
+    },
+    "errors": {
+      "viewsResponseError": "Ran into a bit of an issue getting views"
+    },
+    "gridColumnsHeaders": {
+      "viewName": "NAME",
+      "viewType": "TYPE",
+      "description": "DESCRIPTION",
+      "viewTypeUser": "Employees"
+    },
+    "delete": "Delete",
+    "createview": {
+      "pageTitle": "Create View",
+      "linkTitle": "Views",
+      "header": "Create New View",
+      "genInfoHeader": "General Information",
+      "viewName": "VIEW NAME",
+      "viewNamePlaceHolder": "Enter View Name",
+      "description": "DESCRIPTION",
+      "viewDescPlaceHolder": "Enter View Description",
+      "viewType": "TYPE",
+      "viewTypeDesc": "The type determines what kind of items can be added below",
+      "requiredFieldText": "* This is a required field",
+      "create": "Create",
+      "cancel": "Cancel"
+    },
+    "popOver": {
+      "innerMessage1" : "You are about to delete this view.",
+      "innerMessage2" : "Are you sure?",
+      "confirmYes" : "Yes",
+      "confirmNo" : "No",
+      "warningMessage": "All changes will be lost",
+      "confirmMessage": "Are you sure you want to exit without saving?"
+    },
+    "toastMessage": {
+      "deleteSuccess": "View was successfully deleted.",
+      "deleteFailure": "Cannot delete view. Users assigned to this view must be removed first."
+    }
+  }
+}

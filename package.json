@@ -1,0 +1,29 @@
+{
+  "name": "webapp-common-services-poc-scott1",
+  "version": "1.0.0",
+  "description": "README",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-libs": "cd shared-angular-components && npm run build-lib",
+    "start:container": "cd cxone-container && npm run start -c production",
+    "start:app1": "cd app1-angular && npm run start",
+    "start:app2": "cd app2-angular && npm run start",
+    "start:app3": "cd app3-angular && npm run start",
+    "start:all": "npm run build-libs && concurrently \"npm run start:container\" \"npm run start:app1\" \"npm run start:app2\" \"npm run start:app3\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nice-cxone/webapp-common-services-poc-scott1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nice-cxone/webapp-common-services-poc-scott1/issues"
+  },
+  "homepage": "https://github.com/nice-cxone/webapp-common-services-poc-scott1#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.2"
+  }
+}

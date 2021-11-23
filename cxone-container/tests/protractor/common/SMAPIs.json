@@ -1,0 +1,107 @@
+{
+  "APIs": [
+    {
+      "testName": "Login",
+      "url": "/public/authentication/v1/login",
+      "method": "POST",
+      "payload": {
+        "userName": "syntheticmonitor.adm.api@wfosaas.com",
+        "password": "Pass1234"
+      },
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Pre-login API",
+      "url": "/public/authentication/v1/prelogin?userName=syntheticmonitor.adm.api@wfosaas.com",
+      "method": "GET",
+      "payload": {
+        "userName": "syntheticmonitor.adm.api@wfosaas.com"
+      },
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Get All Users from Tenant",
+      "url": "/wfo/user?includeDeleted=false&withAndWithoutEmail=false",
+      "method": "GET",
+      "payload": null,
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Fetch Locked Users",
+      "url": "/authentication/v1/users?filter=lock%20eq%20true",
+      "method": "GET",
+      "payload": null,
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Get all skills",
+      "url": "/wfo/user/skills/all/users",
+      "method": "GET",
+      "payload": null,
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Get all groups",
+      "url": "/group",
+      "method": "GET",
+      "payload": null,
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Get all teams",
+      "url": "/user-management/v1/teams/search",
+      "method": "POST",
+      "payload": {},
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Get all roles",
+      "url": "/user/getAllRoles",
+      "method": "GET",
+      "payload": null,
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    },
+
+    {
+      "testName": "Get all permissions",
+      "url": "/user/permissions",
+      "method": "GET",
+      "payload": null,
+      "successCode": 200,
+      "tokenRequired": true,
+      "queryParam": null,
+      "timeout": 5000
+    }
+  ]
+}
